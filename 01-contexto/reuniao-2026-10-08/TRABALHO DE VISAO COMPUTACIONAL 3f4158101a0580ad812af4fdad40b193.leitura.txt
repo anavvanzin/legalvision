@@ -1,0 +1,41 @@
+TRABALHO DE VISAO COMPUTACIONAL
+TRABALHO DE VISAO COMPUTACIONAL
+Reunião de Pesquisa: Argumentação Computacional e Aplicações Jurídicas
+@8 de outubro de 2026
+Visão geral
+Ana Vitória e Guilherme conversaram sobre uma possível colaboração entre direito e argumentação computacional. O foco proposto é adaptar métodos de reconstrução de argumentos com LLMs multimodais — texto e imagem — a exemplos jurídicos simples e verificáveis.
+Argumentação computacional
+A proposta parte de argumentos em linguagem natural e os organiza em esquemas formais de raciocínio (argumentation schemes), para que sistemas computacionais possam inferir conclusões e explicitar de onde elas vieram.
+Exemplo discutido: no esquema de Expert Opinion / Position to Know, a afirmação de alguém pode sustentar uma conclusão se a pessoa tiver conhecimento no domínio relevante e a afirmação tratar desse domínio.
+Um entimema é um argumento com premissas omitidas, mas inferíveis pelo contexto. Uma possibilidade de pesquisa é avaliar se um LLM consegue reconstruir a premissa ausente sem inventar informação.
+A formalização também favorece a rastreabilidade: permite inspecionar a cadeia de premissas e identificar qual delas não sustenta a conclusão, em vez de aceitar apenas a resposta final de um modelo.
+Trabalho anterior e método apresentado
+Guilherme apresentou um trabalho que usa LLMs para inferir premissas ausentes em argumentos formalizados, com mais de 400 casos de teste.
+A extensão com visão computacional examina se uma imagem pode fornecer uma premissa que falta no argumento textual. O modelo recebe contexto, texto e imagem e tenta reconstruir o argumento.
+Os testes anteriores usaram imagens de previsão do tempo e compararam condições com remoção do entimema, do contexto ou da imagem, além da condição com todos os elementos. Foram mencionados modelos DeepSeek e Claude (Sonnet); tentativas com modelos da OpenAI foram descartadas porque, em parte dos casos, respondiam com perguntas em vez de produzir a reconstrução solicitada.
+O objetivo para a nova etapa não é repetir o domínio meteorológico, mas testar a abordagem em exemplos jurídicos simples. A recomendação foi limitar a complexidade para que os testes multimodais sejam interpretáveis e viáveis.
+Possíveis aplicações jurídicas
+Buscar um esquema formal adequado ao domínio e associar a ele situações em que uma imagem sustenta uma premissa factual.
+Exemplo ilustrativo: confrontar o depoimento de uma testemunha que afirma ter visto alguém com imagens de uma câmera e características do local — como altura e posição de um muro — para avaliar se a observação seria plausível. A conclusão e suas premissas intermediárias deveriam permanecer explícitas e rastreáveis.
+Outras possibilidades levantadas: questões de topografia e direitos sobre imóveis; imagens relacionadas a fatos discutidos em julgamentos; e análise de casos ou decisões públicas, inclusive do STF.
+A reunião mencionou esquemas de argumentação jurídica já existentes, incluindo trabalhos baseados em Common Law. Eles podem servir de referência, mas a adaptação ao direito brasileiro exige atenção às diferenças entre Common Law e Civil Law.
+Uma linha complementar seria comparar como a argumentação computacional opera nos dois sistemas: no Common Law, precedentes têm papel central; no Civil Law, códigos e textos normativos estruturam mais diretamente o raciocínio e a previsibilidade.
+A escolha do caso deve considerar a disponibilidade de imagens ou de um dataset adequado. Casos artificiais simples também podem ser úteis para testar a abordagem.
+Encaminhamentos
+Ana Vitória: pesquisar esquemas de argumentação jurídica no Google Scholar e na revista Argumentation and Law.
+Ana Vitória: procurar no Hugging Face datasets com imagens que possam servir a exemplos jurídicos.
+Ana Vitória: reunir ideias e possíveis casos/datasets, priorizando situações simples e com evidência visual clara.
+Guilherme: enviar o nome do livro-base sobre argumentação.
+Guilherme: confirmar com o orientador se pode compartilhar o artigo atual e informações sobre a colaboração.
+Guilherme: compartilhar os artigos e o trabalho relacionado à base de esquemas jurídicos que mencionou; o artigo de Carlos também foi enviado durante a reunião.
+Guilherme: enviar um contato para comunicação (WhatsApp/Telegram); o canal ainda ficou em aberto.
+Ambos: marcar uma conversa com o orientador de Guilherme caso a ideia avance.
+Ana Vitória: conferir na planilha da disciplina as datas de apresentação e entrega.
+Prazos mencionados
+Apresentação presencial: 2 de dezembro de 2026.
+Entregas finais — relatório em PDF, GitHub, vídeo, post e checkpoint da rede neural: até 5 de janeiro de 2027.
+Questões em aberto
+Qual esquema de argumentação jurídica é mais adequado para um primeiro experimento?
+Que dataset ou conjunto pequeno de imagens oferece evidência visual relevante e permite formular casos controlados?
+Como adaptar esquemas oriundos de Common Law ao contexto brasileiro de Civil Law?
+Como avaliar se o modelo recuperou a premissa correta, sem acrescentar condições não sustentadas pelos dados?

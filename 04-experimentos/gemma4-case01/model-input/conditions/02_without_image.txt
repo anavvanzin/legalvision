@@ -1,0 +1,40 @@
+CONDIÇÃO: without_image. Nenhuma imagem foi fornecida. Use somente este texto e não procure imagens ou metadados.
+
+Você participa de um ensaio exploratório de um único caso. Use somente o texto abaixo e, se fornecida nesta condição, a imagem. Não use navegação, outras conversas, fonte da fotografia, filenames descritivos ou arquivos de referência. Não há evidência adicional escondida no texto. Definições de categoria não afirmam que o objeto pertence à categoria.
+
+CASO: CASE01. A designa o objeto central eventualmente mostrado na imagem. O cenário é fictício, sem vínculo com um processo real.
+
+CATEGORIA OPERACIONAL C = bicicleta_visual: configuração visual com duas rodas distintas, quadro, guidão, selim e pelo menos um conjunto pedal/manivela visível. A categoria descreve aparência segundo esses critérios e não prova funcionamento, propriedade, identidade, ausência de motor oculto ou estatuto em lei real.
+
+REGRA HIPOTÉTICA FORNECIDA R1, versão 1: para este cenário de demonstração, se A pertence à categoria bicicleta_visual, A recebe a propriedade normativa deve_ser_conduzido_a_mao_na_zona_Z. Trata-se de regra fictícia, não afirmação de direito vigente. A pertinência da zona Z e a regra são estipuladas pelo texto, não inferidas da fotografia. Nenhuma identidade, intenção, culpa ou causalidade deve ser inferida.
+
+PERFIL FORMAL: verbal_classification, versão 0.1.
+classified_as(A,C) + classification_warrant(C,F) => defeasibly has_property(A,F).
+A, C e F devem estar vinculados entre premissas e conclusão. R1 é fonte exclusivamente textual para classification_warrant; pixels não fornecem regra normativa. Se a classificação não tiver evidência, abstenha-se e não conclua a propriedade normativa de A. Separe premissas candidatas de evidência que as sustenta.
+
+PERGUNTAS VISUAIS:
+Q1. Quantas rodas distintas são visíveis no objeto central A? O texto não diz quantas rodas A possui.
+Q2. Há conjunto pedal/manivela visível em A? Responda supported, contradicted ou insufficient e descreva o que observou.
+Q3. Qual é a cor predominante do quadro de A? O texto não fornece essa cor. Se não puder saber, responda insufficient.
+
+Responda apenas JSON UTF-8 válido, no formato abaixo, sem texto fora do JSON. Registre o que efetivamente inspecionou. Regiões são aproximadas e normalizadas [x0,y0,x1,y1], ou null quando não há pixels. Não crie citações/fontes/observações que não recebeu.
+{
+  "case_id": "CASE01",
+  "condition": "without_image",
+  "image_inspected": false,
+  "visual_answers": {
+    "Q1": {"value": null, "evidence_status": "insufficient", "reason": "", "region": null},
+    "Q2": {"value": null, "evidence_status": "insufficient", "reason": "", "region": null},
+    "Q3": {"value": null, "evidence_status": "insufficient", "reason": "", "region": null}
+  },
+  "classification": {"entity": "A", "category": "bicicleta_visual", "evidence_status": "insufficient", "reason": "", "region": null},
+  "instance": {
+    "scheme_id": "verbal_classification",
+    "profile_version": "0.1",
+    "premises": [],
+    "conclusion": null,
+    "critical_questions": {"CQ1": {"state": "unknown", "reason": ""}, "CQ2": {"state": "unknown", "reason": ""}}
+  },
+  "limitations": []
+}
+Quando houver átomos, use objetos {"predicate":"...", "args":["...","..."], "role":"ordinary|conclusion", "source_id":"IMG01|R1", "polaridade":"positive", "modality":"defeasible"}. Use exatamente A, bicicleta_visual e deve_ser_conduzido_a_mao_na_zona_Z como termos; a fonte IMG01 só existe na condição com imagem. A conclusão é derivada: omita source_id na conclusão, use role=conclusion e modality=defeasible. Você pode incluir o warrant fornecido por R1 mesmo sem conseguir classificar A. Estado de CQ pode ser resolved_no_defeater, defeater_established, unknown ou not_applicable_justified; justifique, sem usar confiança do modelo como prova. Não declare validade jurídica.

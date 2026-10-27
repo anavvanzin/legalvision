@@ -1,0 +1,31 @@
+{
+  "source_sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+  "output_sha256": "b734a7395b75d07263b6ba2f7c3e875a3fb8f156abf17539e1932c8c462b1fb4",
+  "source_bytes": 278383,
+  "output_bytes": 278291,
+  "removed": [
+    {
+      "marker": "APP1",
+      "segment_bytes": 92
+    }
+  ],
+  "compressed_scan_and_tail_identical": true,
+  "scan_and_tail_sha256": "bccd72c434d79c6e27308e02e44189d72ab61aa7f89d010f7ae3278698ef57f4",
+  "icc_and_all_non_app1_header_segments_preserved": true,
+  "operation": "Metadata removal only; no decoding, recompression or pixel edits.",
+  "sanitized_at_utc": "2026-10-13T10:48:52.167416+00:00",
+  "command": [
+    "python3",
+    "-I",
+    "-B",
+    "repo-path:04-experimentos/gemma4-case01/evaluator-only/tools/sanitize_metadata.py",
+    "--source",
+    "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/original-case01.jpg",
+    "--output",
+    "repo-path:04-experimentos/gemma4-case01/model-input/images/case01.jpg"
+  ],
+  "source_relative_to_package": "evaluator-only/reference/original-case01.jpg",
+  "model_image_relative_to_package": "model-input/images/case01.jpg",
+  "gold_hash_scope": "Frozen gold points to original image hash; compressed scan identity proves transfer to metadata-sanitized copy.",
+  "candidate_model_execution": "not_executed"
+}

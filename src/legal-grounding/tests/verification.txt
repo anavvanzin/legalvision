@@ -1,0 +1,17 @@
+test_abstention (test_grounding.GroundingTests.test_abstention) ... ok
+test_complete_reference (test_grounding.GroundingTests.test_complete_reference) ... ok
+test_duplicate_evidence_rejected (test_grounding.GroundingTests.test_duplicate_evidence_rejected) ... ok
+test_invalid_boxes (test_grounding.GroundingTests.test_invalid_boxes) ... ok
+test_malformed_and_commentary_rejected (test_grounding.GroundingTests.test_malformed_and_commentary_rejected) ... ok
+test_no_evidence_does_not_certify_grounding (test_grounding.GroundingTests.test_no_evidence_does_not_certify_grounding) ... ok
+test_unknown_legal_claim (test_grounding.GroundingTests.test_unknown_legal_claim) ... ok
+test_upstream_compatibility_and_no_image (test_grounding.GroundingTests.test_upstream_compatibility_and_no_image) ... ok
+test_whole_page_citation_rejected (test_grounding.GroundingTests.test_whole_page_citation_rejected) ... ok
+test_without_image_is_not_grounded (test_grounding.GroundingTests.test_without_image_is_not_grounded) ... ok
+test_wrong_image_hash (test_grounding.GroundingTests.test_wrong_image_hash) ... ok
+test_wrong_role_semantic_conclusion_still_matches (test_grounding.GroundingTests.test_wrong_role_semantic_conclusion_still_matches) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.006s
+
+OK

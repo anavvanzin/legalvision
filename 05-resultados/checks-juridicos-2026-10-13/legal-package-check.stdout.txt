@@ -1,0 +1,3 @@
+Integrity OK: 10 schemes, 2 proposed profiles, 16 acceptance oracles.
+Polarity illustration: 4 Boolean rows checked; Wolfram independently returned Equivalent=False.
+NOT checked: model outputs, images, defeasible engine, legal validity.

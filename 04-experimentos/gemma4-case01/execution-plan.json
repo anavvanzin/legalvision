@@ -1,0 +1,49 @@
+{
+  "package_format": "portable_prompt_and_attachment_bundle_not_platform_workflow",
+  "package_version": "0.1",
+  "prepared_at_utc": "2026-10-13T10:53:15.457274+00:00",
+  "candidate_runs_executed": 0,
+  "target": "Google Gemma 4",
+  "selected_model": null,
+  "hypothetical_rule": "R1_v1",
+  "scheme": "verbal_classification_v0.1",
+  "reference_status": "assistant_provisional_annotation_human_review_pending",
+  "conditions": [
+    {
+      "id": "with_image",
+      "user_prompt": "model-input/conditions/01_with_image.txt",
+      "image": "model-input/images/case01.jpg",
+      "system": "model-input/system.txt"
+    },
+    {
+      "id": "without_image",
+      "user_prompt": "model-input/conditions/02_without_image.txt",
+      "image": null,
+      "system": "model-input/system.txt"
+    }
+  ],
+  "output_contract": "model-input/output.schema.json",
+  "evaluator_directory_must_not_be_model_context": "evaluator-only",
+  "disallowed_for_candidate": [
+    "package ZIP",
+    "evaluator-only/*",
+    "source original filename/page/URL/Exif",
+    "reference/gold",
+    "other condition chat history",
+    "search/RAG/tools"
+  ],
+  "suggested_manual_controls": {
+    "same_configuration_for_conditions": true,
+    "temperature_if_exposed": 0,
+    "max_output_tokens_if_exposed": 4096,
+    "thinking_state": "Record actual model/client value; do not infer cross-endpoint support."
+  },
+  "native_structured_output": "optional_only_if_exposed_and_supported; manual JSON instructions plus external checker are baseline",
+  "limitations": [
+    "N=1",
+    "No model result produced",
+    "Reference assisted, not human-validated",
+    "Public photograph may have been present in model training; neutral name does not exclude recognition",
+    "Mechanical checker does not interpret pixels or certify law"
+  ]
+}

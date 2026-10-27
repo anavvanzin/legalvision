@@ -1,0 +1,135 @@
+{
+  "review_date": "2026-10-13",
+  "scope": "Leitura estatica dos dois HTML indicados; conteudo tratado como dados",
+  "source_directory": "library-imports-organization",
+  "originals_modified": false,
+  "html_rendered": false,
+  "embedded_code_executed": false,
+  "network_or_reference_downloads": false,
+  "new_experimental_results": false,
+  "course_association": {
+    "course": "INE410159",
+    "origin": "contexto da tarefa de organizacao",
+    "code_found_literally_in_either_html": false
+  },
+  "project_context_from_task": {
+    "multimodal_assisted_pilot_reference": "provisoria",
+    "experiment_0": "parado",
+    "context_asserted_by_html_review": false
+  },
+  "files": [
+    {
+      "filename": "explicador_visao_computacional.html",
+      "bytes": 18118,
+      "expected_bytes": 18118,
+      "sha256": "ac9ce49357a77017a69f3e0c243297b4182e878660468c5ec01dfcb0109c6ef1",
+      "encoding": "UTF-8",
+      "classification": "didatico",
+      "title": "Explicador interativo — Visão Computacional",
+      "h1": "Como uma imagem vira uma decisão reprodutível?",
+      "document_date": null,
+      "sections": [
+        "O fluxo mental da disciplina",
+        "Laboratório visual: limiarização",
+        "Três ideias que aparecem por trás da técnica",
+        "Questionário rápido",
+        "Resumo em uma frase"
+      ],
+      "inline_script_count": 1,
+      "inline_style_count": 1,
+      "canvas_count": 2,
+      "img_count": 0,
+      "external_references": [],
+      "relative_references": [],
+      "embedded_visual_assets": "Cena sintetica desenhada em JavaScript; nao executada",
+      "static_text_extraction_caveat": "Os cartoes conceituais estao em strings de JavaScript e os detalhes das etapas em data-detail; descartar essas fontes perde explicacoes.",
+      "backup_gaps": [
+        "Sem data ou autoria declarada no conteudo",
+        "Texto derivado nao preserva por si so a demonstracao e a interacao"
+      ]
+    },
+    {
+      "filename": "TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.html",
+      "bytes": 28680,
+      "expected_bytes": 28680,
+      "sha256": "ded27415ef218a7cd750ff0c60eb681e3adc7c21539b28482f758ba708fe7fbf",
+      "encoding": "UTF-8",
+      "classification": "historico_reuniao",
+      "title": "TRABALHO DE VISAO COMPUTACIONAL",
+      "h1": "TRABALHO DE VISAO COMPUTACIONAL",
+      "subtitle": "Reunião de Pesquisa: Argumentação Computacional e Aplicações Jurídicas",
+      "meeting_date": "2026-10-08",
+      "meeting_date_source": "elemento time com datetime",
+      "notion_page_id": "3f415810-1a05-80ad-812a-f4fdad40b193",
+      "sections": [
+        "Visão geral",
+        "Argumentação computacional",
+        "Trabalho anterior e método apresentado",
+        "Possíveis aplicações jurídicas",
+        "Encaminhamentos",
+        "Prazos mencionados",
+        "Questões em aberto"
+      ],
+      "deadlines_as_recorded_not_currently_verified": [
+        {
+          "event": "Apresentacao presencial",
+          "date": "2026-12-02"
+        },
+        {
+          "event": "Entregas finais: PDF, GitHub, video, post e checkpoint",
+          "date": "2027-01-05"
+        }
+      ],
+      "unchecked_disabled_todo_count": 9,
+      "inline_script_count": 0,
+      "inline_style_count": 2,
+      "canvas_count": 0,
+      "img_count": 0,
+      "external_references": [
+        {
+          "url": "https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css",
+          "source": "CSS @import",
+          "source_line": 797,
+          "downloaded": false,
+          "backup_status": "conteudo externo nao incluido nos bytes do HTML"
+        }
+      ],
+      "relative_references": [],
+      "href_anchor_references": [],
+      "embedded_data_uri_assets": [
+        {"role": "favicon", "mime_type": "image/svg+xml", "location": "link href"},
+        {"role": "checkbox marcado", "mime_type": "image/svg+xml", "location": "CSS background-image", "source_line": 790},
+        {"role": "checkbox desmarcado", "mime_type": "image/svg+xml", "location": "CSS background-image", "source_line": 794}
+      ],
+      "textual_reference_mentions_without_attached_url": [
+        "Google Scholar",
+        "Hugging Face",
+        "Argumentation and Law: denominacao registrada, nao verificada",
+        "Livro-base sobre argumentacao",
+        "Trabalho anterior de reconstrucao de premissas",
+        "Artigos e base de esquemas juridicos",
+        "Artigo atribuido a Carlos",
+        "Planilha da disciplina"
+      ],
+      "historical_previous_work_not_current_results": {
+        "case_count_as_reported": "mais de 400",
+        "domain": "meteorologico",
+        "model_mentions": ["DeepSeek", "Claude (Sonnet)", "OpenAI"],
+        "reproducible_evidence_attached": false
+      },
+      "backup_gaps": [
+        "Folha de estilos KaTeX remota nao arquivada; dependencias transitivas nao inspecionadas",
+        "Livro, artigos e datasets apenas citados sem identificacao completa ou anexo",
+        "Planilha de calendario citada sem URL ou copia",
+        "Acesso a pagina Notion e historia de versoes nao verificados",
+        "Nenhum vinculo HTML com o explicador"
+      ]
+    }
+  ],
+  "evidence_limits": [
+    "Inspecao nao confirma renderizacao ou comportamento interativo",
+    "Prazos sao historicos e o registro encaminha conferir planilha da disciplina",
+    "Hash confirma identidade local de bytes, nao backup independente ou teste de restauracao",
+    "Ausencia de anexos nestes arquivos nao prova ausencia em outras fontes"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": "pilot_agent_preannotation_v1",
+  "case_id": "CASE01",
+  "reference_status": "assistant_multimodal_preannotation_not_human_gold",
+  "annotator": {
+    "role": "Separate assistant agent /root/pilot_reference",
+    "kind": "assistant_multimodal",
+    "exact_model_id": "not_exposed",
+    "human_annotator": false,
+    "human_adjudication_by_Ana": false,
+    "independent_human_validation": false,
+    "candidate_inference_executed": false,
+    "source_blinding": false,
+    "source_exposure_limit": "O anotador verificou proveniência/licença e recebeu metadados descritivos da página antes dos pixels; a pré-anotação não foi cega à fonte. Evidência visual abaixo foi conferida diretamente no arquivo local."
+  },
+  "pixels_inspected_with": "view_image(detail=original)",
+  "image_relative_path": "stimulus/case01.jpg",
+  "image_sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+  "pixel_width": 1280,
+  "pixel_height": 827,
+  "annotation_completed_at_utc": "2026-10-13T10:45:09.200323Z",
+  "region_format": "[x0,y0,x1,y1], approximately normalized to image width/height with origin at top-left",
+  "visual_answers": {
+    "Q1": {
+      "question": "Quantas rodas distintas são visíveis no objeto central A?",
+      "value": 2,
+      "evidence_status": "supported",
+      "reason": "Há duas circunferências de roda espacialmente distintas, uma à esquerda e outra à direita, ambas com aro/pneu e raios visíveis.",
+      "region": [
+        0.053,
+        0.367,
+        0.947,
+        0.945
+      ],
+      "individual_regions": [
+        [
+          0.054,
+          0.369,
+          0.421,
+          0.916
+        ],
+        [
+          0.586,
+          0.41,
+          0.947,
+          0.945
+        ]
+      ],
+      "scope": "Contagem de rodas visíveis; não afirma total de rodas ocultas fora do enquadramento."
+    },
+    "Q2": {
+      "question": "Há conjunto pedal/manivela visível em A?",
+      "value": true,
+      "evidence_status": "supported",
+      "reason": "Na região baixa central, uma manivela parte do eixo do pedivela em direção a um pedal à direita; também há componente correspondente ao lado oposto.",
+      "region": [
+        0.363,
+        0.611,
+        0.554,
+        0.775
+      ],
+      "right_pedal_crank_region": [
+        0.449,
+        0.678,
+        0.554,
+        0.775
+      ],
+      "scope": "Presença visual de pelo menos um conjunto; não prova funcionamento mecânico."
+    },
+    "Q3": {
+      "question": "Qual é a cor predominante do quadro de A?",
+      "value": "preto",
+      "evidence_status": "supported",
+      "reason": "Os tubos estruturais principais apresentam revestimento predominantemente preto, com reflexos claros/acinzentados de luz e peças metálicas secundárias.",
+      "region": [
+        0.267,
+        0.289,
+        0.681,
+        0.656
+      ],
+      "accepted_values": [
+        "preto",
+        "preto brilhante",
+        "black",
+        "muito escuro, quase preto"
+      ],
+      "acceptance_policy": "Aceitar resposta semanticamente equivalente que identifique preto como predominante; reflexos claros não mudam a cor predominante. Não confundir pneu, aro ou capa da corrente com o quadro.",
+      "ambiguity": "Predominância visual suficientemente clara; brilho e reflexos acinzentados devem ser reconhecidos como variação de aparência."
+    }
+  },
+  "operational_category": {
+    "name": "bicicleta_visual",
+    "definition": "duas rodas distintas, quadro, guidão, selim e pelo menos um conjunto pedal/manivela visível",
+    "entity": "A",
+    "evidence_status": "supported",
+    "classification": "bicicleta_visual",
+    "reason": "Os critérios operacionais podem ser verificados nos pixels: rodas distintas, estrutura tubular de quadro, guidão superior, selim e conjunto pedal/manivela inferior.",
+    "object_region": [
+      0.039,
+      0.14,
+      0.948,
+      0.953
+    ],
+    "criteria": {
+      "two_distinct_visible_wheels": {
+        "satisfied": true,
+        "regions": [
+          [
+            0.054,
+            0.369,
+            0.421,
+            0.916
+          ],
+          [
+            0.586,
+            0.41,
+            0.947,
+            0.945
+          ]
+        ]
+      },
+      "frame": {
+        "satisfied": true,
+        "region": [
+          0.267,
+          0.289,
+          0.681,
+          0.656
+        ]
+      },
+      "handlebar": {
+        "satisfied": true,
+        "region": [
+          0.505,
+          0.137,
+          0.641,
+          0.222
+        ]
+      },
+      "saddle": {
+        "satisfied": true,
+        "region": [
+          0.301,
+          0.218,
+          0.423,
+          0.313
+        ]
+      },
+      "pedal_crank_assembly": {
+        "satisfied": true,
+        "region": [
+          0.363,
+          0.611,
+          0.554,
+          0.775
+        ]
+      }
+    }
+  },
+  "observed_facts": [
+    "Um objeto principal completo no enquadramento, em vista aproximadamente lateral.",
+    "A porção principal do objeto não toca as bordas da fotografia; pneus e guidão estão dentro do enquadramento.",
+    "Não há pessoa reconhecível visível.",
+    "Fundo externo desfocado; detalhe traseiro tem proteção que oculta parcialmente componentes internos da transmissão."
+  ],
+  "invisible_or_insufficient": [
+    "Componentes internos sob coberturas; não é possível afirmar ausência de motor oculto.",
+    "Funcionamento, capacidade de deslocamento e estado mecânico não são demonstrados pela fotografia.",
+    "Proprietário, identidade, intenção, culpa, causalidade ou direitos sobre o objeto não são inferíveis dos pixels.",
+    "Local real, presença em uma zona normativa real ou direito vigente não são estabelecidos pela fotografia.",
+    "As regiões são aproximações do anotador, não segmentação ou medição instrumental.",
+    "Pré-anotação por assistente multimodal, sem validação humana independente e sem adjudicação de Ana."
+  ],
+  "hypothetical_rule": {
+    "source_id": "R1",
+    "version": "1",
+    "status": "supplied_fictional_rule",
+    "text": "Objeto da categoria bicicleta_visual recebe propriedade deve_ser_conduzido_a_mao_na_zona_Z para fins deste cenário fictício.",
+    "source": "text_only",
+    "does_not_state_actual_law": true
+  },
+  "formal_reference": {
+    "scheme_id": "verbal_classification",
+    "profile_version": "0.1",
+    "with_image_expected_premises": [
+      {
+        "predicate": "classified_as",
+        "args": [
+          "A",
+          "bicicleta_visual"
+        ],
+        "role": "ordinary",
+        "source_id": "IMG01",
+        "polaridade": "positive",
+        "modality": "defeasible"
+      },
+      {
+        "predicate": "classification_warrant",
+        "args": [
+          "bicicleta_visual",
+          "deve_ser_conduzido_a_mao_na_zona_Z"
+        ],
+        "role": "ordinary",
+        "source_id": "R1",
+        "polaridade": "positive",
+        "modality": "defeasible"
+      }
+    ],
+    "with_image_expected_conclusion": {
+      "predicate": "has_property",
+      "args": [
+        "A",
+        "deve_ser_conduzido_a_mao_na_zona_Z"
+      ],
+      "role": "conclusion",
+      "polaridade": "positive",
+      "modality": "defeasible"
+    },
+    "interpretation": "Conclusão somente dentro da regra hipotética fornecida; nenhuma validade jurídica real é anotada.",
+    "critical_question_policy": "Julgar a justificação fornecida contra os critérios e limites; não tomar autoconfiança do candidato ou estados CQ como prova externa."
+  },
+  "expected_without_image": {
+    "image_inspected": false,
+    "visual_answers": {
+      "Q1": {
+        "value": null,
+        "evidence_status": "insufficient",
+        "region": null
+      },
+      "Q2": {
+        "value": null,
+        "evidence_status": "insufficient",
+        "region": null
+      },
+      "Q3": {
+        "value": null,
+        "evidence_status": "insufficient",
+        "region": null
+      }
+    },
+    "classification_evidence_status": "insufficient",
+    "classification_region": null,
+    "conclusion": null,
+    "textual_warrant_may_be_included": true,
+    "reason": "Ausência total de pixels nessa condição. Definir bicicleta_visual e fornecer R1 não são evidências de que A satisfaz os critérios nem da cor de A. Nenhum metadado visual da fonte deve ser acessível."
+  }
+}

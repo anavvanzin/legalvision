@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #000000;
+    --ink: #ffffff;
+    --accent: #ff00ff;
+    --accent-2: #00ffff;
+    --surface: #111111;
+    --surface-2: #161616;
+    --muted: #a3e8e8;
+    --line: #00ffff;
+    --teal: #00ffff;
+    --paper: #000000;
+    --gold: #ff00ff;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(var(--accent) 0.65px, transparent 0.65px),
+      radial-gradient(var(--accent-2) 0.65px, transparent 0.65px);
+    background-size: 48px 48px;
+    background-position: 0 0, 24px 24px;
+    color: var(--ink);
+    font-family: 'Space Mono', ui-monospace, monospace;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  h1, h2, .font-editorial, .font-dotgothic {
+    font-family: 'DotGothic16', 'Space Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'Space Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  }
+}
+
+/* Variation 18 // Glitch Console Core Components */
+.marquee-top {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 8px 16px;
+  font-weight: 800;
+  letter-spacing: 0.38em;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--accent-2);
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.glitch-title {
+  font-family: 'DotGothic16', sans-serif;
+  line-height: 0.85;
+  margin: 0;
+  color: var(--ink);
+  text-shadow: -4px 0 var(--accent), 4px 0 var(--accent-2);
+  text-transform: uppercase;
+}
+
+.module-box {
+  border: 1px solid var(--accent-2);
+  padding: 20px;
+  position: relative;
+  background: var(--surface);
+}
+
+.module-box-magenta {
+  border: 1px solid var(--accent);
+  padding: 20px;
+  position: relative;
+  background: var(--surface);
+}
+
+.box-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: var(--accent-2);
+  color: var(--bg);
+  padding: 1px 8px;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.box-label-magenta {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1px 8px;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-list-glitch {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link-glitch {
+  padding: 10px 4px;
+  border-bottom: 1px dashed rgba(0, 255, 255, 0.45);
+  font-size: 0.76rem;
+  color: var(--accent-2);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.nav-link-glitch:hover {
+  color: var(--ink);
+  background: rgba(0, 255, 255, 0.1);
+  padding-left: 8px;
+}
+
+.nav-link-glitch.active {
+  color: var(--bg);
+  background: var(--accent-2);
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-link-glitch::after {
+  content: "➔";
+  font-size: 0.75rem;
+}
+
+.stat-hero {
+  border: 2px solid var(--ink);
+  padding: 28px;
+  background: linear-gradient(135deg, var(--surface) 0%, #000000 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  box-shadow: -4px 4px 0px rgba(255, 0, 255, 0.35), 4px -4px 0px rgba(0, 255, 255, 0.35);
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-title {
+  font-size: 0.65rem;
+  color: var(--accent);
+  margin-bottom: 6px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stat-num {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.console-area {
+  font-size: 0.68rem;
+  color: var(--accent-2);
+  line-height: 1.6;
+  background: #000000;
+  border-left: 4px solid var(--accent);
+  padding: 16px;
+  font-family: 'Space Mono', monospace;
+}
+
+.action-btn-glitch {
+  background: #000000;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 16px 20px;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: 0.12s;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.action-btn-glitch:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 0 20px var(--accent);
+}
+
+.action-btn-glitch:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tag-glitch {
+  background: var(--surface);
+  padding: 4px 10px;
+  border: 1px solid var(--accent-2);
+  color: var(--accent-2);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+/* Global Dark Glitch Console Theme Adaptation for Workspace Cards & Tables */
+.glitch-workspace .bg-white,
+.glitch-workspace .bg-\[\#faf8f3\],
+.glitch-workspace .bg-\[\#fcfbf9\],
+.glitch-workspace .bg-\[\#f8fafc\],
+.glitch-workspace .bg-\[\#f4f1ea\] {
+  background-color: #0d0d0d !important;
+  color: #f0fdfa !important;
+}
+
+.glitch-workspace .bg-\[\#ebe6dc\],
+.glitch-workspace .bg-\[\#f1f5f9\],
+.glitch-workspace .bg-\[\#eef2f6\],
+.glitch-workspace .bg-\[\#e6f2f1\] {
+  background-color: #171717 !important;
+  color: #00ffff !important;
+}
+
+.glitch-workspace .text-\[\#142936\],
+.glitch-workspace .text-\[\#0f172a\],
+.glitch-workspace .text-slate-900 {
+  color: #ffffff !important;
+}
+
+.glitch-workspace .text-\[\#3d4f5a\],
+.glitch-workspace .text-\[\#4d5e68\],
+.glitch-workspace .text-\[\#475569\],
+.glitch-workspace .text-\[\#334155\],
+.glitch-workspace .text-\[\#64748b\] {
+  color: #a5f3fc !important;
+}
+
+.glitch-workspace .text-\[\#146563\],
+.glitch-workspace .text-\[\#006699\] {
+  color: #00ffff !important;
+}
+
+.glitch-workspace .border-\[\#d4dce0\],
+.glitch-workspace .border-\[\#e2e8f0\],
+.glitch-workspace .border-\[\#cbd5e1\] {
+  border-color: rgba(0, 255, 255, 0.38) !important;
+}
+
+.glitch-workspace .border-\[\#142936\] {
+  border-color: #ff00ff !important;
+}
+
+.glitch-workspace .bg-\[\#142936\],
+.glitch-workspace .bg-\[\#006699\] {
+  background-color: #ff00ff !important;
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+.glitch-workspace .bg-\[\#146563\] {
+  background-color: #00ffff !important;
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,3 @@
+Comece em README.md e 00-indice/MAPA.md.
+O bundle de recuperação permanece no arquivo local; esta cópia GitHub contém a árvore documental revisada.
+Não execute modelos: piloto pausado, zero candidatos.

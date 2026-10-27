@@ -1,0 +1,31 @@
+[
+  {
+    "name": "awesome-computer-vision",
+    "url": "https://github.com/brandonhimpfen/awesome-computer-vision",
+    "kind": "curated_resource_list",
+    "consulted_2026_10_13": true,
+    "repository_cloned": false,
+    "linked_assets_downloaded": false
+  },
+  {
+    "name": "VIA",
+    "url": "https://www.robots.ox.ac.uk/~vgg/software/via/",
+    "kind": "annotation_tool_reference",
+    "consulted_2026_10_13": true,
+    "downloaded": false,
+    "installed": false,
+    "executed": false
+  },
+  {
+    "name": "Auditoria Notion",
+    "url": "https://app.notion.com/p/3f7158101a058169942be954b87b3066",
+    "kind": "historical_project_record",
+    "full_remote_export_in_this_organization": false
+  },
+  {
+    "name": "Protocolo Notion",
+    "url": "https://app.notion.com/p/3f7158101a058146b0e3ea9662a191fc",
+    "kind": "proposed_validation_protocol",
+    "full_remote_export_in_this_organization": false
+  }
+]

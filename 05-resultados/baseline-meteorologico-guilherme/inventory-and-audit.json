@@ -1,0 +1,394 @@
+{
+  "source_repository": "https://github.com/GuiT2002/comma2026-multimodal-argumentation",
+  "source_head": "d374ac21ca0645c4a49e8ad719a1845afe8754f7",
+  "source_status": [
+    "?? .DS_Store"
+  ],
+  "source_files_hashed": 135,
+  "classes": {
+    "class1": {
+      "cases": 64,
+      "input_widths": {
+        "2": 64
+      },
+      "expected_rows": 64,
+      "unique_expected_texts": 63,
+      "image_files": 64,
+      "unique_image_sha256": 17,
+      "unique_enthymeme_texts": 8,
+      "unique_context_texts": 61,
+      "results": {
+        "claude-sonnet": {
+          "rows": 64,
+          "response_headers": [
+            "claude-sonnet-4-6__without_enthymeme",
+            "claude-sonnet-4-6__without_context",
+            "claude-sonnet-4-6__without_image",
+            "claude-sonnet-4-6__all_inputs"
+          ],
+          "original_widths": {
+            "8": 64
+          },
+          "legacy_padding_cases": [],
+          "metadata_mismatches_against_current_tsv": []
+        },
+        "deepseek-flash": {
+          "rows": 64,
+          "response_headers": [
+            "deepseek-flash__without_enthymeme",
+            "deepseek-flash__without_context",
+            "deepseek-flash__without_image",
+            "deepseek-flash__all_inputs"
+          ],
+          "original_widths": {
+            "7": 1,
+            "8": 63
+          },
+          "legacy_padding_cases": [
+            1
+          ],
+          "metadata_mismatches_against_current_tsv": [
+            {
+              "case": 1,
+              "fields": [
+                "Enthymeme",
+                "Context"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "class2": {
+      "cases": 15,
+      "input_widths": {
+        "2": 15
+      },
+      "expected_rows": 15,
+      "unique_expected_texts": 11,
+      "image_files": 15,
+      "unique_image_sha256": 6,
+      "unique_enthymeme_texts": 5,
+      "unique_context_texts": 15,
+      "results": {
+        "claude-sonnet": {
+          "rows": 15,
+          "response_headers": [
+            "claude-sonnet-4-6__without_enthymeme",
+            "claude-sonnet-4-6__without_context",
+            "claude-sonnet-4-6__without_image",
+            "claude-sonnet-4-6__all_inputs"
+          ],
+          "original_widths": {
+            "8": 15
+          },
+          "legacy_padding_cases": [],
+          "metadata_mismatches_against_current_tsv": []
+        },
+        "deepseek-flash": {
+          "rows": 15,
+          "response_headers": [
+            "deepseek-flash__without_enthymeme",
+            "deepseek-flash__without_context",
+            "deepseek-flash__without_image",
+            "deepseek-flash__all_inputs"
+          ],
+          "original_widths": {
+            "8": 15
+          },
+          "legacy_padding_cases": [],
+          "metadata_mismatches_against_current_tsv": []
+        }
+      }
+    },
+    "class3": {
+      "cases": 11,
+      "input_widths": {
+        "2": 11
+      },
+      "expected_rows": 11,
+      "unique_expected_texts": 11,
+      "image_files": 11,
+      "unique_image_sha256": 3,
+      "unique_enthymeme_texts": 3,
+      "unique_context_texts": 11,
+      "results": {
+        "claude-sonnet": {
+          "rows": 11,
+          "response_headers": [
+            "claude-sonnet-4-6__without_enthymeme",
+            "claude-sonnet-4-6__without_context",
+            "claude-sonnet-4-6__without_image",
+            "claude-sonnet-4-6__all_inputs"
+          ],
+          "original_widths": {
+            "8": 11
+          },
+          "legacy_padding_cases": [],
+          "metadata_mismatches_against_current_tsv": []
+        },
+        "deepseek-flash": {
+          "rows": 11,
+          "response_headers": [
+            "deepseek-flash__without_enthymeme",
+            "deepseek-flash__without_context",
+            "deepseek-flash__without_image",
+            "deepseek-flash__all_inputs"
+          ],
+          "original_widths": {
+            "8": 11
+          },
+          "legacy_padding_cases": [],
+          "metadata_mismatches_against_current_tsv": []
+        }
+      }
+    }
+  },
+  "total_cases": 90,
+  "total_images": 90,
+  "global_unique_image_sha256": 23,
+  "validation_files": [
+    {
+      "file": "claude-sonnet_class1_col1.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 38,
+        "yes/no": 26,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class1_col2.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 19,
+        "yes/no": 45,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class1_col3.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 1,
+        "yes/no": 63,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class1_col4.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 40,
+        "yes/no": 24,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class2_col1.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 3,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 4
+      }
+    },
+    {
+      "file": "claude-sonnet_class2_col2.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 5,
+        "yes/no": 10,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class2_col3.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 1,
+        "yes/no": 14,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class2_col4.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 7,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class3_col1.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 3,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class3_col2.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 1,
+        "yes/no": 10,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class3_col3.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 0,
+        "yes/no": 11,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "claude-sonnet_class3_col4.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 6,
+        "yes/no": 5,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "deepseek-flash_class1_col1.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 36,
+        "yes/no": 22,
+        "no/yes": 0,
+        "no/no": 6
+      }
+    },
+    {
+      "file": "deepseek-flash_class1_col2.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 9,
+        "yes/no": 52,
+        "no/yes": 0,
+        "no/no": 3
+      }
+    },
+    {
+      "file": "deepseek-flash_class1_col3.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 0,
+        "yes/no": 30,
+        "no/yes": 0,
+        "no/no": 34
+      }
+    },
+    {
+      "file": "deepseek-flash_class1_col4.csv",
+      "rows": 64,
+      "outcomes": {
+        "yes/yes": 40,
+        "yes/no": 23,
+        "no/yes": 0,
+        "no/no": 1
+      }
+    },
+    {
+      "file": "deepseek-flash_class2_col1.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 2,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 5
+      }
+    },
+    {
+      "file": "deepseek-flash_class2_col2.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 5,
+        "yes/no": 9,
+        "no/yes": 0,
+        "no/no": 1
+      }
+    },
+    {
+      "file": "deepseek-flash_class2_col3.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 0,
+        "yes/no": 12,
+        "no/yes": 0,
+        "no/no": 3
+      }
+    },
+    {
+      "file": "deepseek-flash_class2_col4.csv",
+      "rows": 15,
+      "outcomes": {
+        "yes/yes": 5,
+        "yes/no": 10,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    },
+    {
+      "file": "deepseek-flash_class3_col1.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 3,
+        "yes/no": 7,
+        "no/yes": 0,
+        "no/no": 1
+      }
+    },
+    {
+      "file": "deepseek-flash_class3_col2.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 1,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 2
+      }
+    },
+    {
+      "file": "deepseek-flash_class3_col3.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 0,
+        "yes/no": 8,
+        "no/yes": 0,
+        "no/no": 3
+      }
+    },
+    {
+      "file": "deepseek-flash_class3_col4.csv",
+      "rows": 11,
+      "outcomes": {
+        "yes/yes": 2,
+        "yes/no": 9,
+        "no/yes": 0,
+        "no/no": 0
+      }
+    }
+  ],
+  "current_lexical_scheme_label_mismatches": [],
+  "interpretation": "Archived semantic labels only; no model inference or semantic rejudgment."
+}

@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-10-13T09:45:14.261043+00:00",
+  "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "python_executable": "python3",
+  "command": [
+    "python3",
+    "-I",
+    "-B",
+    "local-workspace:preparation/work/legal-package/scripts/check_package.py"
+  ],
+  "cwd": "local-workspace:preparation",
+  "source": "repo-root:./legal-visual-argumentation",
+  "isolated_checkout": "local-workspace:preparation/work/legal-package",
+  "bundle_commit": "16919e55dd570387f67f83227a2d5cbf3639f8b8",
+  "exit_code": 0,
+  "stdout": "Integrity OK: 10 schemes, 2 proposed profiles, 16 acceptance oracles.\nPolarity illustration: 4 Boolean rows checked; Wolfram independently returned Equivalent=False.\nNOT checked: model outputs, images, defeasible engine, legal validity.\n",
+  "stderr": "",
+  "source_content_unchanged": true,
+  "checkout_equals_source_content": true,
+  "table": [
+    {
+      "D": false,
+      "E": false,
+      "D_and_E": false,
+      "D_and_not_E": false,
+      "different": false
+    },
+    {
+      "D": false,
+      "E": true,
+      "D_and_E": false,
+      "D_and_not_E": false,
+      "different": false
+    },
+    {
+      "D": true,
+      "E": false,
+      "D_and_E": false,
+      "D_and_not_E": true,
+      "different": true
+    },
+    {
+      "D": true,
+      "E": true,
+      "D_and_E": true,
+      "D_and_not_E": false,
+      "different": true
+    }
+  ],
+  "counterexamples": [
+    {
+      "D": true,
+      "E": false,
+      "D_and_E": false,
+      "D_and_not_E": true,
+      "different": true
+    },
+    {
+      "D": true,
+      "E": true,
+      "D_and_E": true,
+      "D_and_not_E": false,
+      "different": true
+    }
+  ],
+  "meaning": "Package integrity and Boolean illustration only; no execution of acceptance scenarios, images, model, defeasible engine, or legal validity. Wolfram statement in script is historical, not a Wolfram call in this run."
+}

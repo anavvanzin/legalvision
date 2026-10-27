@@ -1,0 +1,152 @@
+[
+  {
+    "id": "LEGAL01",
+    "family": "ao440",
+    "image": "images/ao440.png",
+    "source_pdf": "sources/ao440.pdf",
+    "source_url": "https://www.uscourts.gov/sites/default/files/ao440.pdf",
+    "page": 1,
+    "render": "PyMuPDF RGB matrix 1.5, unaltered page",
+    "sha256_image": "27330e65eecdadadcf6cfd884fe2e3563d7c704dd3524d0dbbe960c5ffbd68b4",
+    "sha256_pdf": "2df4ff1d30d123b8a3591d158816940712e0da0189b47ca0abf780579895fbae",
+    "reference_status": "assistant_visual_annotation_pending_independent_human_review",
+    "reuse": "Official AO federal-government form; US public-domain basis 17 USC 105; attribution retained; no third-party exhibits included. No CC license asserted.",
+    "facts": [
+      {
+        "atom": "printed_recipient_role(doc1,defendant)",
+        "bbox": [
+          0.09901,
+          0.40881,
+          0.2818,
+          0.42139
+        ],
+        "kind": "printed_text_and_field_relation",
+        "transcription": "Defendant’s name and address"
+      },
+      {
+        "atom": "blank_recipient_name(doc1)",
+        "bbox": [
+          0.06,
+          0.4,
+          0.94,
+          0.51
+        ],
+        "kind": "unfilled_field",
+        "transcription": null
+      }
+    ],
+    "derived": [
+      "recipient_identity_undetermined(doc1)"
+    ],
+    "expected_output": "[printed_recipient_role(doc1,defendant),blank_recipient_name(doc1)],recipient_identity_undetermined(doc1)",
+    "enthymeme": "The recipient field identifies a procedural role, but does this page identify an actual recipient by name? Complete the factual premises and conclusion using only this page.",
+    "context": "This is an uncompleted or completed legal document page, called doc1. A procedural role is not a personal name. Operational rule: an unfilled recipient-name field does not establish an actual recipient identity in that field. No fact of issuance, service, waiver, filing, guilt or legal validity is supplied.",
+    "unknowns": [
+      "actual_recipient_identity",
+      "service_occurred",
+      "waiver_executed",
+      "filing_occurred",
+      "authenticity_of_completed_legal_act"
+    ]
+  },
+  {
+    "id": "LEGAL02",
+    "family": "ao441",
+    "image": "images/ao441.png",
+    "source_pdf": "sources/ao441.pdf",
+    "source_url": "https://www.uscourts.gov/sites/default/files/ao441.pdf",
+    "page": 1,
+    "render": "PyMuPDF RGB matrix 1.5, unaltered page",
+    "sha256_image": "fa1f6ddda1fc93168256436da3810dd63566ce2fa3476bb37cf20a0f78e57e4f",
+    "sha256_pdf": "8dbc673a60cfda20b446a956c32edd1eb5525316a458a5db3dca986641819a32",
+    "reference_status": "assistant_visual_annotation_pending_independent_human_review",
+    "reuse": "Official AO federal-government form; US public-domain basis 17 USC 105; attribution retained; no third-party exhibits included. No CC license asserted.",
+    "facts": [
+      {
+        "atom": "printed_recipient_role(doc1,third_party_defendant)",
+        "bbox": [
+          0.09548,
+          0.35912,
+          0.34741,
+          0.3717
+        ],
+        "kind": "printed_text_and_field_relation",
+        "transcription": "Third-party defendant’s name and address"
+      },
+      {
+        "atom": "blank_recipient_name(doc1)",
+        "bbox": [
+          0.06,
+          0.35,
+          0.94,
+          0.46
+        ],
+        "kind": "unfilled_field",
+        "transcription": null
+      }
+    ],
+    "derived": [
+      "recipient_identity_undetermined(doc1)"
+    ],
+    "expected_output": "[printed_recipient_role(doc1,third_party_defendant),blank_recipient_name(doc1)],recipient_identity_undetermined(doc1)",
+    "enthymeme": "The recipient field identifies a procedural role, but does this page identify an actual recipient by name? Complete the factual premises and conclusion using only this page.",
+    "context": "This is an uncompleted or completed legal document page, called doc1. A procedural role is not a personal name. Operational rule: an unfilled recipient-name field does not establish an actual recipient identity in that field. No fact of issuance, service, waiver, filing, guilt or legal validity is supplied.",
+    "unknowns": [
+      "actual_recipient_identity",
+      "service_occurred",
+      "waiver_executed",
+      "filing_occurred",
+      "authenticity_of_completed_legal_act"
+    ]
+  },
+  {
+    "id": "LEGAL03",
+    "family": "ao399",
+    "image": "images/ao399.png",
+    "source_pdf": "sources/ao399.pdf",
+    "source_url": "https://www.uscourts.gov/sites/default/files/ao399.pdf",
+    "page": 1,
+    "render": "PyMuPDF RGB matrix 1.5, unaltered page",
+    "sha256_image": "4db10ad4deedfb8e5a5865b015aaa61952c80bfe2b398d7d9fb2c5b1986f5cb9",
+    "sha256_pdf": "6df38a70fad6719f63fc005fb65651e0e1d11db64a9b7b6746017cba4fd45d16",
+    "reference_status": "assistant_visual_annotation_pending_independent_human_review",
+    "reuse": "Official AO federal-government form; US public-domain basis 17 USC 105; attribution retained; no third-party exhibits included. No CC license asserted.",
+    "facts": [
+      {
+        "atom": "printed_recipient_role(doc1,plaintiff_attorney_or_unrepresented_plaintiff)",
+        "bbox": [
+          0.14549,
+          0.31684,
+          0.48603,
+          0.32942
+        ],
+        "kind": "printed_text_and_field_relation",
+        "transcription": "Name of the plaintiff’s attorney or unrepresented plaintiff"
+      },
+      {
+        "atom": "blank_recipient_name(doc1)",
+        "bbox": [
+          0.06,
+          0.29,
+          0.54,
+          0.33
+        ],
+        "kind": "unfilled_field",
+        "transcription": null
+      }
+    ],
+    "derived": [
+      "recipient_identity_undetermined(doc1)"
+    ],
+    "expected_output": "[printed_recipient_role(doc1,plaintiff_attorney_or_unrepresented_plaintiff),blank_recipient_name(doc1)],recipient_identity_undetermined(doc1)",
+    "enthymeme": "The recipient field identifies a procedural role, but does this page identify an actual recipient by name? Complete the factual premises and conclusion using only this page.",
+    "context": "This is an uncompleted or completed legal document page, called doc1. A procedural role is not a personal name. Operational rule: an unfilled recipient-name field does not establish an actual recipient identity in that field. No fact of issuance, service, waiver, filing, guilt or legal validity is supplied.",
+    "unknowns": [
+      "actual_recipient_identity",
+      "service_occurred",
+      "waiver_executed",
+      "filing_occurred",
+      "authenticity_of_completed_legal_act"
+    ]
+  }
+]

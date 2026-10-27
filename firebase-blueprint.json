@@ -1,0 +1,257 @@
+{
+  "entities": {
+    "Adjudication": {
+      "title": "Adjudication",
+      "description": "Revisão e adjudicação humana de casos jurídicos visuais (CASE01 a CASE04) e mapeamentos COMMA.",
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "type": "string",
+          "description": "Identificador do caso (ex.: CASE01, CASE02, CASE03, CASE04, class1:15).",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_:\\-]+$"
+        },
+        "schemeId": {
+          "type": "string",
+          "description": "Esquema avaliado.",
+          "enum": ["verbal_classification", "established_rule", "witness_testimony", "grounding_comma"]
+        },
+        "targetId": {
+          "type": "string",
+          "description": "Identificador do átomo, região ou cláusula inspecionada.",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "^[a-zA-Z0-9_:\\-.]+$"
+        },
+        "decision": {
+          "type": "string",
+          "description": "Status atribuído pelo revisor humano.",
+          "enum": ["human_verified", "disputed", "draft"]
+        },
+        "deadlineConclusion": {
+          "type": "string",
+          "description": "Prazo normativo ou conclusão vinculada (ex.: 21_days, 60_days, 90_days, abstention).",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "notes": {
+          "type": "string",
+          "description": "Justificativa técnica do revisor humano sobre suporte visual, fonte normativa e questões críticas.",
+          "minLength": 3,
+          "maxLength": 1500
+        },
+        "reviewerUid": {
+          "type": "string",
+          "description": "UID do usuário autenticado via Firebase Auth.",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "reviewerName": {
+          "type": "string",
+          "description": "Nome de exibição do revisor autenticado.",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Carimbo de data/hora de criação no servidor."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Carimbo de data/hora de atualização no servidor."
+        }
+      },
+      "required": [
+        "caseId",
+        "schemeId",
+        "targetId",
+        "decision",
+        "deadlineConclusion",
+        "notes",
+        "reviewerUid",
+        "reviewerName",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "SavedWork": {
+      "title": "SavedWork",
+      "description": "Referência bibliográfica do OpenAlex salva pelo pesquisador para fundamentação teórica.",
+      "type": "object",
+      "properties": {
+        "openalexId": {
+          "type": "string",
+          "description": "ID canônico do trabalho no OpenAlex (ex.: W2741809807).",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Título da publicação acadêmica.",
+          "minLength": 2,
+          "maxLength": 500
+        },
+        "authorsSummary": {
+          "type": "string",
+          "description": "Lista resumida de autores.",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "publicationYear": {
+          "type": "number",
+          "description": "Ano de publicação."
+        },
+        "citedByCount": {
+          "type": "number",
+          "description": "Contagem de citações no OpenAlex."
+        },
+        "doiUrl": {
+          "type": "string",
+          "description": "URL do DOI ou página de acesso aberto.",
+          "minLength": 0,
+          "maxLength": 400
+        },
+        "caseTag": {
+          "type": "string",
+          "description": "Caso ou esquema vinculado (ex.: CASE02_AO399, CASE03_AO440, CASE04_AO441, GERAL).",
+          "minLength": 2,
+          "maxLength": 64
+        },
+        "ownerUid": {
+          "type": "string",
+          "description": "UID do pesquisador que salvou a referência.",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Carimbo de data/hora do servidor."
+        }
+      },
+      "required": [
+        "openalexId",
+        "title",
+        "authorsSummary",
+        "publicationYear",
+        "citedByCount",
+        "doiUrl",
+        "caseTag",
+        "ownerUid",
+        "createdAt"
+      ]
+    },
+    "IconocraciaCatalogEntry": {
+      "title": "IconocraciaCatalogEntry",
+      "description": "Ficha catalográfica documentada do módulo dedicado iconocracia-cv (2026-2) sob paradigma indiciário (DEC-2026-07-29-APARATO-MINIMO), isolada das métricas de INE410159.",
+      "type": "object",
+      "properties": {
+        "itemCode": {
+          "type": "string",
+          "description": "Identificador estável da ficha no catálogo documentado (ex.: ICON-BR-1889-01).",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_:\\-]+$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Título documental da alegoria feminina ou dispositivo estatal.",
+          "minLength": 3,
+          "maxLength": 200
+        },
+        "supportType": {
+          "type": "string",
+          "description": "Suporte material ou institucional do dispositivo.",
+          "enum": ["moeda", "selo", "brasao", "monumento", "arquitetura_forense", "paratexto_normativo"]
+        },
+        "chronologyYear": {
+          "type": "number",
+          "description": "Ano ou data de referência (janela core: 1800-2000)."
+        },
+        "scopeClassification": {
+          "type": "string",
+          "description": "Classificação de escopo (corpus_core para 1800-2000 nos suportes elegíveis; comparador_apendice fora do escopo).",
+          "enum": ["corpus_core", "comparador_apendice"]
+        },
+        "provenanceArchive": {
+          "type": "string",
+          "description": "Proveniência institucional, identificador de acervo e estatuto de direitos.",
+          "minLength": 3,
+          "maxLength": 300
+        },
+        "visualAttributes": {
+          "type": "array",
+          "description": "Inventário verbal de atributos e indícios morfológicos observados (máx. 12 itens)."
+        },
+        "normalizedBox": {
+          "type": "string",
+          "description": "Coordenadas normalizadas [x1, y1, x2, y2] em [0,1] da região principal inspecionada.",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        "stateMeaningProduced": {
+          "type": "string",
+          "description": "Sentido produzido pelo dispositivo estatal (feminilidade de Estado, reconhecimento sem reciprocidade, purificação simbólica).",
+          "minLength": 5,
+          "maxLength": 1200
+        },
+        "silenceAndLimits": {
+          "type": "string",
+          "description": "Declaração dos silêncios do corpus (ausência substantiva vs. ausência de coleta e distinção entre sentido produzido e recepção histórica).",
+          "minLength": 5,
+          "maxLength": 800
+        },
+        "driveFileId": {
+          "type": "string",
+          "description": "Identificador opcional do arquivo ou imagem de referência importado via Google Drive.",
+          "minLength": 0,
+          "maxLength": 128
+        },
+        "ownerUid": {
+          "type": "string",
+          "description": "UID do pesquisador autenticado.",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Carimbo de data/hora de criação no servidor."
+        }
+      },
+      "required": [
+        "itemCode",
+        "title",
+        "supportType",
+        "chronologyYear",
+        "scopeClassification",
+        "provenanceArchive",
+        "visualAttributes",
+        "normalizedBox",
+        "stateMeaningProduced",
+        "silenceAndLimits",
+        "driveFileId",
+        "ownerUid",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/adjudications/{adjudicationId}": {
+      "schema": { "$ref": "#/entities/Adjudication" },
+      "description": "Coleção de adjudicações e revisões humanas de casos jurídicos visuais do usuário."
+    },
+    "/savedWorks/{workId}": {
+      "schema": { "$ref": "#/entities/SavedWork" },
+      "description": "Coleção de artigos acadêmicos do OpenAlex salvos pelo pesquisador."
+    },
+    "/iconocraciaCatalog/{entryId}": {
+      "schema": { "$ref": "#/entities/IconocraciaCatalogEntry" },
+      "description": "Coleção dedicada às fichas catalográficas documentadas de iconocracia-cv (2026-2), separada de INE410159."
+    }
+  }
+}

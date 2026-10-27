@@ -1,0 +1,9 @@
+{
+  "source_id": "R1",
+  "version": "1",
+  "kind": "supplied_fictional_rule",
+  "category": "bicicleta_visual",
+  "property": "deve_ser_conduzido_a_mao_na_zona_Z",
+  "scope": "Apenas cenário fictício com zona Z estipulada. Não constitui direito vigente.",
+  "not_observed_in_pixels": true
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "jpeg_metadata_audit_v1",
+  "case_id": "CASE01",
+  "audited_at_utc": "2026-10-13T10:46:19.968008Z",
+  "image_relative_path": "stimulus/case01.jpg",
+  "sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+  "bytes": 278383,
+  "method": "Read-only JPEG marker traversal from SOI through first SOS; ancillary APP1..APP15 and COM inspected before compressed pixels. APP0/JFIF is format/density only. No pixel edits or rewrites.",
+  "header_segments": [
+    {
+      "marker": "FFE1",
+      "payload_bytes": 88
+    },
+    {
+      "marker": "FFE2",
+      "payload_bytes": 538
+    },
+    {
+      "marker": "FFDB",
+      "payload_bytes": 65
+    },
+    {
+      "marker": "FFDB",
+      "payload_bytes": 65
+    },
+    {
+      "marker": "FFC0",
+      "payload_bytes": 15
+    },
+    {
+      "marker": "FFC4",
+      "payload_bytes": 27
+    },
+    {
+      "marker": "FFC4",
+      "payload_bytes": 96
+    },
+    {
+      "marker": "FFC4",
+      "payload_bytes": 25
+    },
+    {
+      "marker": "FFC4",
+      "payload_bytes": 59
+    },
+    {
+      "marker": "FFDA",
+      "payload_bytes": 10
+    }
+  ],
+  "ancillary_metadata": [
+    {
+      "marker": "APP1",
+      "kind": "Exif",
+      "payload_bytes": 88,
+      "printable_strings": [
+        "Dutch bicycle",
+        "Petar Milo"
+      ]
+    },
+    {
+      "marker": "APP2",
+      "kind": "Other ancillary metadata",
+      "payload_bytes": 538,
+      "printable_strings": [
+        "ICC_PROFILE",
+        "mntrRGB XYZ ",
+        "9acspAPPL",
+        "-lcms",
+        "^cprt",
+        "@gTRC",
+        "@bTRC",
+        "@desc",
+        "-XYZ "
+      ]
+    }
+  ],
+  "has_exif": true,
+  "has_xmp": false,
+  "has_iptc_photoshop": false,
+  "has_comment": false,
+  "embedded_descriptive_metadata_found": true,
+  "source_page_has_descriptive_metadata": true,
+  "input_policy": "Use neutral JPEG alone and approved prompt. Keep source/page/gold/reference files evaluator-only.",
+  "scope_limit": "Audit of standard pre-scan JPEG ancillary metadata markers, not forensic validation of the full binary."
+}

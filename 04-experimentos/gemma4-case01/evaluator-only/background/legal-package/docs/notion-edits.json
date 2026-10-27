@@ -1,0 +1,38 @@
+{
+  "page": "812158101a058238aecb012bb3ccbd40",
+  "date": "2026-10-12",
+  "edits": [
+    {
+      "old_str": "cq(cq2, not excuses(E))[as(as4ER)].",
+      "new_str": "cq(cq3, not excuses(E))[as(as4ER)]."
+    },
+    {
+      "old_str": "factors_favor(deffendant(P))",
+      "new_str": "factors_favor(defendant(P))"
+    },
+    {
+      "old_str": "# 6. Argument from Witness Testemony",
+      "new_str": "# 6. Argument from Witness Testimony"
+    },
+    {
+      "old_str": "<td>Witness W is telling the truth (as W knows it)</td>\n</tr>\n</table>",
+      "new_str": "<td>Witness W is telling the truth (as W knows it)</td>\n</tr>\n<tr>\n<td>Statement Premise — explicit in the adapted rule below</td>\n<td>Witness W states that S is true, and S concerns domain D.</td>\n</tr>\n<tr>\n<td>Defeasible Conclusion — explicit in the adapted rule below</td>\n<td>S may plausibly be taken to be true.</td>\n</tr>\n</table>"
+    },
+    {
+      "old_str": "All <C> is <F>. <A> can be classified as <C>. Therefore, <A> is <F>.",
+      "new_str": "Normally, an item classified as <C> has property <F>. <A> can be classified as <C>. Therefore, <A> defeasibly has property <F>."
+    },
+    {
+      "old_str": "<PC2> and <PC1> has more on point of similarity.",
+      "new_str": "Relative to the current case under consideration, <PC2> is more on-point than <PC1>."
+    },
+    {
+      "old_str": "defeasible_rule(factors_favor(P,PC2),\n[\n\tdecision(PC1,P),\n  there_is(is_counterexample(PC2,PC1)),\n])[as(asP4P)]",
+      "new_str": "// Conceptual representation; no target-engine syntax is asserted.\n// Scope: one fixed current case and issue (Gordon & Walton 2009, p. 142).\n// PC2 is existentially quantified inside the exception for this PC1.\n{\n  scheme: \"asP4P\",\n  ordinary_premises: [\"decision(PC1,P)\"],\n  exceptions: [\"exists PC2: is_counterexample(PC2,PC1)\"],\n  defeasible_conclusion: \"factors_favor(P)\"\n}"
+    },
+    {
+      "old_str": "There is a precedente case <PC1> decided to <P>.\nOn the other hand, there is a counterexample <PC2>.\nTherefore, factors favor <PC1>.",
+      "new_str": "Precedent case <PC1> was decided in favor of party <P>.\nThis supports, defeasibly, that the factors favor <P> in the fixed current-case context.\nAn established counterexample <PC2> to <PC1> defeats this argument.\nAn unknown counterexample status must be recorded explicitly; it is not proof that no counterexample exists."
+    }
+  ]
+}

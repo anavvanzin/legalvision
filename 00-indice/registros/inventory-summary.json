@@ -1,0 +1,179 @@
+{
+  "inspected_on": "2026-10-13",
+  "mode": "read_only_source_inventory",
+  "sources_modified": false,
+  "project_scripts_executed": false,
+  "candidate_runs_executed": 0,
+  "inventory_scope": {
+    "counted_task_files": 118,
+    "excluded": [
+      ".git",
+      ".library",
+      "__pycache__",
+      "node_modules",
+      ".venv",
+      "preflight/checkout",
+      "organization-review",
+      "credential/private-session/.env content"
+    ]
+  },
+  "original_comparison": {
+    "roots": [
+      "repo-root:.",
+      "repo-root:. 2"
+    ],
+    "documental_files_per_root": 14,
+    "documental_bytes_per_root": 53770,
+    "documental_types": {
+      "md": 8,
+      "json": 5,
+      "txt": 1
+    },
+    "useful_files_per_root": 17,
+    "useful_bytes_per_root": 80025,
+    "useful_path_hash_mismatches": 0,
+    "raw_file_counts": [
+      21,
+      19
+    ],
+    "only_raw_differences": "Finder .DS_Store",
+    "work_legal_package_files_checked": 15,
+    "work_legal_package_mismatches": 0,
+    "local_absolute_paths_in_original_documents": 0,
+    "external_notion_pdf_references": 3,
+    "local_pdf_docx_files": 0
+  },
+  "states": {
+    "legal_package": {
+      "integrity_exit": 0,
+      "schemes": 10,
+      "profiles_proposed": 2,
+      "acceptance_oracles": 16,
+      "executable_schemes": 0
+    },
+    "historical_weather_baseline": {
+      "cases": 90,
+      "archived_evaluations": 720,
+      "validation_csv_files": 24,
+      "new_model_inferences": 0,
+      "new_semantic_judgments": 0,
+      "lexical_positive": 657,
+      "archived_semantic_positive": 227
+    },
+    "preflight": {
+      "dry_run_passed": true,
+      "global_exit": 1,
+      "global_exit_reason": "SDKs missing",
+      "input_files_recorded_in_existing_run": 138,
+      "input_bytes_recorded_in_existing_run": 120461375,
+      "pending_slots": 0,
+      "dgx_verified": false
+    },
+    "gemma_legal": {
+      "status": "paused_prepared_not_executed",
+      "candidate_runs": 0,
+      "reference_status": "assistant_provisional_human_review_pending",
+      "native_google_runtime_tested_by_package_creation": false,
+      "synthetic_software_tests_recorded_passed": 6,
+      "result_csv_data_rows": 0,
+      "result_jsonl_bytes": 0
+    },
+    "gitlab": {
+      "publication": "not_confirmed"
+    },
+    "ai_studio": {
+      "setup_errors": "reported_in_task_context_not_model_results",
+      "candidate_result_files_present": false
+    }
+  },
+  "duplicates": {
+    "hash_groups_total": 25,
+    "empty_file_group_count": 1,
+    "original_folders_same_version": true,
+    "archive_content_comparison": "archive-comparison.json"
+  },
+  "portability": {
+    "absolute_path_occurrences_indicative": 92,
+    "affected_lightweight_files": 16,
+    "recommendation": "relative links to central copies plus origin index; preserve historical paths in logs/JSON"
+  },
+  "proposed_mapping": [
+    {
+      "destination": "00indice",
+      "contents": "Start, statuses, source-to-copy index, checksums, external-retention references"
+    },
+    {
+      "destination": "01contexto",
+      "contents": "Legal README, COMO-ABRIR, delivery guide, project scope"
+    },
+    {
+      "destination": "02bibliografia",
+      "contents": "R1-R3 source manifest and external original references; no PDFs redistributed"
+    },
+    {
+      "destination": "03esquemas",
+      "contents": "Whole documental work/legal-package copy and formal-review; thematic indexes point to it"
+    },
+    {
+      "destination": "04experimentos",
+      "contents": "Paused pilot and full prepared Google package, preserving evaluator-only/model-input separation"
+    },
+    {
+      "destination": "05resultados",
+      "contents": "Report, reference-audit, evidence, results ZIP and delivery receipts"
+    },
+    {
+      "destination": "06ambiente",
+      "contents": "12 lightweight preflight files; indexes to retained heavy snapshot/checkout/bundle"
+    },
+    {
+      "destination": "07apresentacoes",
+      "contents": "Existing static HTML and presentation document index"
+    }
+  ],
+  "retain_in_origin": [
+    "preflight/checkout",
+    "preflight/tracked-snapshot.tar",
+    "legal-visual-argumentation bundle",
+    ".git",
+    ".library helpers",
+    "credentials",
+    "private sessions"
+  ],
+  "review_deliverables": [
+    "inventory-review.md",
+    "task-inventory.json",
+    "archive-comparison.json",
+    "inventory-summary.json"
+  ],
+  "groups": {
+    "reference-audit": {
+      "files": 10,
+      "bytes": 48544
+    },
+    "preflight": {
+      "files": 13,
+      "bytes": 120674888
+    },
+    "google-gemma4-package-2026-10-13": {
+      "files": 44,
+      "bytes": 718423
+    },
+    "pilot-2026-10-13": {
+      "files": 20,
+      "bytes": 513902
+    },
+    "evidence": {
+      "files": 6,
+      "bytes": 5208
+    },
+    "work/legal-package": {
+      "files": 15,
+      "bytes": 56304
+    },
+    "root": {
+      "files": 10,
+      "bytes": 755084
+    }
+  }
+}

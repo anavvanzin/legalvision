@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "R1",
+      "filename": "LegalReasoningWithArgumentationSchemes.pdf",
+      "notion_reference": "notion-file-block://bc115810-1a05-83fc-9d62-817af1492cdf/8e87061a-51bc-49fb-b80c-5810a790f5cb?space_id=a7615810-1a05-81cc-adaa-000389cc4f06&name=LegalReasoningWithArgumentationSchemes.pdf",
+      "sha256": "f2138e982dad15f736c9932c6ee0b5ec1495114044dbe0a76f885934f202c050",
+      "bytes": 435109,
+      "read_on": "2026-10-12",
+      "redistributed": false
+    },
+    {
+      "id": "R2",
+      "filename": "ArgumentSchemesforLegalCaseBasedReasoning.pdf",
+      "notion_reference": "notion-file-block://95b15810-1a05-8342-83e8-81ac3b41a983/c3c48026-139e-4f92-aced-b695f1e085bf?space_id=a7615810-1a05-81cc-adaa-000389cc4f06&name=ArgumentSchemesforLegalCaseBasedReasoning.pdf",
+      "sha256": "08238229382b90b1196896bb419d1b897de6d17d05c288044bc71000370d3cda",
+      "bytes": 73351,
+      "read_on": "2026-10-12",
+      "redistributed": false
+    },
+    {
+      "id": "R3",
+      "filename": "UsingArgumentationSchemesToFindMotivesAndIntentionsOfARationalAgent.pdf",
+      "notion_reference": "notion-file-block://1fa15810-1a05-83ba-9b43-81750e925303/68068441-1f5b-4d04-afae-a832c6831b14?space_id=a7615810-1a05-81cc-adaa-000389cc4f06&name=UsingArgumentationSchemesToFindMotivesAndIntentionsOfARationalAgent.pdf",
+      "sha256": "f304659ed4411e935b35eed01b665ef8899bdf61267676b0a0a1daa8a77d9eb1",
+      "bytes": 868078,
+      "read_on": "2026-10-12",
+      "redistributed": false
+    }
+  ],
+  "repository_commit": "d374ac21ca0645c4a49e8ad719a1845afe8754f7"
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "pilot_pre_registration_v1",
+  "case_id": "CASE01",
+  "registered_at_utc": "2026-10-13T10:45:09.200612Z",
+  "purpose": "Piloto exploratório N=1 de percepção visual e classificação verbal formal com regra hipotética; sem inferência jurídica de caso real.",
+  "reference_type": "Preannotation by separate multimodal assistant; not independent human gold; not adjudicated by Ana.",
+  "freeze_stage": "Reference recorded and hashed before parent releases either blind candidate condition.",
+  "candidate_execution_by_reference_annotator": false,
+  "candidate_outputs_seen_by_reference_annotator": false,
+  "input_image": {
+    "relative_path": "stimulus/case01.jpg",
+    "sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+    "bytes": 278383,
+    "mime_type": "image/jpeg"
+  },
+  "reference_files": {
+    "source.json": {
+      "relative_path": "reference/source.json",
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5"
+    },
+    "gold.json": {
+      "relative_path": "reference/gold.json",
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949"
+    },
+    "source-page.html": {
+      "relative_path": "reference/source-page.html",
+      "sha256": "80ba40f679e59a079d301d4776a79b069f7af99429c8929f2bce21116c0c0a83"
+    }
+  },
+  "prompt_files": {
+    "shared.txt": {
+      "relative_path": "prompts/shared.txt",
+      "sha256": "3498838a306711f2760f7215d61b86a88ae45f9bc3a1625ae86721894e6bafd5"
+    },
+    "without_image.txt": {
+      "relative_path": "prompts/without_image.txt",
+      "sha256": "ecf0ea8311071d78bcaf7ab16276996174e8729535c0ae176069f63fb35354cc"
+    }
+  },
+  "conditions": [
+    "with_image",
+    "without_image"
+  ],
+  "visual_question_ids": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "category": "bicicleta_visual",
+  "rule": "R1_v1",
+  "scheme": "verbal_classification_v0.1",
+  "primary_comparison": "Visual answers and evidence grounding with and without pixels; preserve all raw outputs without repair or selection.",
+  "expected_baseline": "insufficient for every visual answer and classification, solely because no pixels or object-specific factual description are provided; no derived property of A.",
+  "anti_leak_policy": [
+    "No source page/title/URL/license/metadata, gold answers, counts, colors or observations provided to either candidate.",
+    "with_image receives only approved prompt plus neutral image; without_image receives approved text only.",
+    "Shared category definition and hypothetical rule are criteria/warrant, not factual assertions about A.",
+    "Reference answers stay undisclosed to parent until both candidate outputs have been recorded.",
+    "Source provenance and viability may be communicated to parent without visual question answers."
+  ],
+  "scoring_pre_specification": {
+    "Q1": "Exact visible-wheel count, evidence status and image-grounded region/reason.",
+    "Q2": "Correct visibility judgment about at least one pedal/crank assembly; grounded reason/region.",
+    "Q3": "Predominant frame color according to accepted semantic values fixed in gold; no answer inferred from category text.",
+    "classification": "Correct operational-category judgment, grounded in observed criteria; abstain if no pixels.",
+    "formal": "Entity/category/property linkage; supplied R1 as textual warrant; derived conclusion without fabricated pixel-law source; no normative conclusion for A without classification evidence.",
+    "CQ": "Candidate self-reports only; compare provided justification, not external validity or human adjudication."
+  },
+  "limits": [
+    "Single case; exploratory evidence only.",
+    "Reference made by assistant multimodal annotator, no human validation.",
+    "Reference annotator had source metadata exposure before pixel inspection.",
+    "Approximate regions; no independent segmentation.",
+    "Rule and normative property are fictional and text-supplied."
+  ],
+  "integrity_policy": "Do not modify source/gold/pre-registration after freeze. Any correction must be a separately timestamped amendment and invalidate or explicitly qualify affected comparisons."
+}

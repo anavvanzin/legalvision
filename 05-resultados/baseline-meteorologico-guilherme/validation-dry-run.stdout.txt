@@ -1,0 +1,2 @@
+Validation files: 24; evaluations: 720; pending: 0.
+Columns: col1=without_enthymeme, col2=without_context, col3=without_image, col4=all_inputs

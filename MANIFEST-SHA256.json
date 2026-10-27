@@ -1,0 +1,19 @@
+{
+  "README.md": "ba7a5f642c23dd45e6ae9f7dd68183dba825b6d3727185bab6f309e5c628b27d",
+  "adapter.py": "b2669be0e8c2e5a87100278d72c2fdfd9d4be3a6a0fe72710a05f62e336a1ba9",
+  "cases.json": "24f68813658541c23e8679eeaea51beb0bd0c6e19243a3dac58af2d5be650162",
+  "evidence-template.json": "f47077410f1a9738e08f08fe3cbf80f0149ead139c355484c4e3e4f7753c63c9",
+  "grounding.py": "6030acc36404d7e1ae12a435f661ee82d84eec9d9ea335536859659b2afe741c",
+  "images/ao399.png": "4db10ad4deedfb8e5a5865b015aaa61952c80bfe2b398d7d9fb2c5b1986f5cb9",
+  "images/ao440.png": "27330e65eecdadadcf6cfd884fe2e3563d7c704dd3524d0dbbe960c5ffbd68b4",
+  "images/ao441.png": "fa1f6ddda1fc93168256436da3810dd63566ce2fa3476bb37cf20a0f78e57e4f",
+  "requests.jsonl": "76b526c68645c9d106c536ba6ef7c147ceef41403b705004a4a5776735385e82",
+  "results/README.txt": "5b35b4f144d4273c1486c829213935c7ffdc9bf53dd673ac5aaa4d097eaf2fee",
+  "run.py": "66140671bef08ff8034351f1eb27af607e6563dbf0e840e49cb1c6595269a669",
+  "sources/ao399.pdf": "6df38a70fad6719f63fc005fb65651e0e1d11db64a9b7b6746017cba4fd45d16",
+  "sources/ao440.pdf": "2df4ff1d30d123b8a3591d158816940712e0da0189b47ca0abf780579895fbae",
+  "sources/ao441.pdf": "8dbc673a60cfda20b446a956c32edd1eb5525316a458a5db3dca986641819a32",
+  "tests/test_grounding.py": "95f7ebafb7764be51a6ea31fc835c5c0c43c35aa625f04cf9435be8a7ea19ce4",
+  "tests/verification.txt": "cc9e57661d22628585729729d8ccb62bd89550920389349c68dd92b16ddc943a",
+  "upstream.json": "3df5ba3c014c7d1966a0fe9917f955f3a6705b14dfa583345737fc623218d1f9"
+}

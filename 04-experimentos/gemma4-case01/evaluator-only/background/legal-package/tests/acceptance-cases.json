@@ -1,0 +1,197 @@
+{
+  "note": "Each row supplies stipulated annotations, not observed image facts. Structure measures graph shape/binding; external support remains separate. No dataset or validator run.",
+  "cases": [
+    {
+      "id": "VC01",
+      "scheme": "verbal_classification",
+      "scenario": "Same A/C/F; supplied warrant; reviewed image supports class; CQs resolved",
+      "expected": {
+        "structure": "pass",
+        "semantics": "match",
+        "visual": "supported",
+        "argument_status": "provisionally_supported"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC02",
+      "scheme": "verbal_classification",
+      "scenario": "Conclusion changes A to another object",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC03",
+      "scheme": "verbal_classification",
+      "scenario": "All predicate names present but category C differs between premises",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC04",
+      "scheme": "verbal_classification",
+      "scenario": "Well-formed warrant invented by model, with no provided-rule source",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC05",
+      "scheme": "verbal_classification",
+      "scenario": "Image absent for a premise designated exclusively visual; no alternative source",
+      "expected": {
+        "structure": "pass",
+        "semantics": "unreviewed",
+        "visual": "insufficient",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC06",
+      "scheme": "verbal_classification",
+      "scenario": "Image contradicts classification but candidate syntax is correct",
+      "expected": {
+        "structure": "pass",
+        "semantics": "mismatch",
+        "visual": "contradicted",
+        "argument_status": "defeated"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "VC07",
+      "scheme": "verbal_classification",
+      "scenario": "Relevant feature occluded; model correctly abstains in evidence report",
+      "expected": {
+        "structure": "pass",
+        "semantics": "match",
+        "visual": "insufficient",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT01",
+      "scheme": "witness_testimony",
+      "scenario": "Calibrated scene and synchronized context support opportunity; testimony and assumption supplied; all CQs resolved or justified N/A",
+      "expected": {
+        "structure": "pass",
+        "semantics": "match",
+        "visual": "supported",
+        "argument_status": "provisionally_supported"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT02",
+      "scheme": "witness_testimony",
+      "scenario": "Scene proves line of sight obstructed; only opportunity premise refuted",
+      "expected": {
+        "structure": "pass",
+        "semantics": "mismatch",
+        "visual": "contradicted",
+        "argument_status": "defeated"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT03",
+      "scheme": "witness_testimony",
+      "scenario": "Model infers truthfulness from face; no declared assumption",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "insufficient",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT04",
+      "scheme": "witness_testimony",
+      "scenario": "states uses witness W1 but observation premise uses W2",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT05",
+      "scheme": "witness_testimony",
+      "scenario": "Same geometry but incompatible observation time",
+      "expected": {
+        "structure": "pass",
+        "semantics": "mismatch",
+        "visual": "insufficient",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT06",
+      "scheme": "witness_testimony",
+      "scenario": "One required CQ remains unknown despite supportive scene",
+      "expected": {
+        "structure": "pass",
+        "semantics": "match",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT07",
+      "scheme": "witness_testimony",
+      "scenario": "Opportunity premise refuted; candidate concludes explicit negation of S",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "contradicted",
+        "argument_status": "defeated"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT08",
+      "scheme": "witness_testimony",
+      "scenario": "No testimony supplied; model invents states(W,S) from scene",
+      "expected": {
+        "structure": "fail",
+        "semantics": "mismatch",
+        "visual": "supported",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    },
+    {
+      "id": "WT09",
+      "scheme": "witness_testimony",
+      "scenario": "Image supports statement compatibility, but camera viewpoint is unrelated to W's position",
+      "expected": {
+        "structure": "pass",
+        "semantics": "mismatch",
+        "visual": "insufficient",
+        "argument_status": "unresolved"
+      },
+      "kind": "proposed_acceptance_oracle_not_executed"
+    }
+  ]
+}

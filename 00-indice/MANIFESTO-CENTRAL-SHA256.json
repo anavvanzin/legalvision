@@ -1,0 +1,619 @@
+{
+  "created_at_utc": "2026-10-13T14:58:16.721957+00:00",
+  "scope": "All files of the reviewed GitHub derivative, excluding this manifest and .git.",
+  "candidate_model_runs": 0,
+  "files": {
+    ".gitignore": {
+      "bytes": 594,
+      "sha256": "e807dd9c2ba76eb5bb9e04ca0bb6ee816e6a261d01d80e6605e4c6e047815f23"
+    },
+    "00-indice/COPIAS-E-PROVENIENCIA.json": {
+      "bytes": 73173,
+      "sha256": "8e832111c6e612794caac093081cced06f6dda8949283bbcfeba95d60be1efbb"
+    },
+    "00-indice/INDICE-PROJETO.md": {
+      "bytes": 3319,
+      "sha256": "93f8251d5c319bbb443d4ec080a0fde04e8699c29a2f51d2f35521a94742d01a"
+    },
+    "00-indice/LACUNAS.md": {
+      "bytes": 2302,
+      "sha256": "04be2cde5344d9611db6645b98c07ffd25385e8f8329fa9447114e1f24fc74d5"
+    },
+    "00-indice/MAPA.md": {
+      "bytes": 1834,
+      "sha256": "0a23d13e785bd4aba4e59dabb2eaeb724445f6f92de0ea22165c0d0c0a2405e5"
+    },
+    "00-indice/PUBLICACAO-PROVENIENCIA.json": {
+      "bytes": 99486,
+      "sha256": "1855a7198b443fc5403793a61557bf8799485492090fca7d98356f640fa4cd8d"
+    },
+    "00-indice/REGISTRO-ORGANIZACAO.md": {
+      "bytes": 1721,
+      "sha256": "57a1f7ecaf6446012e68883ebdf75f137b02ce3d881b1150a21c5d5538650464"
+    },
+    "00-indice/STATUS.md": {
+      "bytes": 1902,
+      "sha256": "b813a739f33b66e6505a8a4c8f70878a6b70bd04cae275f29601474f3a8d5eb8"
+    },
+    "00-indice/VERSIONAMENTO-GITHUB.md": {
+      "bytes": 2807,
+      "sha256": "b62dc53b66671c20163a35b49b429c06836d3c585fb06d7879d6a256c2c3a6c9"
+    },
+    "00-indice/ferramentas/validar_organizacao.py": {
+      "bytes": 4755,
+      "sha256": "fdb191232036aceff686eda27fc6ded4c9af978a18555b76559e2de07ab8d8f8"
+    },
+    "00-indice/registros/anexos-contexto.md": {
+      "bytes": 8883,
+      "sha256": "dec0ebeecef19c32bac870e084d8fe52d3d6da3e240519a1ee1be517158998e5"
+    },
+    "00-indice/registros/anexos-metadados.json": {
+      "bytes": 5539,
+      "sha256": "bf1c669bfd5ef153dcb4a0ee978dc25b5fe55c2e5ecac82437776e69cb66ccab"
+    },
+    "00-indice/registros/archive-comparison.json": {
+      "bytes": 679,
+      "sha256": "d36b24962e28e950d19dd85e6b849739e6cc465c30362b462307dde073bbddf3"
+    },
+    "00-indice/registros/codex-project.md": {
+      "bytes": 1302,
+      "sha256": "93489999b9b5f88c8f31c243de1d1c7dbb2955202efc14619c307b0265ca4fa5"
+    },
+    "00-indice/registros/inventory-review.md": {
+      "bytes": 14239,
+      "sha256": "1e699d52d25d044f683cf0cf7f2dc65b15c38ea6e2ac66cf791fc778f9af874b"
+    },
+    "00-indice/registros/inventory-summary.json": {
+      "bytes": 4904,
+      "sha256": "2c045d1edecaa618bc4aeff2d4b5600a7c053593b936e922fe4efeae6e7c1e8b"
+    },
+    "01-contexto/README.md": {
+      "bytes": 1143,
+      "sha256": "ce593e97f59a4d0f013e3b88cb0fbb8ea0bb1cd8f0184864ee93fbb22c3e7c1e"
+    },
+    "01-contexto/reuniao-2026-10-08/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.leitura.txt": {
+      "bytes": 5241,
+      "sha256": "d018d736fa3773d9d118cf205f4a4bafe251aa9f003aa0c13b1d96f8cb0fba8c"
+    },
+    "01-contexto/reuniao-2026-10-08/originais/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.html": {
+      "bytes": 28680,
+      "sha256": "ded27415ef218a7cd750ff0c60eb681e3adc7c21539b28482f758ba708fe7fbf"
+    },
+    "02-bibliografia-recursos/README.md": {
+      "bytes": 1681,
+      "sha256": "949713e3915bb5426bbe28d7f4524e818627cd86240754c3d2f34aaa7c61f976"
+    },
+    "02-bibliografia-recursos/material-didatico/explicador_visao_computacional.leitura.txt": {
+      "bytes": 2507,
+      "sha256": "d2e60eb5317bd79346ae490f57a078c7b224d179992d135a3e5d1e69da90f600"
+    },
+    "02-bibliografia-recursos/material-didatico/originais/explicador_visao_computacional.html": {
+      "bytes": 18118,
+      "sha256": "ac9ce49357a77017a69f3e0c243297b4182e878660468c5ec01dfcb0109c6ef1"
+    },
+    "02-bibliografia-recursos/recursos-externos.json": {
+      "bytes": 916,
+      "sha256": "4bb3594649264aae24c498324af121d384afd15c137e60312652428eda1a8a52"
+    },
+    "03-esquemas/README.md": {
+      "bytes": 1248,
+      "sha256": "dfcc0f52a1332dfb941a8893c760b78b298bdd3db51077a19c05b68188858600"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/.gitignore": {
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/README.md": {
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/apresentacao.md": {
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/auditoria.md": {
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/correcoes.md": {
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/notion-edits.json": {
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/superpowers/plans/2026-10-12-piloto.md": {
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/superpowers/specs/2026-10-12-piloto-design.md": {
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/validacao.md": {
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/docs/verificacao.md": {
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/schemes/catalog.json": {
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/schemes/profiles.json": {
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/scripts/check_package.py": {
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/sources/manifest.json": {
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e"
+    },
+    "03-esquemas/pacote-documental-2026-10-12/tests/acceptance-cases.json": {
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104"
+    },
+    "03-esquemas/parecer-formal.original.md": {
+      "bytes": 11476,
+      "sha256": "3093f5ecfdcdc0b9e63dcffcc123071b726164b5ab51f4ede2d84fabd1319bea"
+    },
+    "04-experimentos/GUIA-RAPIDO.original.md": {
+      "bytes": 1678,
+      "sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0"
+    },
+    "04-experimentos/README.md": {
+      "bytes": 1512,
+      "sha256": "a4918ee229d90e0380cf4723af368ffe77c2b19a8d8079ecf0517fe935333d28"
+    },
+    "04-experimentos/gemma4-case01/COMECE-AQUI.md": {
+      "bytes": 5496,
+      "sha256": "4dde1bbf206277e364a3de717ccb3dd4507f70eb7aeb98c1f9d4ab973a992aa4"
+    },
+    "04-experimentos/gemma4-case01/GUIA-RAPIDO.md": {
+      "bytes": 1678,
+      "sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0"
+    },
+    "04-experimentos/gemma4-case01/MANIFESTO-SHA256.json": {
+      "bytes": 10024,
+      "sha256": "75426eab4c8783850dd3b716fd13ad6cf9e50f79129b8675b5fc628ab1e46ce9"
+    },
+    "04-experimentos/gemma4-case01/PORTABILIDADE.md": {
+      "bytes": 3382,
+      "sha256": "f919af8c501dc611b04ee92d0da4bf3dbdf98e693942b0ea3669ab25ff5bb409"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/ATRIBUICAO.md": {
+      "bytes": 1585,
+      "sha256": "fa6c2bb1ace0348c16aa240049eb400cadac4836bbd2cfa11091bfb82dfd5d87"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/EVALUATION.md": {
+      "bytes": 3493,
+      "sha256": "a1868d93a871437956c6e63ead1be3686e14d7bc36091a2926dc9968177d9e1b"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/formal-review.md": {
+      "bytes": 11656,
+      "sha256": "211f793731784ebdc918440a0a217e6ef2fd38a2dadf5f92a221126e8117d4cf"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/.gitignore": {
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/README.md": {
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/apresentacao.md": {
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/auditoria.md": {
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/correcoes.md": {
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/notion-edits.json": {
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/superpowers/plans/2026-10-12-piloto.md": {
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/superpowers/specs/2026-10-12-piloto-design.md": {
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/validacao.md": {
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/verificacao.md": {
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/catalog.json": {
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/profiles.json": {
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/scripts/check_package.py": {
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/sources/manifest.json": {
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/tests/acceptance-cases.json": {
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/checks/package-checks.json": {
+      "bytes": 807,
+      "sha256": "dc5819378bd4f21d7833e48489daa1fdfbe74a2feb91879d21ad67bb44ffc292"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/checks/packaged-validator-tests.log": {
+      "bytes": 942,
+      "sha256": "708353afb5c43b868a51f3fa55b9452785119db4e30ed65fb3f1f23598d3b5b0"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/checks/validator-test-results.json": {
+      "bytes": 290,
+      "sha256": "22aa2b3283f93ee5b362bfe900db5a36c8e312222a2b419c95bb764e8a97c3d5"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/checks/validator-tests.log": {
+      "bytes": 852,
+      "sha256": "6ce0291832d64e96ec03cd34c3c17b8761e98d502e935bf8b7bdcc081d6572c6"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/delivery-amendment.json": {
+      "bytes": 1331,
+      "sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/freeze-manifest.json": {
+      "bytes": 818,
+      "sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/gold.json": {
+      "bytes": 8374,
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/metadata-audit.json": {
+      "bytes": 2076,
+      "sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/pre-registration.json": {
+      "bytes": 4163,
+      "sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source-page.html": {
+      "bytes": 153699,
+      "sha256": "80ba40f679e59a079d301d4776a79b069f7af99429c8929f2bce21116c0c0a83"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source.json": {
+      "bytes": 3083,
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/delivery-amendment.json": {
+      "bytes": 1331,
+      "sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/freeze-manifest.json": {
+      "bytes": 818,
+      "sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/gold.json": {
+      "bytes": 8374,
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/metadata-audit.json": {
+      "bytes": 2076,
+      "sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/model-image-lineage.json": {
+      "bytes": 1328,
+      "sha256": "350167309628da7160f539d746100ce7026e6fe7b2b4a3256f3ca48bfa55b651"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/original-case01.jpg": {
+      "bytes": 278383,
+      "sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/pre-registration.json": {
+      "bytes": 4163,
+      "sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/reference/source.json": {
+      "bytes": 3083,
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/results/human-review.template.json": {
+      "bytes": 771,
+      "sha256": "dae0dae8ed47da069e63dee01dfff2b34402d7888feffaa8a723de71b966e04d"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/results/raw/README.txt": {
+      "bytes": 427,
+      "sha256": "ef8ab651a49f2ca0f0dafcc73580505e491c5e49b64e0c00002eb5eaa32ddf53"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/results/results.csv": {
+      "bytes": 286,
+      "sha256": "8338848ef1d33849aa86c8d87b19825877ce9ad24190f6053c39d9386d5c2a3f"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/results/results.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/results/run-record.template.json": {
+      "bytes": 881,
+      "sha256": "5c41b4aa8c3b908810e8a383651945fa834827900a88c7247bfe0f23d09c975d"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/tools/VALIDATOR_LIMITS.md": {
+      "bytes": 3638,
+      "sha256": "8e53efac2718d71d9cd24f31caf6e44fbb747a5145e436bf4c1361cc892f60d2"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/tools/sanitize_metadata.py": {
+      "bytes": 2560,
+      "sha256": "02d4db3b4bb2c7a5bdfa348b46d9ea22cf1d5c8fd86fd0402380395b67b0d06a"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/tools/test_validate_candidate.py": {
+      "bytes": 8285,
+      "sha256": "4db5e994e9865f4f976329ced04ec4ce8ca2713d5baf1ba53d8e39777adf3d95"
+    },
+    "04-experimentos/gemma4-case01/evaluator-only/tools/validate_candidate.py": {
+      "bytes": 19716,
+      "sha256": "9b72ccc5ee68c51b43da570b69c0fe4a6821ae6eb18ee77f7faf7064613372bb"
+    },
+    "04-experimentos/gemma4-case01/execution-plan.json": {
+      "bytes": 1806,
+      "sha256": "ade9be94abca920ff05a5360b0bb81b0bfa11b27e28338aa455e89b6ab7fff35"
+    },
+    "04-experimentos/gemma4-case01/model-input/argument-profile.json": {
+      "bytes": 1486,
+      "sha256": "95ab174ae11518d01005ef744a74aae079e210079671df40cf2cf0acdb86a892"
+    },
+    "04-experimentos/gemma4-case01/model-input/conditions/01_with_image.txt": {
+      "bytes": 3930,
+      "sha256": "b64568003a6b7ea4b024a6196b93862331b9ca4abe4455c3a5d77a61fa8aba31"
+    },
+    "04-experimentos/gemma4-case01/model-input/conditions/02_without_image.txt": {
+      "bytes": 3957,
+      "sha256": "389ad0ee4ac52ad5647e4dbfa6c1d17d60af8eaed190a8d6a5602b39b3e9563a"
+    },
+    "04-experimentos/gemma4-case01/model-input/hypothetical-rule.json": {
+      "bytes": 294,
+      "sha256": "2538efd1ec2c90b4b7a5ba65b5beb6aff4fec2685fbc6d9694bb8b65340d69c0"
+    },
+    "04-experimentos/gemma4-case01/model-input/images/case01.jpg": {
+      "bytes": 278291,
+      "sha256": "b734a7395b75d07263b6ba2f7c3e875a3fb8f156abf17539e1932c8c462b1fb4"
+    },
+    "04-experimentos/gemma4-case01/model-input/output.schema.json": {
+      "bytes": 10710,
+      "sha256": "07fa41409cdae0f73da89bb210ce3b2aca4c39848ac6be04ce3797a8eb1d1138"
+    },
+    "04-experimentos/gemma4-case01/model-input/system.txt": {
+      "bytes": 1305,
+      "sha256": "3cf4b3dab3c1c7bd886f7dad73f388c3e7eccd3aea59cac9770d753fc753c0bc"
+    },
+    "04-experimentos/gemma4-case01/verify_package.py": {
+      "bytes": 1455,
+      "sha256": "0520bd604be4789329d86d16ba5cbcfec8fef89b2a68dc7f84401b493923b3bc"
+    },
+    "05-resultados/README.md": {
+      "bytes": 1781,
+      "sha256": "70a3a56716fd4971f8909fcd48d7e995a229a1304fd79245773e9e25014373ba"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/RESULTADOS-REFERENCIA.md": {
+      "bytes": 7494,
+      "sha256": "239b0148f47a8673208aeff420aa6614cc125f400ca7c14b67cf64aa3131d97a"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/documented-checks.json": {
+      "bytes": 1144,
+      "sha256": "7888ebeba9102ee43f41ad9ff9eb2f7798ff447a388beaa13a5f65829b49f40f"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/independent_audit.py": {
+      "bytes": 8789,
+      "sha256": "dab2a0394d860275c0ef67110927d58b772cd7985765460cd983f7a291b27e2e"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/inventory-and-audit.json": {
+      "bytes": 8899,
+      "sha256": "ba8e479cc00a04903d68e5241b482cdb7b74a046376c2ac7d3e15363b1e62595"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/recomputed-metrics.csv": {
+      "bytes": 2588,
+      "sha256": "e9c183ec68458876f98f8d4af380c47c7f2cb32a5019a8da3263bb395dff1935"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/source-sha256.csv": {
+      "bytes": 13603,
+      "sha256": "7f515ce09ea81dcf73c8766901dbf4eae398caa148eca967b989f54a5aeacd91"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/statistics.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/statistics.stdout.txt": {
+      "bytes": 5936,
+      "sha256": "7294b20d774c0c5e6f45fb05dac461b42f0ae2ce1b3d98bd4e955d645d874b27"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stdout.txt": {
+      "bytes": 143,
+      "sha256": "51af82b770f831023cb5eda5fd323dbce862371352154ad2e7b50f145e71e786"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/PACOTE-GOOGLE-GEMMA4-verificacao.json": {
+      "bytes": 671,
+      "sha256": "b183fa5d5a3aa91c6226e28e3540e5659cba9e3d6fbd5ee204ae92be6d3296bd"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/cv-preflight-mac.zip.json": {
+      "bytes": 249,
+      "sha256": "ce855843673e260e3375d73a754badc5c8a86e2323864427b0561de870139446"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/legal-package-check.json": {
+      "bytes": 1928,
+      "sha256": "97de449f37aa1488963d475ad0403721e6c7641175794c7f4dc4e8bed3cfa24c"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/legal-package-check.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/legal-package-check.stdout.txt": {
+      "bytes": 237,
+      "sha256": "5f882603fb69fecaf6b6800059f108d9dd55c42f6fef4b80f3808bddbc1216cd"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/legal-source-sha256.json": {
+      "bytes": 1450,
+      "sha256": "1934f9d1b9c93088d0116bf96ab23f073ff375edc92ddcfa3bf89e49abda05c6"
+    },
+    "05-resultados/checks-juridicos-2026-10-13/legal-visual-argumentation.zip.json": {
+      "bytes": 1124,
+      "sha256": "2b8504934be3b7b1fcbbb59859ce3ffd042a940bbee613b9a685a6dd8fcccc33"
+    },
+    "05-resultados/juridico-gemma/estado.json": {
+      "bytes": 448,
+      "sha256": "b43bad5bca18d5a24cdcf6f10e7f768a1cacbf66c41eb13d024a870ce3527ad4"
+    },
+    "06-ambiente/CODEX-PROJETO.md": {
+      "bytes": 1036,
+      "sha256": "9df3087cfd47d1ac027e9dc579a4327781919008334dfc32ceead1eaa8d6e6fe"
+    },
+    "06-ambiente/README.md": {
+      "bytes": 1299,
+      "sha256": "5c1ed5c22dd9eef336c69a074fe6cf8d64983049de766b6eca5642a980d558f9"
+    },
+    "06-ambiente/preflight-mac/LEIA-ME.md": {
+      "bytes": 8012,
+      "sha256": "a402d88732d82b97340cbe25f61abc9b3c16c65054567c597770d0caf753c9dc"
+    },
+    "06-ambiente/preflight-mac/README-RESULTADO.md": {
+      "bytes": 7525,
+      "sha256": "ef3ec66046c500322aac2d9701b1c1c0d87ef85fd49583e1335daadbd0405ae1"
+    },
+    "06-ambiente/preflight-mac/check_cv.py": {
+      "bytes": 10014,
+      "sha256": "1e29fe63a1150e349a2e57f94884b3b1063a2576cb1535b2426ecebc8a5d6c9d"
+    },
+    "06-ambiente/preflight-mac/inputs-after.sha256": {
+      "bytes": 12929,
+      "sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6"
+    },
+    "06-ambiente/preflight-mac/inputs-before.sha256": {
+      "bytes": 12929,
+      "sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6"
+    },
+    "06-ambiente/preflight-mac/run.json": {
+      "bytes": 3697,
+      "sha256": "8b475dc88206691a00ea2082539797023d5c3ab6b51299aa22d6cd8e419b5a62"
+    },
+    "06-ambiente/preflight-mac/run.log": {
+      "bytes": 886,
+      "sha256": "241676773ddc573d395b60eadad39c3ad72a7c5cef0c01c3ae265c01c10e55ef"
+    },
+    "06-ambiente/preflight-mac/tracked-files.txt": {
+      "bytes": 3821,
+      "sha256": "1727536e5ed1e98644fac68251bc948aa90c011733ab13c1d516a030a849a7a6"
+    },
+    "07-apresentacoes/APRESENTACAO.html": {
+      "bytes": 10095,
+      "sha256": "ac33392c22f4b88129c14c6eaa561d41ace2b9ff589565cb062aec7636fbadc2"
+    },
+    "07-apresentacoes/BRIEFING.md": {
+      "bytes": 2188,
+      "sha256": "5770d9abddcd62f8f98d7ec0d7aa9e160336d8fff8ebacde1b52424d598e0946"
+    },
+    "07-apresentacoes/registros-originais/APRESENTACAO-INE410159-2026-10-13.html": {
+      "bytes": 9740,
+      "sha256": "b7b72c3e0253a54a6c670e243c86044396bb599d6ece9034b04059ffc9341b5d"
+    },
+    "07-apresentacoes/registros-originais/LEIA-ME-ENTREGA.md": {
+      "bytes": 1803,
+      "sha256": "85ea10dd88ea159a2dbd94016dcbde4adc51bfc27701fd9b6f2c068ded25d232"
+    },
+    "07-apresentacoes/registros-originais/RESULTADOS-INE410159-2026-10-13.md": {
+      "bytes": 12927,
+      "sha256": "62a957a6323fd3652a96d2c95672a10b793a3dbb20bdd2a1e01bd732243738d7"
+    },
+    "AGENTS.md": {
+      "bytes": 1829,
+      "sha256": "ac5cc1872f0fe7d882ce89e0bd7e46a7a506b8959cb66f4fe599b7ca07f1571a"
+    },
+    "COMO-ABRIR.txt": {
+      "bytes": 208,
+      "sha256": "932b9c5995fb569d04f0213f1c73230fa16cb99c80c3188bdc5fa8a002e66838"
+    },
+    "README.md": {
+      "bytes": 4648,
+      "sha256": "6f7756f3617b736dc9b8b0587634aa2afbeff3674b292c1609d9bca1431394ae"
+    },
+    "legal-visual-argumentation/.gitignore": {
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd"
+    },
+    "legal-visual-argumentation/README.md": {
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113"
+    },
+    "legal-visual-argumentation/docs/apresentacao.md": {
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831"
+    },
+    "legal-visual-argumentation/docs/auditoria.md": {
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3"
+    },
+    "legal-visual-argumentation/docs/correcoes.md": {
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca"
+    },
+    "legal-visual-argumentation/docs/notion-edits.json": {
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f"
+    },
+    "legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md": {
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a"
+    },
+    "legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md": {
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5"
+    },
+    "legal-visual-argumentation/docs/validacao.md": {
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267"
+    },
+    "legal-visual-argumentation/docs/verificacao.md": {
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d"
+    },
+    "legal-visual-argumentation/schemes/catalog.json": {
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b"
+    },
+    "legal-visual-argumentation/schemes/profiles.json": {
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154"
+    },
+    "legal-visual-argumentation/scripts/check_package.py": {
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd"
+    },
+    "legal-visual-argumentation/sources/manifest.json": {
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e"
+    },
+    "legal-visual-argumentation/tests/acceptance-cases.json": {
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104"
+    }
+  }
+}

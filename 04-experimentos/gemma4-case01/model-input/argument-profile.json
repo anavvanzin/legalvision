@@ -1,0 +1,79 @@
+{
+  "status": "proposed_not_implemented",
+  "version": "0.1",
+  "scheme": {
+    "id": "verbal_classification",
+    "source_scheme_number": 3,
+    "predicates": {
+      "classified_as": [
+        "entity",
+        "category"
+      ],
+      "classification_warrant": [
+        "category",
+        "property"
+      ],
+      "has_property": [
+        "entity",
+        "property"
+      ]
+    },
+    "premises": [
+      {
+        "predicate": "classified_as",
+        "args": [
+          "A",
+          "C"
+        ],
+        "role": "ordinary",
+        "allowed_source": [
+          "image",
+          "context"
+        ]
+      },
+      {
+        "predicate": "classification_warrant",
+        "args": [
+          "C",
+          "F"
+        ],
+        "role": "ordinary",
+        "allowed_source": [
+          "provided_rule"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "has_property",
+      "args": [
+        "A",
+        "F"
+      ],
+      "modality": "defeasible"
+    },
+    "critical_questions": [
+      {
+        "id": "CQ1",
+        "target": [
+          "A",
+          "F"
+        ],
+        "question": "Grounded doubt about property F in A?"
+      },
+      {
+        "id": "CQ2",
+        "target": [
+          "A",
+          "C"
+        ],
+        "question": "Weak or disputed classification of A as C?"
+      }
+    ],
+    "cq_states": [
+      "resolved_no_defeater",
+      "defeater_established",
+      "unknown",
+      "not_applicable_justified"
+    ]
+  }
+}

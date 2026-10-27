@@ -1,0 +1,28 @@
+{
+  "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "checks": [
+    {
+      "name": "validation-dry-run",
+      "argv": [
+        "python3",
+        "https://github.com/GuiT2002/comma2026-multimodal-argumentation/blob/d374ac21ca0645c4a49e8ad719a1845afe8754f7/validation.py",
+        "--dry-run"
+      ],
+      "cwd": "local-workspace:preparation/reference-audit",
+      "exit_code": 0,
+      "stdout": "repo-path:05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stdout.txt",
+      "stderr": "repo-path:05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stderr.txt"
+    },
+    {
+      "name": "statistics",
+      "argv": [
+        "python3",
+        "https://github.com/GuiT2002/comma2026-multimodal-argumentation/blob/d374ac21ca0645c4a49e8ad719a1845afe8754f7/statistics.py"
+      ],
+      "cwd": "local-workspace:preparation/reference-audit",
+      "exit_code": 0,
+      "stdout": "repo-path:05-resultados/baseline-meteorologico-guilherme/statistics.stdout.txt",
+      "stderr": "repo-path:05-resultados/baseline-meteorologico-guilherme/statistics.stderr.txt"
+    }
+  ]
+}

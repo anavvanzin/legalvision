@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explicador interativo — Visão Computacional</title>
+  <style>
+    :root{
+      --text:#2C2C2B;--muted:#7D7A75;--canvas:#FFFFFF;--soft:#F9F8F7;--surface:#F0EFED;--border:#E6E5E3;
+      --blue:#2783DE;--blue-soft:#E5F2FC;--green:#46A171;--green-soft:#E8F1EC;--orange:#D5803B;--orange-soft:#FBEBDE;--red:#E56458;--red-soft:#FCE9E7;
+      --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fff 0%,#f7f8fb 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.5}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px 28px 36px}
+    header{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-bottom:24px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--soft);color:var(--muted);font-size:14px;font-weight:650}
+    h1{font-size:clamp(30px,4.6vw,54px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 14px;max-width:760px}
+    .lead{font-size:18px;color:var(--muted);max-width:680px;margin:0 0 18px}.lead b{color:var(--text)}
+    .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{padding:8px 11px;border:1px solid var(--border);border-radius:10px;background:#fff;font-size:14px;color:#4f4d49}
+    .hero-card{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:18px;position:relative;overflow:hidden;min-height:310px}
+    .lens{position:absolute;right:22px;top:20px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff 0 8%,#e6f2fc 9% 32%,#2783de 33% 36%,#1e1e1e 37% 42%,#7ab7f0 43% 62%,#174f87 63% 100%);opacity:.9}
+    .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:138px;position:relative;z-index:1}.px{aspect-ratio:1;border-radius:5px;border:1px solid rgba(0,0,0,.05);transition:.25s transform,.25s opacity}.px:hover{transform:scale(1.08)}
+    .hero-note{margin-top:15px;border-left:4px solid var(--blue);padding:10px 12px;background:var(--blue-soft);border-radius:8px;color:#24506f;font-size:14px}
+    .section{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin:18px 0}h2{margin:0 0 6px;font-size:25px;letter-spacing:-.02em}.sub{margin:0 0 18px;color:var(--muted)}
+    .pipeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--border);border-radius:14px;padding:14px;min-height:132px;background:var(--soft);cursor:pointer;transition:.18s ease;position:relative}.step:hover,.step.active{transform:translateY(-2px);border-color:#b8d8f5;background:#fff;box-shadow:0 6px 18px rgba(39,131,222,.12)}.num{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:800;margin-bottom:10px}.step strong{display:block;font-size:16px;margin-bottom:6px}.step span{color:var(--muted);font-size:14px}.detail{margin-top:14px;padding:14px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(90deg,var(--blue-soft),#fff)}
+    .lab{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.panel{border:1px solid var(--border);border-radius:16px;background:var(--soft);padding:16px}.canvasbox{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px}canvas{width:100%;height:auto;display:block;border-radius:8px}.control{margin-top:14px}.control label{font-weight:700;display:flex;justify-content:space-between;gap:12px}.control input{width:100%;margin-top:10px;accent-color:var(--blue)}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;font-size:14px;color:var(--muted)}.sw{width:14px;height:14px;border-radius:4px;display:inline-block;vertical-align:-2px;margin-right:5px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tab{border:1px solid var(--border);background:#fff;border-radius:10px;padding:10px 12px;cursor:pointer;font-weight:700;color:#555}.tab.active{background:var(--blue);border-color:var(--blue);color:#fff}.concept-card{min-height:178px;border:1px solid var(--border);border-radius:14px;background:#fff;padding:18px}.concept-card h3{margin:0 0 8px}.concept-card p{margin:0;color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{background:var(--orange-soft);color:#7e461b;border:1px solid #f3d7bf;border-radius:10px;padding:7px 9px;font-size:14px}
+    .quiz{display:grid;grid-template-columns:1fr 1fr;gap:16px}.q{border:1px solid var(--border);border-radius:16px;background:var(--soft);padding:16px}.q h3{margin:0 0 12px;font-size:17px}.choices{display:grid;gap:8px}.choice{min-height:44px;text-align:left;border:1px solid var(--border);background:#fff;border-radius:12px;padding:10px 12px;cursor:pointer;color:var(--text)}.choice:hover{border-color:#9bc8ee}.choice.correct{border-color:var(--green);background:var(--green-soft)}.choice.wrong{border-color:var(--red);background:var(--red-soft)}.feedback{min-height:44px;margin-top:10px;color:var(--muted);font-size:14px}.score{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;padding:12px;border-radius:14px;background:#fff;border:1px solid var(--border)}.reset{background:var(--text);color:#fff;border:0;border-radius:10px;min-height:44px;padding:0 14px;cursor:pointer;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mini{border:1px solid var(--border);border-radius:16px;background:#fff;padding:16px}.mini b{display:block;margin-bottom:7px}.mini p{margin:0;color:var(--muted);font-size:14px}.icon{font-size:28px;margin-bottom:8px}.final{background:linear-gradient(135deg,#202b3a,#284866);color:#fff}.final .sub{color:rgba(255,255,255,.75)}.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.formula div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px}.formula b{display:block;color:#fff}.formula span{font-size:13px;color:rgba(255,255,255,.75)}
+    @media (max-width:860px){header,.lab,.quiz{grid-template-columns:1fr}.pipeline{grid-template-columns:1fr 1fr}.cards,.formula{grid-template-columns:1fr}.wrap{padding:20px}.grid{margin-top:120px}}
+    @media (max-width:520px){.pipeline{grid-template-columns:1fr}.hero-card{min-height:280px}.lens{width:120px;height:120px}.grid{margin-top:110px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <div class="eyebrow">👁️ Visão Computacional · aula + pesquisa</div>
+        <h1>Como uma imagem vira uma decisão reprodutível?</h1>
+        <p class="lead">A ideia central da página é usar <b>visão computacional</b> como método: transformar pixels em características, comparar essas características com métricas, validar resultados e documentar tudo para que outra pessoa consiga repetir.</p>
+        <div class="pillrow"><span class="pill">pixels → características</span><span class="pill">métricas → decisão</span><span class="pill">baseline → comparação</span><span class="pill">apêndice reprodutível</span></div>
+      </div>
+      <div class="hero-card" aria-label="Ilustração abstrata de pixels e lente">
+        <div class="lens"></div><div class="grid" id="pixelGrid"></div>
+        <div class="hero-note"><b>Metáfora:</b> o algoritmo é uma lente disciplinada. Ele não “vê” como humanos; ele calcula padrões que precisam ser explicados e testados.</div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>O fluxo mental da disciplina</h2>
+      <p class="sub">Clique nas etapas para ver o papel de cada uma no projeto.</p>
+      <div class="pipeline" id="pipeline">
+        <div class="step active" data-detail="Defina exatamente qual imagem, recorte ou snapshot analítico será analisado. Sem dataset claro, o resultado não é verificável."><div class="num">1</div><strong>Dataset</strong><span>o que entra no método</span></div>
+        <div class="step" data-detail="Escolha sinais observáveis: cor, textura, forma, bordas ou embeddings. Aqui a imagem deixa de ser apenas visual e vira dado."><div class="num">2</div><strong>Características</strong><span>como representar pixels</span></div>
+        <div class="step" data-detail="Use uma regra de comparação: distância euclidiana, Manhattan, cosseno, Jaccard etc. A métrica decide o que conta como parecido."><div class="num">3</div><strong>Métrica</strong><span>como comparar</span></div>
+        <div class="step" data-detail="Construa uma referência simples — por exemplo, um threshold — para saber se o método novo realmente melhora algo."><div class="num">4</div><strong>Baseline</strong><span>o ponto de partida</span></div>
+        <div class="step" data-detail="Registre parâmetros, código, checkpoints e resultados. A saída boa não é só um pôster: é um caminho repetível."><div class="num">5</div><strong>Reprodutibilidade</strong><span>como confiar no resultado</span></div>
+      </div>
+      <div class="detail" id="detail"><b>Dataset:</b> Defina exatamente qual imagem, recorte ou snapshot analítico será analisado. Sem dataset claro, o resultado não é verificável.</div>
+    </section>
+
+    <section class="section">
+      <h2>Laboratório visual: limiarização</h2>
+      <p class="sub">Ajuste o limiar. Você verá como uma regra simples separa “objeto” e “fundo” — e por que iluminação e cor podem enganar.</p>
+      <div class="lab">
+        <div class="panel">
+          <div class="canvasbox"><canvas id="scene" width="520" height="320" aria-label="Cena sintética colorida"></canvas></div>
+          <div class="legend"><span><i class="sw" style="background:#d25b46"></i>objeto-alvo</span><span><i class="sw" style="background:#f4c15d"></i>luz/saturação</span><span><i class="sw" style="background:#6b83a0"></i>fundo</span></div>
+        </div>
+        <div class="panel">
+          <div class="canvasbox"><canvas id="mask" width="520" height="320" aria-label="Máscara gerada por threshold"></canvas></div>
+          <div class="control"><label for="threshold">Limiar de similaridade <span id="tval">72</span></label><input id="threshold" type="range" min="18" max="150" value="72" /></div>
+          <p class="sub" style="margin-top:12px">Quanto maior o limiar, mais pixels entram na classe. Isso ajuda a capturar variação, mas também aumenta falsos positivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Três ideias que aparecem por trás da técnica</h2>
+      <p class="sub">Troque de cartão para ligar a aula ao projeto de pesquisa.</p>
+      <div class="tabs"><button class="tab active" data-card="color">Espaços de cor</button><button class="tab" data-card="texture">Texturas</button><button class="tab" data-card="arg">Imagem como premissa</button></div>
+      <div class="concept-card" id="conceptCard"></div>
+    </section>
+
+    <section class="section">
+      <h2>Questionário rápido</h2>
+      <p class="sub">Teste se o conceito ficou claro.</p>
+      <div class="quiz" id="quiz">
+        <div class="q" data-answer="b"><h3>1. Por que definir um baseline?</h3><div class="choices"><button class="choice" data-choice="a">Para deixar o pôster mais bonito.</button><button class="choice" data-choice="b">Para comparar o método novo com uma referência simples.</button><button class="choice" data-choice="c">Para evitar escolher métricas.</button></div><div class="feedback"></div></div>
+        <div class="q" data-answer="a"><h3>2. O que uma métrica faz?</h3><div class="choices"><button class="choice" data-choice="a">Define como medir similaridade ou diferença.</button><button class="choice" data-choice="b">Substitui a necessidade de dataset.</button><button class="choice" data-choice="c">Transforma qualquer imagem em verdade jurídica.</button></div><div class="feedback"></div></div>
+        <div class="q" data-answer="c"><h3>3. Qual é o risco de um threshold simples?</h3><div class="choices"><button class="choice" data-choice="a">Ele nunca produz falsos positivos.</button><button class="choice" data-choice="b">Ele dispensa validação humana.</button><button class="choice" data-choice="c">Ele pode ser sensível à iluminação e saturação.</button></div><div class="feedback"></div></div>
+        <div class="q" data-answer="b"><h3>4. O que torna o projeto reprodutível?</h3><div class="choices"><button class="choice" data-choice="a">Usar apenas imagens bonitas.</button><button class="choice" data-choice="b">Registrar dados, parâmetros, código e resultados.</button><button class="choice" data-choice="c">Evitar explicar decisões técnicas.</button></div><div class="feedback"></div></div>
+      </div>
+      <div class="score"><b id="scoreText">Pontuação: 0/4</b><button class="reset" id="reset">Recomeçar</button></div>
+    </section>
+
+    <section class="section final">
+      <h2>Resumo em uma frase</h2>
+      <p class="sub">Visão computacional, nesta página, é uma disciplina de tradução: converter imagens em evidências calculáveis, avaliáveis e reprodutíveis.</p>
+      <div class="formula"><div><b>Imagem</b><span>pixels, cor, textura</span></div><div><b>Regra</b><span>métrica ou modelo</span></div><div><b>Teste</b><span>baseline + validação</span></div><div><b>Registro</b><span>método que alguém repete</span></div></div>
+    </section>
+  </main>
+<script>
+const grid=document.getElementById('pixelGrid');const colors=['#2783DE','#5E9FE8','#E5F2FC','#46A171','#E8F1EC','#D5803B','#FBEBDE','#F0EFED','#7D7A75'];for(let i=0;i<49;i++){const d=document.createElement('div');d.className='px';d.style.background=colors[(i*7+i%5)%colors.length];d.style.opacity=.55+(i%7)/14;grid.appendChild(d)}
+const detail=document.getElementById('detail');document.querySelectorAll('.step').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.step').forEach(x=>x.classList.remove('active'));s.classList.add('active');detail.innerHTML='<b>'+s.querySelector('strong').textContent+':</b> '+s.dataset.detail;}));
+const scene=document.getElementById('scene'),mask=document.getElementById('mask'),sc=scene.getContext('2d'),mc=mask.getContext('2d'),thr=document.getElementById('threshold'),tval=document.getElementById('tval');function draw(){const w=scene.width,h=scene.height;let g=sc.createLinearGradient(0,0,w,h);g.addColorStop(0,'#50657e');g.addColorStop(.55,'#8aa0b7');g.addColorStop(1,'#f4c15d');sc.fillStyle=g;sc.fillRect(0,0,w,h);sc.fillStyle='#394b5d';sc.beginPath();sc.moveTo(0,230);sc.quadraticCurveTo(170,160,330,232);sc.quadraticCurveTo(420,272,520,218);sc.lineTo(520,320);sc.lineTo(0,320);sc.closePath();sc.fill();sc.fillStyle='#d25b46';sc.beginPath();sc.ellipse(250,164,76,58,-.15,0,Math.PI*2);sc.fill();sc.fillStyle='rgba(255,255,255,.55)';sc.beginPath();sc.ellipse(222,136,22,12,-.5,0,Math.PI*2);sc.fill();sc.strokeStyle='rgba(255,255,255,.55)';sc.lineWidth=3;for(let i=0;i<5;i++){sc.beginPath();sc.arc(420,76,28+i*18,.2,1.5);sc.stroke()}drawMask()}function drawMask(){const w=scene.width,h=scene.height,img=sc.getImageData(0,0,w,h),out=mc.createImageData(w,h),T=+thr.value;tval.textContent=T;for(let i=0;i<img.data.length;i+=4){let r=img.data[i],g=img.data[i+1],b=img.data[i+2];let dist=Math.sqrt((r-210)**2+(g-91)**2+(b-70)**2);let on=dist<T;out.data[i]=on?39:240;out.data[i+1]=on?131:239;out.data[i+2]=on?222:237;out.data[i+3]=255;}mc.putImageData(out,0,0);mc.fillStyle='rgba(44,44,43,.82)';mc.font='700 16px system-ui';mc.fillText('Máscara: pixels parecidos com o alvo',18,30)}thr.addEventListener('input',drawMask);draw();
+const concepts={color:['Espaços de cor','RGB é intuitivo, mas mistura cor e iluminação. HSV/HSI/HSL ajudam quando a luz atrapalha a separação do objeto.',['RGB','HSV','iluminação','saturação']],texture:['Texturas','Filtros como Gabor capturam padrões repetitivos: folhas, superfícies, tecidos, ruído. A textura vira mais uma dimensão do vetor de características.',['Gabor','kernels','ângulos','repetitividade']],arg:['Imagem como premissa','No diálogo com argumentação computacional, uma imagem pode fornecer uma premissa que faltava: por exemplo, altura, presença, forma ou condição visual de algo.',['evidência visual','premissa','rastreabilidade','domínio jurídico']]};const card=document.getElementById('conceptCard');function setCard(k){let c=concepts[k];card.innerHTML='<h3>'+c[0]+'</h3><p>'+c[1]+'</p><div class="chips">'+c[2].map(x=>'<span class="chip">'+x+'</span>').join('')+'</div>'}setCard('color');document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');setCard(t.dataset.card)}));
+const answered=new Map();function updateScore(){let score=0;answered.forEach(v=>{if(v)score++});document.getElementById('scoreText').textContent='Pontuação: '+score+'/4'}document.querySelectorAll('.q').forEach((q,idx)=>{q.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{q.querySelectorAll('.choice').forEach(b=>{b.classList.remove('correct','wrong');b.disabled=true});let ok=btn.dataset.choice===q.dataset.answer;btn.classList.add(ok?'correct':'wrong');if(!ok){q.querySelector('[data-choice="'+q.dataset.answer+'"]').classList.add('correct')}q.querySelector('.feedback').textContent=ok?'Correto — essa é a lógica metodológica.':'Quase. Observe a alternativa destacada: ela preserva a ideia de método verificável.';answered.set(idx,ok);updateScore()}))});document.getElementById('reset').addEventListener('click',()=>{answered.clear();document.querySelectorAll('.choice').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong')});document.querySelectorAll('.feedback').forEach(f=>f.textContent='');updateScore()});
+</script>
+</body>
+</html>

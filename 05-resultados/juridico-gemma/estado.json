@@ -1,0 +1,11 @@
+{
+  "project": "INE410159 legal visual argumentation",
+  "case_id": "CASE01",
+  "status": "paused_not_executed",
+  "candidate_model_runs": 0,
+  "new_legal_model_metrics": null,
+  "reference_status": "assistant_provisional_human_review_pending",
+  "actual_result_templates": "../../04-experimentos/gemma4-case01/evaluator-only/results",
+  "AI_Studio_errors": "setup_only_not_model_metrics",
+  "recorded_at_utc": "2026-10-13T14:28:24.626773+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "source": "repo-root:..zip",
+  "bytes": 48669,
+  "sha256": "fc439d543eb0e50a2e94f460c3c9d72d8b03dbac44af19131d02a922ddf8c006",
+  "corrupt_member": null,
+  "member_count": 17,
+  "members": [
+    "legal-visual-argumentation/.gitignore",
+    "legal-visual-argumentation/README.md",
+    "legal-visual-argumentation/docs/apresentacao.md",
+    "legal-visual-argumentation/docs/auditoria.md",
+    "legal-visual-argumentation/docs/correcoes.md",
+    "legal-visual-argumentation/docs/notion-edits.json",
+    "legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md",
+    "legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md",
+    "legal-visual-argumentation/docs/validacao.md",
+    "legal-visual-argumentation/docs/verificacao.md",
+    "legal-visual-argumentation/schemes/catalog.json",
+    "legal-visual-argumentation/schemes/profiles.json",
+    "legal-visual-argumentation/scripts/check_package.py",
+    "legal-visual-argumentation/sources/manifest.json",
+    "legal-visual-argumentation/tests/acceptance-cases.json",
+    "legal-visual-argumentation.bundle",
+    "COMO-ABRIR.txt"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "summary":  "Plano de implementacao para integrar os formularios processuais federais AO 399, AO 440 e AO 441 como casos juridicos formais (Classificacao Verbal e Regra Estabelecida para prazos de 21, 60 e 90 dias), com persistencia de revisoes e adjudicacoes humanas no Firebase Firestore, busca fundamentada (Google Search Grounding via gemini-3.8-flash) para regras processuais FRCP 4 e 12, e explorador de literatura academica via OpenAlex.",
+  "updatedAt":  "2026-10-25T05:26:18.306059573Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

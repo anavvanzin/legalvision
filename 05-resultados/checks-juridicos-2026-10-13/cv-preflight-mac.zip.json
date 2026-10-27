@@ -1,0 +1,11 @@
+{
+  "source": "local-source:omitted-host-path",
+  "bytes": 7838,
+  "sha256": "9b33b816e854001444b2e81767681d176869249c329fa53cf59c9a22f0895824",
+  "corrupt_member": null,
+  "member_count": 2,
+  "members": [
+    "LEIA-ME.md",
+    "check_cv.py"
+  ]
+}

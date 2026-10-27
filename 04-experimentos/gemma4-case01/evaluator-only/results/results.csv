@@ -1,0 +1,1 @@
+run_id,case_id,condition,platform,model_id,model_version,timestamp_utc,schema_status,binding_status,evidence_policy,Q1_reference_match,Q2_reference_match,Q3_reference_match,classification_reference_match,abstention_review,raw_output_path,raw_output_sha256,reference_human_review,notes

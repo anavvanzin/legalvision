@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-12",
+  "schemes": [
+    {
+      "number": 1,
+      "id": "analogy_v1",
+      "title": "Argument from Analogy (version 1)",
+      "visual_role": "auxiliary",
+      "categories": [
+        "A",
+        "L"
+      ],
+      "action": "Preserved; declare polarity and legally relevant similarity",
+      "evidence": "R1 p.142",
+      "executable": false
+    },
+    {
+      "number": 2,
+      "id": "analogy_v2",
+      "title": "Argument from Analogy (version 2)",
+      "visual_role": "auxiliary",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "Preserved; relevance premise is not independently represented",
+      "evidence": "Internal comparison; exact source unresolved",
+      "executable": false
+    },
+    {
+      "number": 3,
+      "id": "verbal_classification",
+      "title": "Defeasible Argument from a Verbal Classification",
+      "visual_role": "pilot",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "Defeasible wording corrected; predicate semantics and CQ2 signature preserved pending contract",
+      "evidence": "R1 p.140, related variant",
+      "executable": false
+    },
+    {
+      "number": 4,
+      "id": "established_rule",
+      "title": "Argument from an Established Rule",
+      "visual_role": "secondary",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "Duplicate CQ2 corrected to CQ3; deontic and scope issues annotated",
+      "evidence": "Internal CQ table; R1 section 4 is related",
+      "executable": false
+    },
+    {
+      "number": 5,
+      "id": "exceptional_case",
+      "title": "Argument from an Exceptional Case",
+      "visual_role": "secondary",
+      "categories": [
+        "A",
+        "L"
+      ],
+      "action": "Preserved; conditional CQs and evidence binding need explicit policy",
+      "evidence": "Internal comparison; R1/R2 exception semantics",
+      "executable": false
+    },
+    {
+      "number": 6,
+      "id": "witness_testimony",
+      "title": "Argument from Witness Testimony",
+      "visual_role": "pilot",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "Title/table completed; adapted rule preserved; five CQs require separate coverage",
+      "evidence": "R1 pp.143-144; R3 p.256",
+      "executable": false
+    },
+    {
+      "number": 7,
+      "id": "ad_populum",
+      "title": "Position-to-know Ad Populum Argument",
+      "visual_role": "exclude_initial",
+      "categories": [
+        "A",
+        "L"
+      ],
+      "action": "Preserved; universal quantification and source unresolved",
+      "evidence": "Internal comparison only",
+      "executable": false
+    },
+    {
+      "number": 8,
+      "id": "counterexample",
+      "title": "Counterexample Scheme",
+      "visual_role": "exclude_initial",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "Directional natural language clarified; fixed current-case context documented",
+      "evidence": "R1 p.142; R2 section 5",
+      "executable": false
+    },
+    {
+      "number": 9,
+      "id": "precedent_preference",
+      "title": "Preference from Precedent Scheme",
+      "visual_role": "exclude_initial",
+      "categories": [
+        "T",
+        "L"
+      ],
+      "action": "Positive counterexample replaced by existential exception; conclusion favors party",
+      "evidence": "R1 p.142",
+      "executable": false
+    },
+    {
+      "number": 10,
+      "id": "factor_comparison",
+      "title": "Factor Comparison Scheme",
+      "visual_role": "exclude_initial",
+      "categories": [
+        "T",
+        "A",
+        "L"
+      ],
+      "action": "defendant spelling corrected; issue binding and compound party terms annotated",
+      "evidence": "R1 p.142",
+      "executable": false
+    }
+  ]
+}

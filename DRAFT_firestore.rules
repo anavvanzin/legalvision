@@ -1,0 +1,201 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net (Default Deny)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Primitive Helpers
+    function isSignedIn() {
+      return request.auth != null && request.auth.token.email_verified == true;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Validation Blueprint: Adjudication
+    function isValidAdjudication(data) {
+      return data.keys().hasAll([
+        'caseId',
+        'schemeId',
+        'targetId',
+        'decision',
+        'deadlineConclusion',
+        'notes',
+        'reviewerUid',
+        'reviewerName',
+        'createdAt',
+        'updatedAt'
+      ]) &&
+      data.keys().hasOnly([
+        'caseId',
+        'schemeId',
+        'targetId',
+        'decision',
+        'deadlineConclusion',
+        'notes',
+        'reviewerUid',
+        'reviewerName',
+        'createdAt',
+        'updatedAt'
+      ]) &&
+      data.caseId is string && data.caseId.size() >= 2 && data.caseId.size() <= 64 && data.caseId.matches('^[a-zA-Z0-9_:\\-]+$') &&
+      data.schemeId is string && data.schemeId.size() <= 40 && (
+        data.schemeId == 'verbal_classification' ||
+        data.schemeId == 'established_rule' ||
+        data.schemeId == 'witness_testimony' ||
+        data.schemeId == 'grounding_comma'
+      ) &&
+      data.targetId is string && data.targetId.size() >= 1 && data.targetId.size() <= 120 && data.targetId.matches('^[a-zA-Z0-9_:\\-.]+$') &&
+      data.decision is string && data.decision.size() <= 32 && (
+        data.decision == 'human_verified' ||
+        data.decision == 'disputed' ||
+        data.decision == 'draft'
+      ) &&
+      data.deadlineConclusion is string && data.deadlineConclusion.size() >= 1 && data.deadlineConclusion.size() <= 80 &&
+      data.notes is string && data.notes.size() >= 3 && data.notes.size() <= 1500 &&
+      data.reviewerUid is string && data.reviewerUid.size() >= 1 && data.reviewerUid.size() <= 128 && data.reviewerUid == request.auth.uid &&
+      data.reviewerName is string && data.reviewerName.size() >= 1 && data.reviewerName.size() <= 120 &&
+      data.createdAt is timestamp &&
+      data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: SavedWork
+    function isValidSavedWork(data) {
+      return data.keys().hasAll([
+        'openalexId',
+        'title',
+        'authorsSummary',
+        'publicationYear',
+        'citedByCount',
+        'doiUrl',
+        'caseTag',
+        'ownerUid',
+        'createdAt'
+      ]) &&
+      data.keys().hasOnly([
+        'openalexId',
+        'title',
+        'authorsSummary',
+        'publicationYear',
+        'citedByCount',
+        'doiUrl',
+        'caseTag',
+        'ownerUid',
+        'createdAt'
+      ]) &&
+      data.openalexId is string && data.openalexId.size() >= 2 && data.openalexId.size() <= 64 && data.openalexId.matches('^[a-zA-Z0-9_\\-]+$') &&
+      data.title is string && data.title.size() >= 2 && data.title.size() <= 500 &&
+      data.authorsSummary is string && data.authorsSummary.size() >= 1 && data.authorsSummary.size() <= 300 &&
+      data.publicationYear is int && data.publicationYear >= 1800 && data.publicationYear <= 2100 &&
+      data.citedByCount is int && data.citedByCount >= 0 &&
+      data.doiUrl is string && data.doiUrl.size() <= 400 &&
+      data.caseTag is string && data.caseTag.size() >= 2 && data.caseTag.size() <= 64 &&
+      data.ownerUid is string && data.ownerUid.size() >= 1 && data.ownerUid.size() <= 128 && data.ownerUid == request.auth.uid &&
+      data.createdAt is timestamp;
+    }
+
+    // Validation Blueprint: IconocraciaCatalogEntry
+    function isValidIconocraciaCatalogEntry(data) {
+      return data.keys().hasAll([
+        'itemCode',
+        'title',
+        'supportType',
+        'chronologyYear',
+        'scopeClassification',
+        'provenanceArchive',
+        'visualAttributes',
+        'normalizedBox',
+        'stateMeaningProduced',
+        'silenceAndLimits',
+        'driveFileId',
+        'ownerUid',
+        'createdAt'
+      ]) &&
+      data.keys().hasOnly([
+        'itemCode',
+        'title',
+        'supportType',
+        'chronologyYear',
+        'scopeClassification',
+        'provenanceArchive',
+        'visualAttributes',
+        'normalizedBox',
+        'stateMeaningProduced',
+        'silenceAndLimits',
+        'driveFileId',
+        'ownerUid',
+        'createdAt'
+      ]) &&
+      data.itemCode is string && data.itemCode.size() >= 2 && data.itemCode.size() <= 64 && data.itemCode.matches('^[a-zA-Z0-9_:\\-]+$') &&
+      data.title is string && data.title.size() >= 3 && data.title.size() <= 200 &&
+      data.supportType is string && data.supportType.size() <= 32 && (
+        data.supportType == 'moeda' ||
+        data.supportType == 'selo' ||
+        data.supportType == 'brasao' ||
+        data.supportType == 'monumento' ||
+        data.supportType == 'arquitetura_forense' ||
+        data.supportType == 'paratexto_normativo'
+      ) &&
+      data.chronologyYear is int && data.chronologyYear >= 1500 && data.chronologyYear <= 2100 &&
+      data.scopeClassification is string && data.scopeClassification.size() <= 32 && (
+        data.scopeClassification == 'corpus_core' ||
+        data.scopeClassification == 'comparador_apendice'
+      ) &&
+      data.provenanceArchive is string && data.provenanceArchive.size() >= 3 && data.provenanceArchive.size() <= 300 &&
+      data.visualAttributes is list && data.visualAttributes.size() >= 1 && data.visualAttributes.size() <= 12 &&
+      data.visualAttributes[0] is string && data.visualAttributes[0].size() >= 1 && data.visualAttributes[0].size() <= 100 &&
+      data.normalizedBox is string && data.normalizedBox.size() >= 3 && data.normalizedBox.size() <= 80 &&
+      data.stateMeaningProduced is string && data.stateMeaningProduced.size() >= 5 && data.stateMeaningProduced.size() <= 1200 &&
+      data.silenceAndLimits is string && data.silenceAndLimits.size() >= 5 && data.silenceAndLimits.size() <= 800 &&
+      data.driveFileId is string && data.driveFileId.size() <= 128 &&
+      data.ownerUid is string && data.ownerUid.size() >= 1 && data.ownerUid.size() <= 128 && data.ownerUid == request.auth.uid &&
+      data.createdAt is timestamp;
+    }
+
+    match /adjudications/{adjudicationId} {
+      allow get: if isSignedIn() && isValidId(adjudicationId) && existing().reviewerUid == request.auth.uid;
+      allow list: if isSignedIn() && existing().reviewerUid == request.auth.uid;
+      allow create: if isSignedIn() && isValidId(adjudicationId) && isValidAdjudication(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time;
+      allow update: if isSignedIn() && isValidId(adjudicationId) && isValidAdjudication(incoming()) &&
+        existing().reviewerUid == request.auth.uid &&
+        incoming().reviewerUid == existing().reviewerUid &&
+        incoming().caseId == existing().caseId &&
+        incoming().createdAt == existing().createdAt &&
+        incoming().updatedAt == request.time &&
+        existing().decision != 'human_verified' &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['decision', 'deadlineConclusion', 'notes', 'updatedAt']);
+      allow delete: if isSignedIn() && isValidId(adjudicationId) && existing().reviewerUid == request.auth.uid;
+    }
+
+    match /savedWorks/{workId} {
+      allow get: if isSignedIn() && isValidId(workId) && existing().ownerUid == request.auth.uid;
+      allow list: if isSignedIn() && existing().ownerUid == request.auth.uid;
+      allow create: if isSignedIn() && isValidId(workId) && isValidSavedWork(incoming()) &&
+        incoming().createdAt == request.time;
+      allow update: if false;
+      allow delete: if isSignedIn() && isValidId(workId) && existing().ownerUid == request.auth.uid;
+    }
+
+    match /iconocraciaCatalog/{entryId} {
+      allow get: if isSignedIn() && isValidId(entryId) && existing().ownerUid == request.auth.uid;
+      allow list: if isSignedIn() && existing().ownerUid == request.auth.uid;
+      allow create: if isSignedIn() && isValidId(entryId) && isValidIconocraciaCatalogEntry(incoming()) &&
+        incoming().createdAt == request.time;
+      allow update: if false;
+      allow delete: if isSignedIn() && isValidId(entryId) && existing().ownerUid == request.auth.uid;
+    }
+  }
+}

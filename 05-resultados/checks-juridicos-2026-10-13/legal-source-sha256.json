@@ -1,0 +1,17 @@
+{
+  ".gitignore": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+  "README.md": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+  "docs/apresentacao.md": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+  "docs/auditoria.md": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+  "docs/correcoes.md": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+  "docs/notion-edits.json": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+  "docs/superpowers/plans/2026-10-12-piloto.md": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+  "docs/superpowers/specs/2026-10-12-piloto-design.md": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+  "docs/validacao.md": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+  "docs/verificacao.md": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+  "schemes/catalog.json": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+  "schemes/profiles.json": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+  "scripts/check_package.py": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+  "sources/manifest.json": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+  "tests/acceptance-cases.json": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104"
+}

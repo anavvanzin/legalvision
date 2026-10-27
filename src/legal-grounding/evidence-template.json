@@ -1,0 +1,19 @@
+{
+  "notice": "Template only; no generated model response. Duplicate per actual run. Do not give reference boxes to the generator.",
+  "case_id": "LEGAL01",
+  "condition": "all_inputs",
+  "model": "REPLACE_WITH_ACTUAL_MODEL",
+  "repeat": 1,
+  "model_output": "REPLACE_WITH_ACTUAL_FINAL_OUTPUT",
+  "evidence": [
+    {
+      "atom": "COPY_ACTUAL_GENERATED_ATOM",
+      "source": "image",
+      "page": 1,
+      "image_sha256": "27330e65eecdadadcf6cfd884fe2e3563d7c704dd3524d0dbbe960c5ffbd68b4",
+      "bbox": null
+    }
+  ],
+  "reviewer_id": null,
+  "review_status": "pending"
+}

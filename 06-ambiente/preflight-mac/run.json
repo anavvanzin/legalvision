@@ -1,0 +1,102 @@
+{
+  "captured_at_utc_start": "2026-10-13T09:46:17.295702+00:00",
+  "captured_at_utc_end": "2026-10-13T09:46:17.458465+00:00",
+  "source_repository": "https://github.com/GuiT2002/comma2026-multimodal-argumentation",
+  "source_commit": "d374ac21ca0645c4a49e8ad719a1845afe8754f7",
+  "isolation": "Local git archive of tracked files; no fetch/clone/network/installation; no source edits.",
+  "command": [
+    "python3",
+    "-I",
+    "-B",
+    "repo-path:06-ambiente/preflight-mac/check_cv.py",
+    "--repo",
+    "local-workspace:preparation/preflight/checkout"
+  ],
+  "cwd": "local-workspace:preparation/preflight",
+  "capture_python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "capture_python_executable": "python3",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "exit_code": 1,
+  "exit_bits": {
+    "installation": true,
+    "files": false,
+    "validation": false,
+    "dgx": false,
+    "unreviewed_version": false
+  },
+  "categories": [
+    {
+      "category": "INSTALAÇÃO",
+      "status": "INFO",
+      "message": "3.11.17; arm64; python3"
+    },
+    {
+      "category": "INSTALAÇÃO",
+      "status": "INFO",
+      "message": "venv ativo: False"
+    },
+    {
+      "category": "INSTALAÇÃO",
+      "status": "FALHA",
+      "message": "openai ausente (não bloqueia dry-run)."
+    },
+    {
+      "category": "INSTALAÇÃO",
+      "status": "FALHA",
+      "message": "anthropic ausente (não bloqueia dry-run)."
+    },
+    {
+      "category": "ARQUIVOS",
+      "status": "INFO",
+      "message": "class1: 64 casos; imagens verificadas por presença/assinatura, sem decodificação."
+    },
+    {
+      "category": "ARQUIVOS",
+      "status": "INFO",
+      "message": "class2: 15 casos; imagens verificadas por presença/assinatura, sem decodificação."
+    },
+    {
+      "category": "ARQUIVOS",
+      "status": "INFO",
+      "message": "class3: 11 casos; imagens verificadas por presença/assinatura, sem decodificação."
+    },
+    {
+      "category": "VALIDAÇÃO",
+      "status": "INFO",
+      "message": "Executando validation.py --dry-run; ambiente sem credenciais, rede/gravação bloqueadas."
+    },
+    {
+      "category": "VALIDAÇÃO",
+      "status": "OK",
+      "message": "Dry-run aprovado. Não atesta qualidade semântica, acesso DGX ou execução de modelos."
+    }
+  ],
+  "dry_run_counts": {
+    "validation_files": 24,
+    "evaluation_slots": 720,
+    "pending_slots": 0
+  },
+  "input_files_count": 138,
+  "input_bytes": 120461375,
+  "checkout_unchanged": true,
+  "png_files_count": 90,
+  "cases": {
+    "class1": 64,
+    "class2": 15,
+    "class3": 11
+  },
+  "artifact_sha256": {
+    "check_cv.py": "1e29fe63a1150e349a2e57f94884b3b1063a2576cb1535b2426ecebc8a5d6c9d",
+    "LEIA-ME.md": "a402d88732d82b97340cbe25f61abc9b3c16c65054567c597770d0caf753c9dc",
+    "cv-preflight-mac.zip": "9b33b816e854001444b2e81767681d176869249c329fa53cf59c9a22f0895824",
+    "tracked-snapshot.tar": "0f42a12cdb96ec06a10c2c676f914c35c7996146f17bc786f188d5a301d1d393",
+    "run.log": "31e514fb367830ce49f513341fb1a4a8c1eaf4ed7b149fb67702d712ce9b0dd2",
+    "inputs-before.sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+    "inputs-after.sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+    "tracked-files.txt": "1727536e5ed1e98644fac68251bc948aa90c011733ab13c1d516a030a849a7a6"
+  },
+  "validation_source_git_blob": "ec3de301f0090d628c5ed99d9bb07da655a1c21d",
+  "interpretation": "Software/data consistency preflight; no new model answers or semantic judgments; DGX untested.",
+  "case_count_method": "CSV parser, tab delimiter; quoted multiline records count as one case."
+}

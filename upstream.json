@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/GuiT2002/comma2026-multimodal-argumentation",
+  "commit": "d374ac21ca0645c4a49e8ad719a1845afe8754f7",
+  "files": {
+    "main.py": "c518063d3830a2a86b5626629e641e0f85d5de56404f18e9abc2fb0d05909153",
+    "validation.py": "c49b7a74cacd4695041b74c10a74ea183f2b1c56104fd245ee7c334affee973e",
+    "all_examples.txt": "7cfc4d28b6a7b9d6c737137354bbb89dc1c69085aed261e939ef5771d17f851c"
+  },
+  "license": "No repository license found; upstream code is not redistributed."
+}

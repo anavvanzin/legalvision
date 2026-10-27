@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-13T10:54:07.176595+00:00",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "candidate_runs": 0,
+  "suite_type": "synthetic_software_fixtures_only",
+  "command": "python3 -I -B + stdlib unittest loader of packaged tools/test_validate_candidate.py",
+  "passed": true,
+  "json_files_parse": true,
+  "draft2020_schema_syntax_parse": "passed; no external schema engine installed or called",
+  "empty_result_templates": true,
+  "model_input_leak_text_scan": true,
+  "metadata_sanitized": true,
+  "compressed_scan_identical": true,
+  "all_execution_plan_inputs_exist": true,
+  "reference_human_review": "pending",
+  "native_Google_runtime": "not_tested",
+  "software_check_scope": "Format, term binding and declared evidence policy only; no image semantics or legal validity."
+}

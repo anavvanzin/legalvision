@@ -1,0 +1,24 @@
+[
+  {
+    "zip": "RESULTADOS-INE410159-2026-10-13.zip",
+    "bytes": 85679,
+    "sha256": "ce9eb549c64c7f61818a0bde9bbd15f1884a8e49a08ef5f013cb9b126d4bf120",
+    "members": 45,
+    "uncompressed_bytes": 219512,
+    "unmapped": [],
+    "content_mismatches": [],
+    "comparison_root": ".",
+    "reading_only": true
+  },
+  {
+    "zip": "PACOTE-GOOGLE-GEMMA4-INE410159-2026-10-13.zip",
+    "bytes": 622865,
+    "sha256": "f34aa2314cbff3057c44d7e84e871e72ce91e83f10e092f47e634e3bb08a0579",
+    "members": 44,
+    "uncompressed_bytes": 718423,
+    "unmapped": [],
+    "content_mismatches": [],
+    "comparison_root": "google-gemma4-package-2026-10-13",
+    "reading_only": true
+  }
+]

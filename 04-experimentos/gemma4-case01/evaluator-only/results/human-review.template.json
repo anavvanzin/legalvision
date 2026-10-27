@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE01",
+  "status": "human_review_pending",
+  "reviewer": null,
+  "reviewed_at_utc": null,
+  "reference_file": "evaluator-only/reference/gold.json",
+  "reference_sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+  "items": {
+    "Q1": {
+      "accepted": null,
+      "correction": null,
+      "reason": null
+    },
+    "Q2": {
+      "accepted": null,
+      "correction": null,
+      "reason": null
+    },
+    "Q3": {
+      "accepted": null,
+      "correction": null,
+      "reason": null
+    },
+    "classification": {
+      "accepted": null,
+      "correction": null,
+      "reason": null
+    },
+    "regions": {
+      "accepted": null,
+      "correction": null,
+      "reason": null
+    }
+  },
+  "adjudication_notes": null
+}

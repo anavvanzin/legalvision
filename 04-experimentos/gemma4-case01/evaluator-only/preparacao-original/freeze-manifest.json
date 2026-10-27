@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-10-13T10:45:09.201454Z",
+  "case_id": "CASE01",
+  "files": {
+    "stimulus/case01.jpg": {
+      "sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+      "bytes": 278383
+    },
+    "reference/source.json": {
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5",
+      "bytes": 3083
+    },
+    "reference/gold.json": {
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+      "bytes": 8374
+    },
+    "reference/source-page.html": {
+      "sha256": "80ba40f679e59a079d301d4776a79b069f7af99429c8929f2bce21116c0c0a83",
+      "bytes": 153699
+    },
+    "reference/pre-registration.json": {
+      "sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3",
+      "bytes": 4163
+    }
+  }
+}

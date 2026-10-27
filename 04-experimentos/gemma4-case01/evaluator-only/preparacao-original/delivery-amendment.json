@@ -1,0 +1,19 @@
+{
+  "schema_version": "reference_delivery_amendment_v1",
+  "case_id": "CASE01",
+  "recorded_at_utc": "2026-10-13T10:46:19.968558Z",
+  "reason": "Ana changed next stage to a complete ZIP for future manual upload to Google AI Studio; no candidates executed now.",
+  "frozen_reference_preserved": true,
+  "reference_gold_status": "anotação provisória assistida, revisão humana pendente",
+  "not_human_ground_truth": true,
+  "human_review_by_Ana_completed": false,
+  "candidate_execution_status": "not_executed",
+  "source_reference_use": "evaluator-only",
+  "pixels_edit_status": "No visual edits; original local neutral thumbnail bytes preserved.",
+  "baseline_expectations_status": "Prospective protocol expectations only; not an observed candidate result.",
+  "existing_manifest_relative_path": "reference/freeze-manifest.json",
+  "existing_manifest_sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614",
+  "new_metadata_audit_relative_path": "reference/metadata-audit.json",
+  "new_metadata_audit_sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29",
+  "instruction": "Keep original reference and this amendment together in evaluator-only. Gold remains an assisted provisional reference pending human review. Candidate execution, if later authorized, must use only model-input."
+}

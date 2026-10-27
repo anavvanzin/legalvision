@@ -1,0 +1,1339 @@
+{
+  "prepared_at_utc": "2026-10-13T14:22:51.410553+00:00",
+  "planned_destination": "repo-root:.",
+  "staging_path": "local-workspace:preparation/organized-project-2026-10-13",
+  "policy": "Copy only; preserve existing originals; stop on divergent destination collision.",
+  "copied_files": [
+    {
+      "source_path": "repo-path:COMO-ABRIR.txt",
+      "destination_relative_path": "COMO-ABRIR.txt",
+      "role": "pre_existing_destination_original",
+      "bytes": 196,
+      "sha256": "d633ac41db0f81ab592cd9a75c979e660e95a3b3cfa69c7e04b9715a29539a87",
+      "source_modified": false,
+      "destination_sha256": "d633ac41db0f81ab592cd9a75c979e660e95a3b3cfa69c7e04b9715a29539a87",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/.gitignore",
+      "destination_relative_path": "legal-visual-argumentation/.gitignore",
+      "role": "pre_existing_destination_original",
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "source_modified": false,
+      "destination_sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/README.md",
+      "destination_relative_path": "legal-visual-argumentation/README.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "source_modified": false,
+      "destination_sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/apresentacao.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/apresentacao.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "source_modified": false,
+      "destination_sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/auditoria.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/auditoria.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "source_modified": false,
+      "destination_sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/correcoes.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/correcoes.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "source_modified": false,
+      "destination_sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/notion-edits.json",
+      "destination_relative_path": "legal-visual-argumentation/docs/notion-edits.json",
+      "role": "pre_existing_destination_original",
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "source_modified": false,
+      "destination_sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "source_modified": false,
+      "destination_sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "source_modified": false,
+      "destination_sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/validacao.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/validacao.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "source_modified": false,
+      "destination_sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/verificacao.md",
+      "destination_relative_path": "legal-visual-argumentation/docs/verificacao.md",
+      "role": "pre_existing_destination_original",
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "source_modified": false,
+      "destination_sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/schemes/catalog.json",
+      "destination_relative_path": "legal-visual-argumentation/schemes/catalog.json",
+      "role": "pre_existing_destination_original",
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "source_modified": false,
+      "destination_sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/schemes/profiles.json",
+      "destination_relative_path": "legal-visual-argumentation/schemes/profiles.json",
+      "role": "pre_existing_destination_original",
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "source_modified": false,
+      "destination_sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/scripts/check_package.py",
+      "destination_relative_path": "legal-visual-argumentation/scripts/check_package.py",
+      "role": "pre_existing_destination_original",
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "source_modified": false,
+      "destination_sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/sources/manifest.json",
+      "destination_relative_path": "legal-visual-argumentation/sources/manifest.json",
+      "role": "pre_existing_destination_original",
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "source_modified": false,
+      "destination_sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/tests/acceptance-cases.json",
+      "destination_relative_path": "legal-visual-argumentation/tests/acceptance-cases.json",
+      "role": "pre_existing_destination_original",
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "source_modified": false,
+      "destination_sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:legal-visual-argumentation.bundle",
+      "destination_relative_path": "legal-visual-argumentation.bundle",
+      "role": "pre_existing_destination_original",
+      "bytes": 23525,
+      "sha256": "85bc89fc5c500f68a458de7ffa27b1a88e6f8f0b8207568ea3ab8a4c599f9452",
+      "source_modified": false,
+      "destination_sha256": "85bc89fc5c500f68a458de7ffa27b1a88e6f8f0b8207568ea3ab8a4c599f9452",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/.gitignore",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/.gitignore",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "source_modified": false,
+      "destination_sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/README.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/README.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "source_modified": false,
+      "destination_sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/apresentacao.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/apresentacao.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "source_modified": false,
+      "destination_sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/auditoria.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/auditoria.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "source_modified": false,
+      "destination_sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/correcoes.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/correcoes.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "source_modified": false,
+      "destination_sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/notion-edits.json",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/notion-edits.json",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "source_modified": false,
+      "destination_sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/superpowers/plans/2026-10-12-piloto.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "source_modified": false,
+      "destination_sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "source_modified": false,
+      "destination_sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/validacao.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/validacao.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "source_modified": false,
+      "destination_sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/verificacao.md",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/docs/verificacao.md",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "source_modified": false,
+      "destination_sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/schemes/catalog.json",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/schemes/catalog.json",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "source_modified": false,
+      "destination_sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/schemes/profiles.json",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/schemes/profiles.json",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "source_modified": false,
+      "destination_sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/scripts/check_package.py",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/scripts/check_package.py",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "source_modified": false,
+      "destination_sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/sources/manifest.json",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/sources/manifest.json",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "source_modified": false,
+      "destination_sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/tests/acceptance-cases.json",
+      "destination_relative_path": "03-esquemas/pacote-documental-2026-10-12/tests/acceptance-cases.json",
+      "role": "organized_copy_of_original_legal_package",
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "source_modified": false,
+      "destination_sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:03-esquemas/parecer-formal.original.md",
+      "destination_relative_path": "03-esquemas/parecer-formal.original.md",
+      "role": "historical_formal_review",
+      "bytes": 12668,
+      "sha256": "887e0e5ce1cdcafc7e57483025b3c9925da443db87c35a138ad0adfedd138374",
+      "source_modified": false,
+      "destination_sha256": "887e0e5ce1cdcafc7e57483025b3c9925da443db87c35a138ad0adfedd138374",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/COMECE-AQUI.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/COMECE-AQUI.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 5496,
+      "sha256": "4dde1bbf206277e364a3de717ccb3dd4507f70eb7aeb98c1f9d4ab973a992aa4",
+      "source_modified": false,
+      "destination_sha256": "4dde1bbf206277e364a3de717ccb3dd4507f70eb7aeb98c1f9d4ab973a992aa4",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/GUIA-RAPIDO.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/GUIA-RAPIDO.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1678,
+      "sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0",
+      "source_modified": false,
+      "destination_sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/MANIFESTO-SHA256.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/MANIFESTO-SHA256.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 7036,
+      "sha256": "36013e88f0112229da24ef2b574ba079f58e6796563869d730199b7bf022058b",
+      "source_modified": false,
+      "destination_sha256": "309119b786345d8d8c946d4d2e6abac0cfacdd443a53360acfb5dfbcb4bc5e98",
+      "copy_status": "derived_organized_copy; original source unchanged",
+      "derivation": "Regenerated manifest after adding documentary link targets; no model-input or experimental results changed."
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/PORTABILIDADE.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/PORTABILIDADE.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3382,
+      "sha256": "f919af8c501dc611b04ee92d0da4bf3dbdf98e693942b0ea3669ab25ff5bb409",
+      "source_modified": false,
+      "destination_sha256": "f919af8c501dc611b04ee92d0da4bf3dbdf98e693942b0ea3669ab25ff5bb409",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/ATRIBUICAO.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/ATRIBUICAO.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1585,
+      "sha256": "fa6c2bb1ace0348c16aa240049eb400cadac4836bbd2cfa11091bfb82dfd5d87",
+      "source_modified": false,
+      "destination_sha256": "fa6c2bb1ace0348c16aa240049eb400cadac4836bbd2cfa11091bfb82dfd5d87",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/EVALUATION.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/EVALUATION.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3493,
+      "sha256": "a1868d93a871437956c6e63ead1be3686e14d7bc36091a2926dc9968177d9e1b",
+      "source_modified": false,
+      "destination_sha256": "a1868d93a871437956c6e63ead1be3686e14d7bc36091a2926dc9968177d9e1b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/formal-review.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/formal-review.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 12668,
+      "sha256": "887e0e5ce1cdcafc7e57483025b3c9925da443db87c35a138ad0adfedd138374",
+      "source_modified": false,
+      "destination_sha256": "887e0e5ce1cdcafc7e57483025b3c9925da443db87c35a138ad0adfedd138374",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/README.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/README.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 2778,
+      "sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "source_modified": false,
+      "destination_sha256": "b50d2167bee5a64ac3a2e75ade8f5b281c18e6e5e2023baea3834097918a9113",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/auditoria.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/auditoria.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 13932,
+      "sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "source_modified": false,
+      "destination_sha256": "ccb71e1214ac2402a63b53e914fff58070e0403eb4359d515c075c99d719acf3",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/correcoes.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/correcoes.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1598,
+      "sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "source_modified": false,
+      "destination_sha256": "5222cfee7bbad999ab44cdff795d2465673914d0a342684816c0e7280be8d6ca",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/validacao.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/validacao.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 8157,
+      "sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "source_modified": false,
+      "destination_sha256": "e565e3ca1f3ccb4d0c0dae8d8447334c8c8ba1ca197c351d4101955e396e2267",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/catalog.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/catalog.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3839,
+      "sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "source_modified": false,
+      "destination_sha256": "38ee46c9725f8eab662496bf4a0f243fcd15317f321cfa617fb795008b0c1c1b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/profiles.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/schemes/profiles.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 4144,
+      "sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "source_modified": false,
+      "destination_sha256": "2292a31478bec21e2c4051f18c726e640eebbbaf19a3844a5c557ea0391f9154",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/background/legal-package/tests/acceptance-cases.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/tests/acceptance-cases.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 6322,
+      "sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "source_modified": false,
+      "destination_sha256": "64d120718f65517556f5b4b389b8bf2a094b1c1c6334c5d8ba6bf0f4d14c3104",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/checks/package-checks.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/checks/package-checks.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 807,
+      "sha256": "dc5819378bd4f21d7833e48489daa1fdfbe74a2feb91879d21ad67bb44ffc292",
+      "source_modified": false,
+      "destination_sha256": "dc5819378bd4f21d7833e48489daa1fdfbe74a2feb91879d21ad67bb44ffc292",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/checks/packaged-validator-tests.log",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/checks/packaged-validator-tests.log",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 942,
+      "sha256": "708353afb5c43b868a51f3fa55b9452785119db4e30ed65fb3f1f23598d3b5b0",
+      "source_modified": false,
+      "destination_sha256": "708353afb5c43b868a51f3fa55b9452785119db4e30ed65fb3f1f23598d3b5b0",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/checks/validator-test-results.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/checks/validator-test-results.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 290,
+      "sha256": "22aa2b3283f93ee5b362bfe900db5a36c8e312222a2b419c95bb764e8a97c3d5",
+      "source_modified": false,
+      "destination_sha256": "22aa2b3283f93ee5b362bfe900db5a36c8e312222a2b419c95bb764e8a97c3d5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/checks/validator-tests.log",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/checks/validator-tests.log",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 852,
+      "sha256": "6ce0291832d64e96ec03cd34c3c17b8761e98d502e935bf8b7bdcc081d6572c6",
+      "source_modified": false,
+      "destination_sha256": "6ce0291832d64e96ec03cd34c3c17b8761e98d502e935bf8b7bdcc081d6572c6",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/delivery-amendment.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/delivery-amendment.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1331,
+      "sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b",
+      "source_modified": false,
+      "destination_sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/freeze-manifest.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/freeze-manifest.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 818,
+      "sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614",
+      "source_modified": false,
+      "destination_sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/gold.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/gold.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 8374,
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+      "source_modified": false,
+      "destination_sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/metadata-audit.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/metadata-audit.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 2076,
+      "sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29",
+      "source_modified": false,
+      "destination_sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/model-image-lineage.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/model-image-lineage.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1398,
+      "sha256": "e534833c0ccc6f80acee24b4f9fed644e59cbe36c28e96f11642ee5259c36576",
+      "source_modified": false,
+      "destination_sha256": "e534833c0ccc6f80acee24b4f9fed644e59cbe36c28e96f11642ee5259c36576",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/original-case01.jpg",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/original-case01.jpg",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 278383,
+      "sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+      "source_modified": false,
+      "destination_sha256": "02c79b6a08236946b7b96a9971bfe16558fde4dc721d15ea240fef8ec763d265",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/pre-registration.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/pre-registration.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 4163,
+      "sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3",
+      "source_modified": false,
+      "destination_sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/reference/source.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/reference/source.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3083,
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5",
+      "source_modified": false,
+      "destination_sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/results/human-review.template.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/results/human-review.template.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 771,
+      "sha256": "dae0dae8ed47da069e63dee01dfff2b34402d7888feffaa8a723de71b966e04d",
+      "source_modified": false,
+      "destination_sha256": "dae0dae8ed47da069e63dee01dfff2b34402d7888feffaa8a723de71b966e04d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/results/raw/README.txt",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/results/raw/README.txt",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 427,
+      "sha256": "ef8ab651a49f2ca0f0dafcc73580505e491c5e49b64e0c00002eb5eaa32ddf53",
+      "source_modified": false,
+      "destination_sha256": "ef8ab651a49f2ca0f0dafcc73580505e491c5e49b64e0c00002eb5eaa32ddf53",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/results/results.csv",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/results/results.csv",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 286,
+      "sha256": "8338848ef1d33849aa86c8d87b19825877ce9ad24190f6053c39d9386d5c2a3f",
+      "source_modified": false,
+      "destination_sha256": "8338848ef1d33849aa86c8d87b19825877ce9ad24190f6053c39d9386d5c2a3f",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/results/results.jsonl",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/results/results.jsonl",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_modified": false,
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/results/run-record.template.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/results/run-record.template.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 881,
+      "sha256": "5c41b4aa8c3b908810e8a383651945fa834827900a88c7247bfe0f23d09c975d",
+      "source_modified": false,
+      "destination_sha256": "5c41b4aa8c3b908810e8a383651945fa834827900a88c7247bfe0f23d09c975d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/tools/VALIDATOR_LIMITS.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/tools/VALIDATOR_LIMITS.md",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3638,
+      "sha256": "8e53efac2718d71d9cd24f31caf6e44fbb747a5145e436bf4c1361cc892f60d2",
+      "source_modified": false,
+      "destination_sha256": "8e53efac2718d71d9cd24f31caf6e44fbb747a5145e436bf4c1361cc892f60d2",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/tools/sanitize_metadata.py",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/tools/sanitize_metadata.py",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 2560,
+      "sha256": "02d4db3b4bb2c7a5bdfa348b46d9ea22cf1d5c8fd86fd0402380395b67b0d06a",
+      "source_modified": false,
+      "destination_sha256": "02d4db3b4bb2c7a5bdfa348b46d9ea22cf1d5c8fd86fd0402380395b67b0d06a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/tools/test_validate_candidate.py",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/tools/test_validate_candidate.py",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 8285,
+      "sha256": "4db5e994e9865f4f976329ced04ec4ce8ca2713d5baf1ba53d8e39777adf3d95",
+      "source_modified": false,
+      "destination_sha256": "4db5e994e9865f4f976329ced04ec4ce8ca2713d5baf1ba53d8e39777adf3d95",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/tools/validate_candidate.py",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/tools/validate_candidate.py",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 19716,
+      "sha256": "9b72ccc5ee68c51b43da570b69c0fe4a6821ae6eb18ee77f7faf7064613372bb",
+      "source_modified": false,
+      "destination_sha256": "9b72ccc5ee68c51b43da570b69c0fe4a6821ae6eb18ee77f7faf7064613372bb",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/execution-plan.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/execution-plan.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1806,
+      "sha256": "ade9be94abca920ff05a5360b0bb81b0bfa11b27e28338aa455e89b6ab7fff35",
+      "source_modified": false,
+      "destination_sha256": "ade9be94abca920ff05a5360b0bb81b0bfa11b27e28338aa455e89b6ab7fff35",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/argument-profile.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/argument-profile.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1486,
+      "sha256": "95ab174ae11518d01005ef744a74aae079e210079671df40cf2cf0acdb86a892",
+      "source_modified": false,
+      "destination_sha256": "95ab174ae11518d01005ef744a74aae079e210079671df40cf2cf0acdb86a892",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/conditions/01_with_image.txt",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/conditions/01_with_image.txt",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3930,
+      "sha256": "b64568003a6b7ea4b024a6196b93862331b9ca4abe4455c3a5d77a61fa8aba31",
+      "source_modified": false,
+      "destination_sha256": "b64568003a6b7ea4b024a6196b93862331b9ca4abe4455c3a5d77a61fa8aba31",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/conditions/02_without_image.txt",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/conditions/02_without_image.txt",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 3957,
+      "sha256": "389ad0ee4ac52ad5647e4dbfa6c1d17d60af8eaed190a8d6a5602b39b3e9563a",
+      "source_modified": false,
+      "destination_sha256": "389ad0ee4ac52ad5647e4dbfa6c1d17d60af8eaed190a8d6a5602b39b3e9563a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/hypothetical-rule.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/hypothetical-rule.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 294,
+      "sha256": "2538efd1ec2c90b4b7a5ba65b5beb6aff4fec2685fbc6d9694bb8b65340d69c0",
+      "source_modified": false,
+      "destination_sha256": "2538efd1ec2c90b4b7a5ba65b5beb6aff4fec2685fbc6d9694bb8b65340d69c0",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/images/case01.jpg",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/images/case01.jpg",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 278291,
+      "sha256": "b734a7395b75d07263b6ba2f7c3e875a3fb8f156abf17539e1932c8c462b1fb4",
+      "source_modified": false,
+      "destination_sha256": "b734a7395b75d07263b6ba2f7c3e875a3fb8f156abf17539e1932c8c462b1fb4",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/output.schema.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/output.schema.json",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 10710,
+      "sha256": "07fa41409cdae0f73da89bb210ce3b2aca4c39848ac6be04ce3797a8eb1d1138",
+      "source_modified": false,
+      "destination_sha256": "07fa41409cdae0f73da89bb210ce3b2aca4c39848ac6be04ce3797a8eb1d1138",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/model-input/system.txt",
+      "destination_relative_path": "04-experimentos/gemma4-case01/model-input/system.txt",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1305,
+      "sha256": "3cf4b3dab3c1c7bd886f7dad73f388c3e7eccd3aea59cac9770d753fc753c0bc",
+      "source_modified": false,
+      "destination_sha256": "3cf4b3dab3c1c7bd886f7dad73f388c3e7eccd3aea59cac9770d753fc753c0bc",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/verify_package.py",
+      "destination_relative_path": "04-experimentos/gemma4-case01/verify_package.py",
+      "role": "prepared_gemma4_manual_package_no_candidate_runs",
+      "bytes": 1455,
+      "sha256": "0520bd604be4789329d86d16ba5cbcfec8fef89b2a68dc7f84401b493923b3bc",
+      "source_modified": false,
+      "destination_sha256": "0520bd604be4789329d86d16ba5cbcfec8fef89b2a68dc7f84401b493923b3bc",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:PACOTE-GOOGLE-GEMMA4-INE410159-2026-10-13.zip",
+      "destination_relative_path": "04-experimentos/pacotes-originais/PACOTE-GOOGLE-GEMMA4-INE410159-2026-10-13.zip",
+      "role": "immutable_original_export_prepared_not_executed",
+      "bytes": 622865,
+      "sha256": "f34aa2314cbff3057c44d7e84e871e72ce91e83f10e092f47e634e3bb08a0579",
+      "source_modified": false,
+      "destination_sha256": "f34aa2314cbff3057c44d7e84e871e72ce91e83f10e092f47e634e3bb08a0579",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/GUIA-RAPIDO.original.md",
+      "destination_relative_path": "04-experimentos/GUIA-RAPIDO.original.md",
+      "role": "original_manual_guide_before_pause",
+      "bytes": 1678,
+      "sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0",
+      "source_modified": false,
+      "destination_sha256": "9dd112d87b62d7d316380a0847a13e85dadd64182d615962621a3f4c2c717ac0",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/delivery-amendment.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/delivery-amendment.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 1331,
+      "sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b",
+      "source_modified": false,
+      "destination_sha256": "eab4bd8f830312fcaabe0900db9b4d7af9cacc0a3df6d8ba3add736d7a13ec9b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/freeze-manifest.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/freeze-manifest.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 818,
+      "sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614",
+      "source_modified": false,
+      "destination_sha256": "8f89788afa21cffe2062c94430e15bd3445ab9cb8d1757ede05428e316f00614",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/gold.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/gold.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 8374,
+      "sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+      "source_modified": false,
+      "destination_sha256": "b6e95d5648a2ce2b311e3aab31553b53c9a0cbc85870c72a1ba9858bd7478949",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/metadata-audit.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/metadata-audit.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 2076,
+      "sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29",
+      "source_modified": false,
+      "destination_sha256": "1cccb335faea20930b6b69c67ba8bf2a3d5c9a0656cea2185fe286d8b9e9fb29",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/pre-registration.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/pre-registration.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 4163,
+      "sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3",
+      "source_modified": false,
+      "destination_sha256": "950736a8bcc4c5ddaff96c496c1641a7a88a15ef41765e54158a2db9e4e973b3",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source-page.html",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source-page.html",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 153699,
+      "sha256": "80ba40f679e59a079d301d4776a79b069f7af99429c8929f2bce21116c0c0a83",
+      "source_modified": false,
+      "destination_sha256": "80ba40f679e59a079d301d4776a79b069f7af99429c8929f2bce21116c0c0a83",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/preparacao-original/source.json",
+      "role": "source_and_provisional_assisted_reference_never_model_input",
+      "bytes": 3083,
+      "sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5",
+      "source_modified": false,
+      "destination_sha256": "61d83f9c8ad400ad76636323769ce5e1f51b43fab58034341c78ee615afbc2a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/RESULTADOS-REFERENCIA.md",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/RESULTADOS-REFERENCIA.md",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 7470,
+      "sha256": "6294697ac059ed2a6d2c52d7b4848a6c79b80c227fcf753935c05771ecc6ff2a",
+      "source_modified": false,
+      "destination_sha256": "6294697ac059ed2a6d2c52d7b4848a6c79b80c227fcf753935c05771ecc6ff2a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/documented-checks.json",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/documented-checks.json",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 1166,
+      "sha256": "1111da18d84eb11f44ccb38bc292d0b816f8796c9285ffc8d1e4185f316c9ff1",
+      "source_modified": false,
+      "destination_sha256": "1111da18d84eb11f44ccb38bc292d0b816f8796c9285ffc8d1e4185f316c9ff1",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/independent_audit.py",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/independent_audit.py",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 8789,
+      "sha256": "dab2a0394d860275c0ef67110927d58b772cd7985765460cd983f7a291b27e2e",
+      "source_modified": false,
+      "destination_sha256": "dab2a0394d860275c0ef67110927d58b772cd7985765460cd983f7a291b27e2e",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/inventory-and-audit.json",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/inventory-and-audit.json",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 8897,
+      "sha256": "00800863964abc666c81573f57e6addd956265fa1907842a52053e79568a51d2",
+      "source_modified": false,
+      "destination_sha256": "00800863964abc666c81573f57e6addd956265fa1907842a52053e79568a51d2",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/recomputed-metrics.csv",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/recomputed-metrics.csv",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 2588,
+      "sha256": "e9c183ec68458876f98f8d4af380c47c7f2cb32a5019a8da3263bb395dff1935",
+      "source_modified": false,
+      "destination_sha256": "e9c183ec68458876f98f8d4af380c47c7f2cb32a5019a8da3263bb395dff1935",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/source-sha256.csv",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/source-sha256.csv",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 13603,
+      "sha256": "7f515ce09ea81dcf73c8766901dbf4eae398caa148eca967b989f54a5aeacd91",
+      "source_modified": false,
+      "destination_sha256": "7f515ce09ea81dcf73c8766901dbf4eae398caa148eca967b989f54a5aeacd91",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/statistics.stderr.txt",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/statistics.stderr.txt",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_modified": false,
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/statistics.stdout.txt",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/statistics.stdout.txt",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 5888,
+      "sha256": "f3ea4a41fa2059d8bd9629a79db43f2f458043c65f73cf4bc9e613895217392a",
+      "source_modified": false,
+      "destination_sha256": "f3ea4a41fa2059d8bd9629a79db43f2f458043c65f73cf4bc9e613895217392a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stderr.txt",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stderr.txt",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_modified": false,
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stdout.txt",
+      "destination_relative_path": "05-resultados/baseline-meteorologico-guilherme/validation-dry-run.stdout.txt",
+      "role": "archived_weather_reference_aggregates_not_legal_results",
+      "bytes": 143,
+      "sha256": "51af82b770f831023cb5eda5fd323dbce862371352154ad2e7b50f145e71e786",
+      "source_modified": false,
+      "destination_sha256": "51af82b770f831023cb5eda5fd323dbce862371352154ad2e7b50f145e71e786",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/cv-preflight-mac.zip.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/cv-preflight-mac.zip.json",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 265,
+      "sha256": "dd90ac273b7c55268e768779276b4d21208f643f3640d6bf3e71f7266b1676ed",
+      "source_modified": false,
+      "destination_sha256": "dd90ac273b7c55268e768779276b4d21208f643f3640d6bf3e71f7266b1676ed",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/legal-package-check.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/legal-package-check.json",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 2091,
+      "sha256": "c5f9f737da8a5d38f5d70fe06ff9f3e04f0569c1c84e06bad553e522a2835486",
+      "source_modified": false,
+      "destination_sha256": "c5f9f737da8a5d38f5d70fe06ff9f3e04f0569c1c84e06bad553e522a2835486",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/legal-package-check.stderr.txt",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/legal-package-check.stderr.txt",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_modified": false,
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/legal-package-check.stdout.txt",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/legal-package-check.stdout.txt",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 237,
+      "sha256": "5f882603fb69fecaf6b6800059f108d9dd55c42f6fef4b80f3808bddbc1216cd",
+      "source_modified": false,
+      "destination_sha256": "5f882603fb69fecaf6b6800059f108d9dd55c42f6fef4b80f3808bddbc1216cd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/legal-source-sha256.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/legal-source-sha256.json",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 1450,
+      "sha256": "1934f9d1b9c93088d0116bf96ab23f073ff375edc92ddcfa3bf89e49abda05c6",
+      "source_modified": false,
+      "destination_sha256": "1934f9d1b9c93088d0116bf96ab23f073ff375edc92ddcfa3bf89e49abda05c6",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/legal-visual-argumentation.zip.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/legal-visual-argumentation.zip.json",
+      "role": "local_integrity_checks_not_model_metrics",
+      "bytes": 1165,
+      "sha256": "550f980a4d19136fc1a2b59a27304f43b80b3b9fc237c371ee48b504544eb49f",
+      "source_modified": false,
+      "destination_sha256": "550f980a4d19136fc1a2b59a27304f43b80b3b9fc237c371ee48b504544eb49f",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:05-resultados/checks-juridicos-2026-10-13/PACOTE-GOOGLE-GEMMA4-verificacao.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/PACOTE-GOOGLE-GEMMA4-verificacao.json",
+      "role": "historical_package_verification_and_delivery",
+      "bytes": 701,
+      "sha256": "3a718a5a04b432f1f5d7d1393fbae4f153930a9d8d6e0d7b44f966999a4b6580",
+      "source_modified": false,
+      "destination_sha256": "3a718a5a04b432f1f5d7d1393fbae4f153930a9d8d6e0d7b44f966999a4b6580",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:PACOTE-GOOGLE-GEMMA4-Library-receipt.json",
+      "destination_relative_path": "05-resultados/checks-juridicos-2026-10-13/PACOTE-GOOGLE-GEMMA4-Library-receipt.json",
+      "role": "historical_package_verification_and_delivery",
+      "bytes": 526,
+      "sha256": "351e9e5fbc9081fc684cd2262f6a5df5b432241c05d561d16d1e4d398a31a2f8",
+      "source_modified": false,
+      "destination_sha256": "351e9e5fbc9081fc684cd2262f6a5df5b432241c05d561d16d1e4d398a31a2f8",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/README-RESULTADO.md",
+      "destination_relative_path": "06-ambiente/preflight-mac/README-RESULTADO.md",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 7646,
+      "sha256": "1ca2fd8fdf1b16d0b6014b0f5220aca0d2762e6b8fdbc9f6dedcc8ad2ffe55ac",
+      "source_modified": false,
+      "destination_sha256": "1ca2fd8fdf1b16d0b6014b0f5220aca0d2762e6b8fdbc9f6dedcc8ad2ffe55ac",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/run.log",
+      "destination_relative_path": "06-ambiente/preflight-mac/run.log",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 923,
+      "sha256": "31e514fb367830ce49f513341fb1a4a8c1eaf4ed7b149fb67702d712ce9b0dd2",
+      "source_modified": false,
+      "destination_sha256": "31e514fb367830ce49f513341fb1a4a8c1eaf4ed7b149fb67702d712ce9b0dd2",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/run.json",
+      "destination_relative_path": "06-ambiente/preflight-mac/run.json",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 3819,
+      "sha256": "5be50d685c0c9f3faf592f854c4b8df2b271743b5181df73810b859c71f32690",
+      "source_modified": false,
+      "destination_sha256": "5be50d685c0c9f3faf592f854c4b8df2b271743b5181df73810b859c71f32690",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/inputs-before.sha256",
+      "destination_relative_path": "06-ambiente/preflight-mac/inputs-before.sha256",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 12929,
+      "sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+      "source_modified": false,
+      "destination_sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/inputs-after.sha256",
+      "destination_relative_path": "06-ambiente/preflight-mac/inputs-after.sha256",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 12929,
+      "sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+      "source_modified": false,
+      "destination_sha256": "39662b59fbf206bbc4f0c8de93506a92d1a49c8eb294cc085da4fb05342e32a6",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/tracked-files.txt",
+      "destination_relative_path": "06-ambiente/preflight-mac/tracked-files.txt",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 3821,
+      "sha256": "1727536e5ed1e98644fac68251bc948aa90c011733ab13c1d516a030a849a7a6",
+      "source_modified": false,
+      "destination_sha256": "1727536e5ed1e98644fac68251bc948aa90c011733ab13c1d516a030a849a7a6",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/check_cv.py",
+      "destination_relative_path": "06-ambiente/preflight-mac/check_cv.py",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 10014,
+      "sha256": "1e29fe63a1150e349a2e57f94884b3b1063a2576cb1535b2426ecebc8a5d6c9d",
+      "source_modified": false,
+      "destination_sha256": "1e29fe63a1150e349a2e57f94884b3b1063a2576cb1535b2426ecebc8a5d6c9d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:06-ambiente/preflight-mac/LEIA-ME.md",
+      "destination_relative_path": "06-ambiente/preflight-mac/LEIA-ME.md",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 8012,
+      "sha256": "a402d88732d82b97340cbe25f61abc9b3c16c65054567c597770d0caf753c9dc",
+      "source_modified": false,
+      "destination_sha256": "a402d88732d82b97340cbe25f61abc9b3c16c65054567c597770d0caf753c9dc",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:record_preflight.py",
+      "destination_relative_path": "06-ambiente/preflight-mac/record_preflight.py",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 5728,
+      "sha256": "40c33d3946bc4c154802e87d09af714258d775b80ccc6e441686bc397de28848",
+      "source_modified": false,
+      "destination_sha256": "40c33d3946bc4c154802e87d09af714258d775b80ccc6e441686bc397de28848",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:preflight-evidence-2026-10-13.zip",
+      "destination_relative_path": "06-ambiente/preflight-mac/preflight-evidence-2026-10-13.zip",
+      "role": "mac_preflight_and_original_safe_checker",
+      "bytes": 24496,
+      "sha256": "1395259a89cc83ae3c80fcd77025b6d9c0967ddf9e6396332283bab356a80a63",
+      "source_modified": false,
+      "destination_sha256": "1395259a89cc83ae3c80fcd77025b6d9c0967ddf9e6396332283bab356a80a63",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:07-apresentacoes/registros-originais/RESULTADOS-INE410159-2026-10-13.md",
+      "destination_relative_path": "07-apresentacoes/registros-originais/RESULTADOS-INE410159-2026-10-13.md",
+      "role": "historical_briefing_snapshot",
+      "bytes": 12930,
+      "sha256": "f09b99b54d4b2d39fb62609959f38f7df216d3c9b57506e82025ab3f574d39de",
+      "source_modified": false,
+      "destination_sha256": "f09b99b54d4b2d39fb62609959f38f7df216d3c9b57506e82025ab3f574d39de",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:07-apresentacoes/registros-originais/APRESENTACAO-INE410159-2026-10-13.html",
+      "destination_relative_path": "07-apresentacoes/registros-originais/APRESENTACAO-INE410159-2026-10-13.html",
+      "role": "historical_briefing_snapshot",
+      "bytes": 9740,
+      "sha256": "b7b72c3e0253a54a6c670e243c86044396bb599d6ece9034b04059ffc9341b5d",
+      "source_modified": false,
+      "destination_sha256": "b7b72c3e0253a54a6c670e243c86044396bb599d6ece9034b04059ffc9341b5d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:07-apresentacoes/registros-originais/LEIA-ME-ENTREGA.md",
+      "destination_relative_path": "07-apresentacoes/registros-originais/LEIA-ME-ENTREGA.md",
+      "role": "historical_briefing_snapshot",
+      "bytes": 1771,
+      "sha256": "178073301a7febbf9b645a778a4c575ab0a473712f918c366e514331eee281a5",
+      "source_modified": false,
+      "destination_sha256": "178073301a7febbf9b645a778a4c575ab0a473712f918c366e514331eee281a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:RESULTADOS-INE410159-2026-10-13.zip",
+      "destination_relative_path": "07-apresentacoes/registros-originais/RESULTADOS-INE410159-2026-10-13.zip",
+      "role": "historical_briefing_snapshot",
+      "bytes": 85679,
+      "sha256": "ce9eb549c64c7f61818a0bde9bbd15f1884a8e49a08ef5f013cb9b126d4bf120",
+      "source_modified": false,
+      "destination_sha256": "ce9eb549c64c7f61818a0bde9bbd15f1884a8e49a08ef5f013cb9b126d4bf120",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:02-bibliografia-recursos/material-didatico/originais/explicador_visao_computacional.html",
+      "destination_relative_path": "02-bibliografia-recursos/material-didatico/originais/explicador_visao_computacional.html",
+      "role": "Library_original_HTML_read_as_data_not_executed",
+      "bytes": 18118,
+      "sha256": "ac9ce49357a77017a69f3e0c243297b4182e878660468c5ec01dfcb0109c6ef1",
+      "source_modified": false,
+      "destination_sha256": "ac9ce49357a77017a69f3e0c243297b4182e878660468c5ec01dfcb0109c6ef1",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:02-bibliografia-recursos/material-didatico/explicador_visao_computacional.leitura.txt",
+      "destination_relative_path": "02-bibliografia-recursos/material-didatico/explicador_visao_computacional.leitura.txt",
+      "role": "derived_read_only_text_without_scripts",
+      "bytes": 2507,
+      "sha256": "d2e60eb5317bd79346ae490f57a078c7b224d179992d135a3e5d1e69da90f600",
+      "source_modified": false,
+      "destination_sha256": "d2e60eb5317bd79346ae490f57a078c7b224d179992d135a3e5d1e69da90f600",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:01-contexto/reuniao-2026-10-08/originais/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.html",
+      "destination_relative_path": "01-contexto/reuniao-2026-10-08/originais/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.html",
+      "role": "Library_original_HTML_read_as_data_not_executed",
+      "bytes": 28680,
+      "sha256": "ded27415ef218a7cd750ff0c60eb681e3adc7c21539b28482f758ba708fe7fbf",
+      "source_modified": false,
+      "destination_sha256": "ded27415ef218a7cd750ff0c60eb681e3adc7c21539b28482f758ba708fe7fbf",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:01-contexto/reuniao-2026-10-08/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.leitura.txt",
+      "destination_relative_path": "01-contexto/reuniao-2026-10-08/TRABALHO DE VISAO COMPUTACIONAL 3f4158101a0580ad812af4fdad40b193.leitura.txt",
+      "role": "derived_read_only_text_without_scripts",
+      "bytes": 5241,
+      "sha256": "d018d736fa3773d9d118cf205f4a4bafe251aa9f003aa0c13b1d96f8cb0fba8c",
+      "source_modified": false,
+      "destination_sha256": "d018d736fa3773d9d118cf205f4a4bafe251aa9f003aa0c13b1d96f8cb0fba8c",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:destination-before.json",
+      "destination_relative_path": "00-indice/registros/destination-before.json",
+      "role": "organization_provenance_and_app_capability_check",
+      "bytes": 3301,
+      "sha256": "e6449078f7ce2ae6f37c7721867140d36933af48debc4383d64521c38bde1893",
+      "source_modified": false,
+      "destination_sha256": "e6449078f7ce2ae6f37c7721867140d36933af48debc4383d64521c38bde1893",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "local-archive:attachments-manifest.json",
+      "destination_relative_path": "00-indice/registros/attachments-manifest.json",
+      "role": "organization_provenance_and_app_capability_check",
+      "bytes": 1864,
+      "sha256": "8fb0fddd809cee31957e23fd30b1ff5c80d0775e55d58370842dda2c8e2d836b",
+      "source_modified": false,
+      "destination_sha256": "8fb0fddd809cee31957e23fd30b1ff5c80d0775e55d58370842dda2c8e2d836b",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:00-indice/registros/codex-project.md",
+      "destination_relative_path": "00-indice/registros/codex-project.md",
+      "role": "organization_provenance_and_app_capability_check",
+      "bytes": 1343,
+      "sha256": "083e000c62bddfd68ee9d9d751b8a73d14060012b61011ac6bf49f11cc9c5bf1",
+      "source_modified": false,
+      "destination_sha256": "083e000c62bddfd68ee9d9d751b8a73d14060012b61011ac6bf49f11cc9c5bf1",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/.gitignore",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/.gitignore",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 47,
+      "sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "source_modified": false,
+      "destination_sha256": "f852b456d6ebfd96a2a7938c41049e58715ff1bd2b4a30aede601126168d0ddd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/apresentacao.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/apresentacao.md",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 1498,
+      "sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "source_modified": false,
+      "destination_sha256": "01d3b47e7e532fbded40ebca2103bd8bd7e95517090fdcf4cf4c9149dc1d5831",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/notion-edits.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/notion-edits.json",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 2437,
+      "sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "source_modified": false,
+      "destination_sha256": "bd1442a17729c2463a80df546a6f8e9331dbdd44e9c129fce8b1068d3881732f",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/plans/2026-10-12-piloto.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/superpowers/plans/2026-10-12-piloto.md",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 3327,
+      "sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "source_modified": false,
+      "destination_sha256": "2c31246caa0b8c5904640ac7972ca775c0ff8b4ce7b693e65db74f4780b4452a",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/superpowers/specs/2026-10-12-piloto-design.md",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 2604,
+      "sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "source_modified": false,
+      "destination_sha256": "d38c9741f3b43bf8560eaf0bdf1d092273a2080f81cdddb83fb3aa6d10c0a2a5",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/docs/verificacao.md",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/docs/verificacao.md",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 1350,
+      "sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "source_modified": false,
+      "destination_sha256": "1bf86bdf83e016f8b834e9288f048e2cb702ebe26871f3954b663d545d8e8c9d",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/scripts/check_package.py",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/scripts/check_package.py",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 2683,
+      "sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "source_modified": false,
+      "destination_sha256": "68258a40da9f58c42cb05ace89a44debe7f824efb9d160d1007b9efa24799dfd",
+      "copy_status": "byte_identical"
+    },
+    {
+      "source_path": "repo-path:legal-visual-argumentation/sources/manifest.json",
+      "destination_relative_path": "04-experimentos/gemma4-case01/evaluator-only/background/legal-package/sources/manifest.json",
+      "role": "documentary_link_target_added_in_organized_copy",
+      "bytes": 1588,
+      "sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "source_modified": false,
+      "destination_sha256": "6e95d9a15002cfd416d9c0d123fe2e7757dced50ba63e83667d02aed69f2291e",
+      "copy_status": "byte_identical"
+    }
+  ]
+}

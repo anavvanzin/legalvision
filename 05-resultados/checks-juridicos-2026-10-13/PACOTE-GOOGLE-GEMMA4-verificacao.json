@@ -1,0 +1,23 @@
+{
+  "zip": "local-archive:PACOTE-GOOGLE-GEMMA4-INE410159-2026-10-13.zip",
+  "zip_bytes": 622865,
+  "zip_sha256": "f34aa2314cbff3057c44d7e84e871e72ce91e83f10e092f47e634e3bb08a0579",
+  "package_files": 44,
+  "zip_test": "passed",
+  "member_hashes": "passed",
+  "manifest_validation": {
+    "package_files_checked": 43,
+    "failures": [],
+    "passed": true,
+    "scope": "Prepared-package bytes and JSON only; no model run or legal/visual validation."
+  },
+  "candidate_runs_executed": 0,
+  "native_Google_session_tested": false,
+  "human_reference_validation": "pending",
+  "software_unit_tests": {
+    "run": 6,
+    "passed": 6,
+    "failures": 0,
+    "errors": 0
+  }
+}

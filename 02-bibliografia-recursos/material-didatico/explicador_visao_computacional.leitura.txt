@@ -1,0 +1,32 @@
+Explicador interativo — Visão Computacional
+👁️ Visão Computacional · aula + pesquisa
+Como uma imagem vira uma decisão reprodutível?
+A ideia central da página é usar visão computacional como método: transformar pixels em características, comparar essas características com métricas, validar resultados e documentar tudo para que outra pessoa consiga repetir.
+pixels → característicasmétricas → decisãobaseline → comparaçãoapêndice reprodutível
+Metáfora: o algoritmo é uma lente disciplinada. Ele não “vê” como humanos; ele calcula padrões que precisam ser explicados e testados.
+O fluxo mental da disciplina
+Clique nas etapas para ver o papel de cada uma no projeto.
+1Dataseto que entra no método
+2Característicascomo representar pixels
+3Métricacomo comparar
+4Baselineo ponto de partida
+5Reprodutibilidadecomo confiar no resultado
+Dataset: Defina exatamente qual imagem, recorte ou snapshot analítico será analisado. Sem dataset claro, o resultado não é verificável.
+Laboratório visual: limiarização
+Ajuste o limiar. Você verá como uma regra simples separa “objeto” e “fundo” — e por que iluminação e cor podem enganar.
+objeto-alvoluz/saturaçãofundo
+Limiar de similaridade 72
+Quanto maior o limiar, mais pixels entram na classe. Isso ajuda a capturar variação, mas também aumenta falsos positivos.
+Três ideias que aparecem por trás da técnica
+Troque de cartão para ligar a aula ao projeto de pesquisa.
+Espaços de corTexturasImagem como premissa
+Questionário rápido
+Teste se o conceito ficou claro.
+1. Por que definir um baseline?Para deixar o pôster mais bonito.Para comparar o método novo com uma referência simples.Para evitar escolher métricas.
+2. O que uma métrica faz?Define como medir similaridade ou diferença.Substitui a necessidade de dataset.Transforma qualquer imagem em verdade jurídica.
+3. Qual é o risco de um threshold simples?Ele nunca produz falsos positivos.Ele dispensa validação humana.Ele pode ser sensível à iluminação e saturação.
+4. O que torna o projeto reprodutível?Usar apenas imagens bonitas.Registrar dados, parâmetros, código e resultados.Evitar explicar decisões técnicas.
+Pontuação: 0/4Recomeçar
+Resumo em uma frase
+Visão computacional, nesta página, é uma disciplina de tradução: converter imagens em evidências calculáveis, avaliáveis e reprodutíveis.
+Imagempixels, cor, texturaRegramétrica ou modeloTestebaseline + validaçãoRegistrométodo que alguém repete

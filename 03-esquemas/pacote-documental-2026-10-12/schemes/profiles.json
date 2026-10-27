@@ -1,0 +1,193 @@
+{
+  "status": "proposed_not_implemented",
+  "version": "0.1",
+  "unknown_policy": "explicit_unresolved",
+  "legal_validity_output": false,
+  "schemes": [
+    {
+      "id": "verbal_classification",
+      "source_scheme_number": 3,
+      "predicates": {
+        "classified_as": [
+          "entity",
+          "category"
+        ],
+        "classification_warrant": [
+          "category",
+          "property"
+        ],
+        "has_property": [
+          "entity",
+          "property"
+        ]
+      },
+      "premises": [
+        {
+          "predicate": "classified_as",
+          "args": [
+            "A",
+            "C"
+          ],
+          "role": "ordinary",
+          "allowed_source": [
+            "image",
+            "context"
+          ]
+        },
+        {
+          "predicate": "classification_warrant",
+          "args": [
+            "C",
+            "F"
+          ],
+          "role": "ordinary",
+          "allowed_source": [
+            "provided_rule"
+          ]
+        }
+      ],
+      "conclusion": {
+        "predicate": "has_property",
+        "args": [
+          "A",
+          "F"
+        ],
+        "modality": "defeasible"
+      },
+      "critical_questions": [
+        {
+          "id": "CQ1",
+          "target": [
+            "A",
+            "F"
+          ],
+          "question": "Grounded doubt about property F in A?"
+        },
+        {
+          "id": "CQ2",
+          "target": [
+            "A",
+            "C"
+          ],
+          "question": "Weak or disputed classification of A as C?"
+        }
+      ],
+      "cq_states": [
+        "resolved_no_defeater",
+        "defeater_established",
+        "unknown",
+        "not_applicable_justified"
+      ]
+    },
+    {
+      "id": "witness_testimony",
+      "source_scheme_number": 6,
+      "adaptation": "position_to_observe specializes position_to_know for controlled visual cases",
+      "predicates": {
+        "states": [
+          "witness",
+          "proposition"
+        ],
+        "position_to_observe": [
+          "witness",
+          "proposition",
+          "scene",
+          "time"
+        ],
+        "truthfulness_assumption": [
+          "witness",
+          "proposition"
+        ]
+      },
+      "premises": [
+        {
+          "predicate": "states",
+          "args": [
+            "W",
+            "S"
+          ],
+          "role": "ordinary",
+          "allowed_source": [
+            "testimony_text",
+            "testimony_audio"
+          ]
+        },
+        {
+          "predicate": "position_to_observe",
+          "args": [
+            "W",
+            "S",
+            "SCENE",
+            "TIME"
+          ],
+          "role": "ordinary",
+          "allowed_source": [
+            "image_plus_context"
+          ]
+        },
+        {
+          "predicate": "truthfulness_assumption",
+          "args": [
+            "W",
+            "S"
+          ],
+          "role": "assumption",
+          "allowed_source": [
+            "explicit_scenario_assumption"
+          ]
+        }
+      ],
+      "conclusion": {
+        "proposition_variable": "S",
+        "modality": "defeasible"
+      },
+      "critical_questions": [
+        {
+          "id": "CQ1",
+          "target": [
+            "W",
+            "S"
+          ],
+          "question": "Internal consistency?"
+        },
+        {
+          "id": "CQ2",
+          "target": [
+            "W",
+            "S"
+          ],
+          "question": "Consistency with independent case evidence?"
+        },
+        {
+          "id": "CQ3",
+          "target": [
+            "W",
+            "S"
+          ],
+          "question": "Consistency with independent witnesses?"
+        },
+        {
+          "id": "CQ4",
+          "target": [
+            "W",
+            "S"
+          ],
+          "question": "Relevant bias?"
+        },
+        {
+          "id": "CQ5",
+          "target": [
+            "S"
+          ],
+          "question": "Plausibility in the circumstances?"
+        }
+      ],
+      "cq_states": [
+        "resolved_no_defeater",
+        "defeater_established",
+        "unknown",
+        "not_applicable_justified"
+      ]
+    }
+  ]
+}

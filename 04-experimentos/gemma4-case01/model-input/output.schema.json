@@ -1,0 +1,494 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:case01:manual-output:0.1",
+  "title": "CASE01 manual candidate output contract",
+  "description": "Standard JSON Schema for manual model exports, independent of provider-native structured-output support. Conformance does not certify visual truth, semantic adequacy, independent CQ review, or legal validity. An abstention may be schema-valid while the mechanical scheme is incomplete.",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "const": "CASE01"
+    },
+    "condition": {
+      "enum": [
+        "with_image",
+        "without_image"
+      ]
+    },
+    "image_inspected": {
+      "type": "boolean"
+    },
+    "visual_answers": {
+      "type": "object",
+      "properties": {
+        "Q1": {
+          "$ref": "#/$defs/visualAnswer"
+        },
+        "Q2": {
+          "$ref": "#/$defs/visualAnswer"
+        },
+        "Q3": {
+          "$ref": "#/$defs/visualAnswer"
+        }
+      },
+      "required": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ],
+      "additionalProperties": false
+    },
+    "classification": {
+      "$ref": "#/$defs/classification"
+    },
+    "instance": {
+      "type": "object",
+      "properties": {
+        "scheme_id": {
+          "const": "verbal_classification"
+        },
+        "profile_version": {
+          "const": "0.1"
+        },
+        "premises": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/classificationAtom"
+              },
+              {
+                "$ref": "#/$defs/warrantAtom"
+              }
+            ]
+          },
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "conclusion": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/conclusionAtom"
+            }
+          ]
+        },
+        "critical_questions": {
+          "type": "object",
+          "properties": {
+            "CQ1": {
+              "$ref": "#/$defs/criticalQuestion"
+            },
+            "CQ2": {
+              "$ref": "#/$defs/criticalQuestion"
+            }
+          },
+          "required": [
+            "CQ1",
+            "CQ2"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "scheme_id",
+        "profile_version",
+        "premises",
+        "conclusion",
+        "critical_questions"
+      ],
+      "additionalProperties": false
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "condition",
+    "image_inspected",
+    "visual_answers",
+    "classification",
+    "instance",
+    "limitations"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "condition": {
+            "const": "without_image"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/noPixelsPolicy"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "image_inspected": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/noPixelsPolicy"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "instance": {
+            "properties": {
+              "conclusion": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "conclusion"
+            ]
+          }
+        },
+        "required": [
+          "instance"
+        ]
+      },
+      "then": {
+        "properties": {
+          "condition": {
+            "const": "with_image"
+          },
+          "image_inspected": {
+            "const": true
+          },
+          "classification": {
+            "properties": {
+              "evidence_status": {
+                "const": "supported"
+              }
+            }
+          },
+          "instance": {
+            "properties": {
+              "premises": {
+                "minItems": 2,
+                "maxItems": 2,
+                "allOf": [
+                  {
+                    "contains": {
+                      "$ref": "#/$defs/classificationAtom"
+                    },
+                    "minContains": 1,
+                    "maxContains": 1
+                  },
+                  {
+                    "contains": {
+                      "$ref": "#/$defs/warrantAtom"
+                    },
+                    "minContains": 1,
+                    "maxContains": 1
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "region": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      ],
+      "description": "Normalized [x0,y0,x1,y1]. The stdlib checker additionally requires x0<x1 and y0<y1."
+    },
+    "visualAnswer": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        "evidence_status": {
+          "enum": [
+            "supported",
+            "contradicted",
+            "insufficient"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "region": {
+          "$ref": "#/$defs/region"
+        }
+      },
+      "required": [
+        "value",
+        "evidence_status",
+        "reason",
+        "region"
+      ],
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "entity": {
+          "const": "A"
+        },
+        "category": {
+          "const": "bicicleta_visual"
+        },
+        "evidence_status": {
+          "enum": [
+            "supported",
+            "contradicted",
+            "insufficient"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "region": {
+          "$ref": "#/$defs/region"
+        }
+      },
+      "required": [
+        "entity",
+        "category",
+        "evidence_status",
+        "reason",
+        "region"
+      ],
+      "additionalProperties": false
+    },
+    "criticalQuestion": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "resolved_no_defeater",
+            "defeater_established",
+            "unknown",
+            "not_applicable_justified"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "state",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "classificationAtom": {
+      "type": "object",
+      "properties": {
+        "predicate": {
+          "const": "classified_as"
+        },
+        "args": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "A"
+            },
+            {
+              "const": "bicicleta_visual"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "role": {
+          "const": "ordinary"
+        },
+        "polaridade": {
+          "const": "positive"
+        },
+        "modality": {
+          "const": "defeasible"
+        },
+        "source_id": {
+          "const": "IMG01"
+        }
+      },
+      "required": [
+        "predicate",
+        "args",
+        "role",
+        "polaridade",
+        "modality",
+        "source_id"
+      ],
+      "additionalProperties": false
+    },
+    "warrantAtom": {
+      "type": "object",
+      "properties": {
+        "predicate": {
+          "const": "classification_warrant"
+        },
+        "args": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "bicicleta_visual"
+            },
+            {
+              "const": "deve_ser_conduzido_a_mao_na_zona_Z"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "role": {
+          "const": "ordinary"
+        },
+        "polaridade": {
+          "const": "positive"
+        },
+        "modality": {
+          "const": "defeasible"
+        },
+        "source_id": {
+          "const": "R1"
+        }
+      },
+      "required": [
+        "predicate",
+        "args",
+        "role",
+        "polaridade",
+        "modality",
+        "source_id"
+      ],
+      "additionalProperties": false
+    },
+    "conclusionAtom": {
+      "type": "object",
+      "properties": {
+        "predicate": {
+          "const": "has_property"
+        },
+        "args": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "A"
+            },
+            {
+              "const": "deve_ser_conduzido_a_mao_na_zona_Z"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "role": {
+          "const": "conclusion"
+        },
+        "polaridade": {
+          "const": "positive"
+        },
+        "modality": {
+          "const": "defeasible"
+        }
+      },
+      "required": [
+        "predicate",
+        "args",
+        "role",
+        "polaridade",
+        "modality"
+      ],
+      "additionalProperties": false
+    },
+    "noPixelsVisualAnswer": {
+      "properties": {
+        "value": {
+          "type": "null"
+        },
+        "region": {
+          "type": "null"
+        },
+        "evidence_status": {
+          "const": "insufficient"
+        }
+      }
+    },
+    "noPixelsPolicy": {
+      "properties": {
+        "image_inspected": {
+          "const": false
+        },
+        "visual_answers": {
+          "properties": {
+            "Q1": {
+              "$ref": "#/$defs/noPixelsVisualAnswer"
+            },
+            "Q2": {
+              "$ref": "#/$defs/noPixelsVisualAnswer"
+            },
+            "Q3": {
+              "$ref": "#/$defs/noPixelsVisualAnswer"
+            }
+          }
+        },
+        "classification": {
+          "properties": {
+            "evidence_status": {
+              "const": "insufficient"
+            },
+            "region": {
+              "type": "null"
+            }
+          }
+        },
+        "instance": {
+          "properties": {
+            "premises": {
+              "items": {
+                "$ref": "#/$defs/warrantAtom"
+              },
+              "maxItems": 1
+            },
+            "conclusion": {
+              "type": "null"
+            }
+          }
+        }
+      }
+    }
+  }
+}

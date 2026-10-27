@@ -1,0 +1,10 @@
+{
+  "kind": "software_fixture_test_run",
+  "candidate_models_executed": 0,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log": "validator-tests.log",
+  "scope": "Synthetic software fixtures only; no image, reference, oracle, or candidate response inspected."
+}
