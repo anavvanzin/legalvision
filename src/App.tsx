@@ -449,245 +449,239 @@ export function App() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white">
-      {/* Variation 18 Marquee Top Bar */}
-      <div className="marquee-top">
-        <span>SECURITY STATUS: OMEGA</span>
-        <span className="hidden sm:inline">PROTOCOLO: AGENTS.MD</span>
-        <span className="hidden md:inline">ISOLAMENTO: MODEL-INPUT // EVALUATOR-ONLY</span>
-        <span>SECURITY STATUS: OMEGA</span>
-      </div>
-
-      {/* Variation 18 Glitch Console 3-Column Command Deck */}
-      <section className="max-w-7xl w-full mx-auto px-6 pt-8 pb-6 grid grid-cols-1 lg:grid-cols-4 gap-6 items-stretch">
-        {/* LEFT PANE: SUB_DIR & LOGS */}
-        <div className="flex flex-col gap-5 lg:col-span-1">
-          <div className="module-box">
-            <div className="box-label">SUB_DIR</div>
-            <nav className="nav-list-glitch">
-              <button
-                onClick={() => setActiveTab('execucao_colab')}
-                className={`nav-link-glitch ${activeTab === 'execucao_colab' ? 'active' : ''}`}
-              >
-                <span>EXECUTION &amp; RESULTS (HOJE)</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('casos_federais')}
-                className={`nav-link-glitch ${activeTab === 'casos_federais' ? 'active' : ''}`}
-              >
-                <span>CASE AO 399 / 440 / 441</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('fundamentacao_literatura')}
-                className={`nav-link-glitch ${activeTab === 'fundamentacao_literatura' ? 'active' : ''}`}
-              >
-                <span>GROUNDING &amp; OPENALEX</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('case01')}
-                className={`nav-link-glitch ${activeTab === 'case01' ? 'active' : ''}`}
-              >
-                <span>ORACLE VALIDATOR (CASE01)</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('esquemas')}
-                className={`nav-link-glitch ${activeTab === 'esquemas' ? 'active' : ''}`}
-              >
-                <span>10 ESQUEMAS &amp; 16 ORÁCULOS</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('revisao_grounding')}
-                className={`nav-link-glitch ${activeTab === 'revisao_grounding' ? 'active' : ''}`}
-              >
-                <span>REVISÃO GROUNDING (COMMA)</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('iconocracia_cv')}
-                className={`nav-link-glitch ${activeTab === 'iconocracia_cv' ? 'active' : ''}`}
-              >
-                <span>ICONOCRACIA-CV (2026-2)</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('apresentacao')}
-                className={`nav-link-glitch ${activeTab === 'apresentacao' ? 'active' : ''}`}
-              >
-                <span>APRESENTAÇÃO &amp; STATUS</span>
-              </button>
-              <button
-                onClick={() => setActiveTab('baseline')}
-                className={`nav-link-glitch ${activeTab === 'baseline' ? 'active' : ''}`}
-              >
-                <span>BASELINE &amp; PROVENIÊNCIA</span>
-              </button>
-            </nav>
+    <div className="var3-shell">
+      {/* Variation 3 Sidebar Navigation */}
+      <aside className="var3-sidebar">
+        <div className="brand-block">
+          <div className="var3-label" style={{ color: '#ffffff', opacity: 1 }}>
+            Project Code
           </div>
-
-          <div className="module-box-magenta flex-1 flex flex-col justify-between">
-            <div className="box-label-magenta">LOGS</div>
-            <div className="console-area">
-              &gt; AO 399 // WAIVER [ACTIVE]
-              <br />
-              &gt; AO 440 // SUMMONS [ACTIVE]
-              <br />
-              &gt; AO 441 // 3RD_PARTY [ACTIVE]
-              <br />
-              &gt; CASE01 // R1_HYPOTHETICAL [ACTIVE]
-              <br />
-              <br />
-              &gt; ANALYZING VISUAL NODES...
-              <br />
-              &gt; 100% PARSING COMPLETE (20/20)
-              <br />
-              &gt; TEMP=0.0 // ZERO_LEAKAGE
-            </div>
+          <div className="brand-title">
+            INE
+            <br />
+            410159
           </div>
         </div>
 
-        {/* CENTER PANE: NODE_ID + STAT HERO */}
-        <div className="flex flex-col justify-between gap-6 lg:col-span-2">
-          <div className="text-center py-2">
-            <span className="text-[#00ffff] tracking-[0.75em] text-xs font-bold block mb-2">
-              NODE_ID // GRUPO_26
-            </span>
-            <h1 className="glitch-title text-6xl sm:text-7xl xl:text-8xl">INE410159</h1>
-          </div>
-
-          <div className="stat-hero">
-            <div className="stat-block">
-              <span className="stat-title">EXECUTIONS</span>
-              <span className="stat-num tabular-nums">20</span>
-            </div>
-            <div className="stat-block">
-              <span className="stat-title">ACCURACY</span>
-              <span className="stat-num tabular-nums">100%</span>
-            </div>
-            <div className="stat-block">
-              <span className="stat-title">ABSTENTIONS</span>
-              <span className="stat-num tabular-nums">14/14</span>
-            </div>
-            <div className="stat-block">
-              <span className="stat-title">HASHES</span>
-              <span className="stat-num tabular-nums">5/5</span>
-            </div>
-          </div>
-
-          <div className="text-[#00ffff] text-xs border border-[#00ffff] bg-[#111111] p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div>
-              <strong>VISUAL ARGUMENTATION // PHASE_01_METRICS</strong>
-              <br />
-              ARGUMENTAÇÃO JURÍDICA VISUAL [DATA_SYNC_ON · 0 RODADAS ≠ ACURÁCIA ZERO]
-            </div>
-            <div className="font-mono text-[11px] text-[#ff00ff] shrink-0">
-              COMMIT: {PROJECT_METADATA.legalCommit.slice(0, 8)}
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT PANE: NODE_INFO + EXECUTE_BATCH + AUTH + RETICLE SVG */}
-        <div className="flex flex-col justify-between gap-5 lg:col-span-1">
-          <div className="module-box text-right">
-            <div className="box-label">NODE_INFO</div>
-            <div className="text-2xl font-bold text-[#00ffff] leading-tight uppercase">
-              VISUAL
-              <br />
-              ARGUMENT
-            </div>
-            <div className="text-[11px] text-white/80 mt-2 font-mono">
-              VERBAL CLASSIFICATION
-              <br />
-              ESTABLISHED RULE (FRCP)
-            </div>
-          </div>
-
+        <nav className="nav-section">
           <button
-            onClick={() => {
-              setActiveTab('execucao_colab');
-              const el = document.getElementById('workspace-main');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="action-btn-glitch w-full"
+            onClick={() => setActiveTab('execucao_colab')}
+            className={`nav-item ${activeTab === 'execucao_colab' ? 'active' : ''}`}
           >
-            EXECUTE_BATCH
+            00 // EXECUTION_RESULTS
           </button>
+          <button
+            onClick={() => setActiveTab('casos_federais')}
+            className={`nav-item ${activeTab === 'casos_federais' ? 'active' : ''}`}
+          >
+            01 // CASE_AO_399_440
+          </button>
+          <button
+            onClick={() => setActiveTab('fundamentacao_literatura')}
+            className={`nav-item ${activeTab === 'fundamentacao_literatura' ? 'active' : ''}`}
+          >
+            02 // GROUNDING_OPENALEX
+          </button>
+          <button
+            onClick={() => setActiveTab('case01')}
+            className={`nav-item ${activeTab === 'case01' ? 'active' : ''}`}
+          >
+            03 // ORACLE_VALIDATOR
+          </button>
+          <button
+            onClick={() => setActiveTab('esquemas')}
+            className={`nav-item ${activeTab === 'esquemas' ? 'active' : ''}`}
+          >
+            04 // SCHEME_MATRIX
+          </button>
+          <button
+            onClick={() => setActiveTab('revisao_grounding')}
+            className={`nav-item ${activeTab === 'revisao_grounding' ? 'active' : ''}`}
+          >
+            05 // COMMA_REVIEW
+          </button>
+          <button
+            onClick={() => setActiveTab('iconocracia_cv')}
+            className={`nav-item ${activeTab === 'iconocracia_cv' ? 'active' : ''}`}
+          >
+            06 // ICONOCRACIA_CV
+          </button>
+          <button
+            onClick={() => setActiveTab('apresentacao')}
+            className={`nav-item ${activeTab === 'apresentacao' ? 'active' : ''}`}
+          >
+            07 // STATUS_PROV
+          </button>
+          <button
+            onClick={() => setActiveTab('baseline')}
+            className={`nav-item ${activeTab === 'baseline' ? 'active' : ''}`}
+          >
+            08 // BASELINE_ARCHIVE
+          </button>
+        </nav>
 
-          <div className="module-box flex flex-col gap-3">
-            <div className="box-label">SESSION_AUTH</div>
-            <div className="flex flex-col gap-2">
-              {currentUser ? (
-                <>
-                  <span className="text-[11px] text-[#00ffff] truncate">
-                    USER: {currentUser.displayName || currentUser.email}
-                  </span>
-                  <button
-                    onClick={handleSignOut}
-                    className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-[#ff00ff] text-[#ff00ff] bg-black hover:bg-[#ff00ff] hover:text-black transition-colors cursor-pointer uppercase"
-                  >
-                    <LogOut className="w-3.5 h-3.5" />
-                    DISCONNECT
-                  </button>
-                </>
-              ) : (
-                <button
-                  onClick={handleSignIn}
-                  className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-[#00ffff] text-[#00ffff] bg-black hover:bg-[#00ffff] hover:text-black transition-colors cursor-pointer uppercase"
-                >
-                  <LogIn className="w-3.5 h-3.5" />
-                  FIRESTORE_AUTH
-                </button>
-              )}
-              <button
-                onClick={() => window.print()}
-                className="px-3 py-2 text-xs font-bold border border-white text-white bg-black hover:bg-white hover:text-black transition-colors cursor-pointer uppercase"
-              >
-                PRINT_EXPORT
-              </button>
-            </div>
-
-            <div className="flex justify-end pt-1 opacity-75">
-              <svg width="72" height="72" viewBox="0 0 100 100">
-                <rect x="0" y="0" width="100" height="100" fill="none" stroke="#00ffff" strokeWidth="1.5" />
-                <path d="M0 0 L100 100 M100 0 L0 100" stroke="#ff00ff" strokeWidth="0.8" />
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="30"
-                  fill="none"
-                  stroke="#00ffff"
-                  strokeWidth="2"
-                  strokeDasharray="4 4"
-                />
-              </svg>
-            </div>
+        <div className="p-6 border-t-2 border-[#1a1a1c] bg-white">
+          <div className="var3-label mb-2">Authorized User</div>
+          <div className="font-extrabold text-sm text-[#1a1a1c] truncate">
+            {currentUser ? currentUser.displayName || currentUser.email : 'Ana V. Vanzin Mendes'}
           </div>
-        </div>
-      </section>
-
-      {authError && (
-        <div className="max-w-7xl w-full mx-auto px-6 pb-4">
-          <div className="bg-[#111111] border border-[#ff00ff] px-4 py-2 text-xs text-[#ff00ff] flex items-center justify-between">
-            <span>
-              <strong>AUTH_ALERT // FIRESTORE:</strong> {authError}
-            </span>
-            <button onClick={() => setAuthError(null)} className="underline font-bold ml-4 cursor-pointer">
-              CLOSE
+          <div className="mt-3 flex flex-wrap gap-2">
+            {currentUser ? (
+              <button
+                onClick={handleSignOut}
+                className="font-mono text-[10px] border border-[#1a1a1c] px-2.5 py-1 bg-white hover:bg-[#1a1a1c] hover:text-white transition-colors cursor-pointer uppercase"
+              >
+                LOGOUT_SECURE
+              </button>
+            ) : (
+              <button
+                onClick={handleSignIn}
+                className="font-mono text-[10px] border border-[#1a1a1c] px-2.5 py-1 bg-white hover:bg-[#ff4d00] hover:text-white hover:border-[#ff4d00] transition-colors cursor-pointer uppercase"
+              >
+                LOGIN_GOOGLE
+              </button>
+            )}
+            <button
+              onClick={() => window.print()}
+              className="font-mono text-[10px] border border-[#1a1a1c] px-2.5 py-1 bg-white hover:bg-[#1a1a1c] hover:text-white transition-colors cursor-pointer uppercase"
+            >
+              PRINT_EXPORT
             </button>
           </div>
         </div>
-      )}
+      </aside>
 
-      {/* Main Content Container (Glitch Console Workspace) */}
-      <main id="workspace-main" className="glitch-workspace flex-1 max-w-7xl w-full mx-auto px-6 py-6">
-        {/* DEDICATED MODULE: EXECUCAO & RESULTADOS (HOJE) */}
-        {activeTab === 'execucao_colab' && <ColabExecutionTab />}
+      {/* Variation 3 Main Workspace */}
+      <main className="var3-main">
+        <header className="var3-header">
+          <div className="var3-label" style={{ opacity: 0.9 }}>
+            <span className="var3-dot" />
+            Live Connection: Deterministic (0.0)
+          </div>
+          <div className="var3-label" style={{ opacity: 0.9 }}>
+            Commit_Hash: {PROJECT_METADATA.legalCommit.slice(0, 8)}
+          </div>
+        </header>
 
-        {/* DEDICATED MODULE: ICONOCRACIA-CV (2026-2) */}
-        {activeTab === 'iconocracia_cv' && (
-          <IconocraciaCvTab
-            currentUser={currentUser}
-            catalogEntries={iconocraciaCatalog}
-            onUserAuthenticated={(user) => setCurrentUser(user)}
-          />
-        )}
+        <div className="workspace-content">
+          {/* Laboratory Report Hero & 12-Column KPI Summary */}
+          <div className="max-w-7xl mx-auto mb-10">
+            <div className="mb-8">
+              <div className="var3-label" style={{ color: 'var(--accent)', opacity: 1, fontWeight: 700 }}>
+                Research Dashboard // Phase 01
+              </div>
+              <h2 className="font-oswald text-4xl sm:text-5xl font-bold my-1 tracking-tight text-[#1a1a1c]">
+                LABORATORY_REPORT
+              </h2>
+              <p className="max-w-2xl text-sm leading-relaxed text-[#444]">
+                Bateria completa executada sob isolamento estrito. Resultados Consolidados: Piloto CASE01 (R1) e
+                Formulários Federais AO 399, 440 e 441.
+              </p>
+            </div>
+
+            <div className="grid-layout">
+              <div className="data-card">
+                <div className="var3-label">Executions</div>
+                <div className="stat-large tabular-nums">20</div>
+              </div>
+              <div className="data-card">
+                <div className="var3-label">Accuracy</div>
+                <div className="stat-large tabular-nums">100%</div>
+              </div>
+              <div className="data-card">
+                <div className="var3-label">Abstentions</div>
+                <div className="stat-large tabular-nums">14/14</div>
+              </div>
+              <button
+                onClick={() => {
+                  setActiveTab('execucao_colab');
+                  const el = document.getElementById('workspace-main');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="btn-action"
+              >
+                Run_Batch
+              </button>
+
+              <div className="table-container">
+                <table className="var3-table">
+                  <thead>
+                    <tr>
+                      <th>Case ID</th>
+                      <th>Status</th>
+                      <th>Detection_Result</th>
+                      <th>Methodology_Audit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="font-mono text-xs font-bold">CASE01 · Object_A</td>
+                      <td>
+                        <span className="pill pill-success">PASS</span>
+                      </td>
+                      <td>
+                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
+                          has_property(A, conduct_by_hand)
+                        </code>
+                      </td>
+                      <td className="text-xs text-[#333]">Visual anchoring verified (2/2 c/ imagem, 2/2 abstenções s/ imagem).</td>
+                    </tr>
+                    <tr>
+                      <td className="font-mono text-xs font-bold">LEGAL01 · Summons (AO 440)</td>
+                      <td>
+                        <span className="pill pill-success">PASS</span>
+                      </td>
+                      <td>
+                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
+                          identity_undetermined(blank)
+                        </code>
+                      </td>
+                      <td className="text-xs text-[#333]">Zero hallucination on empty field; prazos 21d / 60d homologados.</td>
+                    </tr>
+                    <tr>
+                      <td className="font-mono text-xs font-bold">AO 399 · Waiver / AO 441</td>
+                      <td>
+                        <span className="pill pill-warn">ABSTAIN</span>
+                      </td>
+                      <td>
+                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
+                          deadline_undetermined
+                        </code>
+                      </td>
+                      <td className="text-xs text-[#333]">Form requires missing input data when blank or without image (60d / 90d c/ contexto).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {authError && (
+            <div className="max-w-7xl mx-auto mb-6">
+              <div className="bg-white border-2 border-[#1a1a1c] px-4 py-2.5 text-xs text-[#ff4d00] font-mono flex items-center justify-between shadow-[4px_4px_0_#1a1a1c]">
+                <span>
+                  <strong>AUTH_ALERT:</strong> {authError}
+                </span>
+                <button onClick={() => setAuthError(null)} className="underline font-bold ml-4 cursor-pointer text-[#1a1a1c]">
+                  CLOSE
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Active Module Content Container */}
+          <div id="workspace-main" className="var3-workspace max-w-7xl mx-auto pt-2">
+            {/* DEDICATED MODULE: EXECUCAO & RESULTADOS (HOJE) */}
+            {activeTab === 'execucao_colab' && <ColabExecutionTab />}
+
+            {/* DEDICATED MODULE: ICONOCRACIA-CV (2026-2) */}
+            {activeTab === 'iconocracia_cv' && (
+              <IconocraciaCvTab
+                currentUser={currentUser}
+                catalogEntries={iconocraciaCatalog}
+                onUserAuthenticated={(user) => setCurrentUser(user)}
+              />
+            )}
 
         {/* TAB 1: CASOS FEDERAIS AO 399 / AO 440 / AO 441 & ADJUDICAÇÃO FIRESTORE */}
         {activeTab === 'casos_federais' && (
@@ -2216,24 +2210,19 @@ export function App() {
             </section>
           </div>
         )}
-      </main>
-
-      {/* Variation 18 Glitch Console Footer */}
-      <footer className="border-t border-[#00ffff]/40 bg-[#080808] px-8 py-5 mt-12 text-xs">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="tag-glitch">VER: 4.1.0-A</span>
-            <span className="tag-glitch">SYS: STABLE</span>
-            <span className="tag-glitch">HASHES: 5/5 SHA-256</span>
-          </div>
-          <div className="text-[#ff00ff] font-bold tracking-wider">
-            PING_RESPONSE: 0.003MS // TEMP: 0.0
-          </div>
-          <div className="text-white/80">
-            (C) 410159 // SYSTEMATIC ANALYSIS · GRUPO 26 ({BIBLIOGRAPHIC_SOURCES.map((s) => s.id).join(' / ')})
           </div>
         </div>
-      </footer>
+
+        {/* Variation 3 Console Footer */}
+        <div className="console-footer">
+          <span>&gt; SYS_STABLE</span>
+          <span>&gt; NO_LEAKAGE_DETECTED</span>
+          <span>&gt; HASH_VALID: 5/5</span>
+          <span className="ml-auto">
+            (C) 410159 · GRUPO 26 ({BIBLIOGRAPHIC_SOURCES.map((s) => s.id).join(' / ')})
+          </span>
+        </div>
+      </main>
     </div>
   );
 }

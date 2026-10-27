@@ -106,6 +106,8 @@ Responda em português técnico e claro, estruturando:
       });
 
       const rawChunks = response.candidates?.[0]?.groundingMetadata?.groundingChunks || [];
+      const searchEntryPointRendered =
+        response.candidates?.[0]?.groundingMetadata?.searchEntryPoint?.renderedContent || null;
       const sources = rawChunks
         .map((chunk: { web?: { uri?: string; title?: string } }) => ({
           title: chunk.web?.title || chunk.web?.uri || 'Fonte Web Verificada',
@@ -113,11 +115,18 @@ Responda em português técnico e claro, estruturando:
         }))
         .filter((s: { uri: string }) => Boolean(s.uri));
 
+      const nowIso = new Date().toISOString();
+      const answerText = response.text || '';
       res.json({
-        text: response.text || '',
+        query: queryText,
+        formCode,
+        answer: answerText,
+        text: answerText,
+        searchEntryPointRendered,
         sources,
         model: 'gemini-3.8-flash',
-        checkedAt: new Date().toISOString(),
+        timestamp: nowIso,
+        checkedAt: nowIso,
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
@@ -130,14 +139,28 @@ Responda em português técnico e claro, estruturando:
   // 2. OpenAlex Academic Literature Proxy Route (Science Skill)
   app.get('/api/openalex/works', async (req, res) => {
     try {
-      const search = typeof req.query.search === 'string' ? req.query.search.trim() : 'legal argumentation schemes Walton';
+      const rawSearch =
+        typeof req.query.q === 'string'
+          ? req.query.q
+          : typeof req.query.search === 'string'
+          ? req.query.search
+          : 'legal argumentation schemes Walton';
+      const search = rawSearch.trim() || 'legal argumentation schemes Walton';
       const oaOnly = req.query.oaOnly === 'true';
-      const perPage = Math.min(Number(req.query.perPage) || 12, 25);
+      const fromYear = typeof req.query.from_year === 'string' ? req.query.from_year.trim() : '';
+      const perPage = Math.min(Number(req.query.per_page || req.query.perPage) || 12, 25);
 
       const params = new URLSearchParams();
       params.set('search', search);
+      const filters: string[] = [];
       if (oaOnly) {
-        params.set('filter', 'is_oa:true');
+        filters.push('is_oa:true');
+      }
+      if (fromYear && /^\d{4}$/.test(fromYear)) {
+        filters.push(`from_publication_date:${fromYear}-01-01`);
+      }
+      if (filters.length > 0) {
+        params.set('filter', filters.join(','));
       }
       params.set('sort', 'cited_by_count:desc');
       params.set('per-page', String(perPage));
@@ -175,31 +198,37 @@ Responda em português técnico e claro, estruturando:
       };
 
       const works = (data.results || []).map((w) => {
-        const shortId = (w.id || '').replace('https://openalex.org/', '');
+        const shortId = (w.id || '').replace('https://openalex.org/', '') || 'W0';
         const authors = (w.authorships || [])
           .map((a) => a.author?.display_name)
           .filter(Boolean)
           .slice(0, 4)
           .join(', ');
         const abstractText = reconstructAbstract(w.abstract_inverted_index);
+        const venueName = w.primary_location?.source?.display_name || 'Publicação Acadêmica';
         return {
           id: w.id,
-          openalexId: shortId || 'W0',
+          shortId,
+          openalexId: shortId,
           title: w.display_name || 'Sem título',
           publicationYear: w.publication_year || 2000,
           citedByCount: w.cited_by_count || 0,
           doiUrl: w.doi || w.best_oa_location?.landing_page_url || w.id,
           oaUrl: w.best_oa_location?.pdf_url || w.open_access?.oa_url || '',
           isOa: Boolean(w.open_access?.is_oa),
-          sourceName: w.primary_location?.source?.display_name || 'Publicação Acadêmica',
+          venue: venueName,
+          sourceName: venueName,
           authorsSummary: authors || 'Autor não listado',
           abstractText: abstractText ? abstractText.slice(0, 520) + (abstractText.length > 520 ? '…' : '') : '',
         };
       });
 
+      const totalCount = data.meta?.count || works.length;
       res.json({
-        totalCount: data.meta?.count || works.length,
+        totalCount,
+        meta: { count: totalCount },
         works,
+        results: works,
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
