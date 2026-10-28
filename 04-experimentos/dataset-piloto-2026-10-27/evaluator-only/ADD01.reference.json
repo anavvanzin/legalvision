@@ -1,0 +1,82 @@
+{
+  "case_id": "ADD01",
+  "family": "AO88B",
+  "reference_status": "assistant_proposed_pending_human_review",
+  "human_review_status": "pending",
+  "source_url": "https://www.wyd.uscourts.gov/sites/wyd/files/forms/AO_088b.pdf",
+  "source_file": "evaluator-only/sources/AO_088b.original.pdf",
+  "source_sha256": "b0462342769bcfb4be0d7dc47b455464e954064e0a36d4be6eb3c7bc8517a15f",
+  "source_page": 1,
+  "document_edition": "AO88B Rev. 02/14, hosted by District of Wyoming; contains historical Rule45 attachment not used as current law",
+  "retrieved_date_utc": "2026-10-27",
+  "image_sha256": "2ee2efe75c74fb1dd41749367cb523a2d43ada0cf760baa32af9facea28fd6d8",
+  "render": {
+    "tool": "macOS PDFKit PDFPage.thumbnail + AppKit NSBitmapImageRep",
+    "media_box_scale": 2,
+    "dimensions": [
+      1224,
+      1584
+    ],
+    "crop": null,
+    "annotations": "Rendered source as provided; no form fields filled; no source PDF edits."
+  },
+  "reuse": "Official US federal court form hosted on an official court site; federal-government-work basis under 17 USC105, attribution retained. No CC licence asserted; no private exhibits included.",
+  "visual_inspection": {
+    "inspected": true,
+    "method": "view_image of final PNG",
+    "observation": "Both target option boxes visually empty; printed alternatives and labels visible. No personal names or signatures visible in target groups.",
+    "date_utc": "2026-10-27"
+  },
+  "facts": [
+    {
+      "atom": "option_state(doc1,production,unmarked)",
+      "bbox": [
+        0.098,
+        0.369,
+        0.215,
+        0.384
+      ],
+      "page": 1,
+      "kind": "checkbox_state_and_label_relation",
+      "transcription": null
+    },
+    {
+      "atom": "option_state(doc1,inspection,unmarked)",
+      "bbox": [
+        0.098,
+        0.522,
+        0.296,
+        0.537
+      ],
+      "page": 1,
+      "kind": "checkbox_state_and_label_relation",
+      "transcription": null
+    }
+  ],
+  "derived": [
+    "command_choice_undetermined(doc1)"
+  ],
+  "expected_output": "[option_state(doc1,production,unmarked),option_state(doc1,inspection,unmarked)],command_choice_undetermined(doc1)",
+  "without_image_expected": "[],undetermined(visual_facts,doc1)",
+  "limits": [
+    "The two AO tasks share the same PDF and are not independent sources.",
+    "A blank checkbox does not prove non-occurrence of service, production or inspection.",
+    "Do not infer identity, guilt, intent, legal validity or causal responsibility.",
+    "The reference boxes and expected answers are assistant proposals pending independent human review.",
+    "The image is a full-page rendering; the factual target concerns the designated checkbox group, not the historical rule text."
+  ],
+  "annotation_provenance": {
+    "kind": "assistant_visual_annotation",
+    "exact_assistant_model_id": "not_exposed",
+    "source_blinded": false,
+    "source_exposure": "Official PDF text was read before final PNG inspection; not independent human ground truth.",
+    "pixels_inspected_with": "view_image",
+    "bbox_format": "normalized XYXY, top-left origin; approximate proposed regions"
+  },
+  "model_image": "model-input/images/ADD01.png",
+  "path_base": "package_root",
+  "human_review_completed": false,
+  "artifact_status": "prepared_local_research",
+  "bbox_space": "model_image_normalized_xyxy",
+  "page_convention": "facts.page identifies the source PDF page, or 1 for a standalone illustration; bboxes always refer to the candidate PNG, not the uncropped source page."
+}

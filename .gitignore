@@ -32,3 +32,9 @@ memories.jsonl
 credentials*
 *.tar
 *.tar.gz
+
+# Artefato neutro preservado somente no diretório de pesquisa.
+!04-experimentos/dataset-piloto-2026-10-27/somente-model-input.zip
+
+# Saída local de compilação; o Space é montado a partir de um build verificado.
+dist/

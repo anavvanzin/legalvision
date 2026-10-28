@@ -1,0 +1,81 @@
+{
+  "case_id": "ADD04",
+  "artifact_status": "blocked_source_http_488",
+  "reference_status": "assistant_proposed_pending_human_review",
+  "ready_for_candidate": false,
+  "source_url": "https://servicos.seara.sc.gov.br/uploads/sites/335/2022/05/1664596_Manual_I_sinalizacao_vertical_de_regulamentacao.pdf",
+  "source_file": null,
+  "source_sha256": null,
+  "source_metadata": {
+    "reported_title": "Manual Brasileiro de Sinalização de Trânsito, Volume I, Sinalização Vertical de Regulamentação",
+    "reported_edition_year": 2007,
+    "benchmark_scope": "Benchmark documental da edição de 2007; não representa a legislação atual.",
+    "verification": "Localização e edição informadas pelo pesquisador da tarefa; PDF não obtido nem inspecionado localmente.",
+    "proposed_pdf_page_1_based": 142,
+    "proposed_pdf_page_index_0_based": 141,
+    "proposed_printed_page": 141,
+    "reported_sign_code_evaluator_only": "R-6a",
+    "reuse": "Condições de reutilização não verificadas; acesso público não foi tratado como licença."
+  },
+  "source_access_attempt": {
+    "operation": "Download apenas do PDF público autorizado, usando urllib padrão.",
+    "outcome": "HTTP 488",
+    "source_target_created": false,
+    "retry_performed": false
+  },
+  "crop": {
+    "image_file": null,
+    "image_sha256": null,
+    "bbox_xyxy": null,
+    "coordinate_system": null,
+    "visually_inspected": false,
+    "pending_requirement": "Obter cópia oficial autorizada, renderizar a página, recortar somente a placa sem legendas/código e inspecionar os pixels."
+  },
+  "model_input_proposal": {
+    "case_id": "ADD04",
+    "asset_id": "ADD04",
+    "image": null,
+    "image_sha256": null,
+    "context": "doc1 designa somente a placa do recorte. Não há dados de veículo, condutor, local, data ou comportamento.",
+    "enthymeme": "Qual padrão de diagonais vermelhas aparece sobre a letra e qual categoria decorre exclusivamente da regra operacional fornecida?",
+    "provided_rule": "Regra operacional hipotética deste exercício, e não uma declaração de direito vigente: se o recorte mostrar a letra E sobreposta por uma única diagonal vermelha, conclua operational_category(doc1,parking_prohibited). Se mostrar a letra E sobreposta por duas diagonais vermelhas cruzadas em X, conclua operational_category(doc1,stopping_and_parking_prohibited). A regra só se aplica após identificar o padrão nos pixels fornecidos. Sem imagem ou com padrão ilegível, não escolha categoria.",
+    "output_contract": {
+      "format": "[premises],conclusion",
+      "without_image": "[],undetermined(visual_facts,doc1)",
+      "allowed_atoms": [
+        "printed_letter(doc1,E)",
+        "red_diagonal_pattern(doc1,single_diagonal)",
+        "red_diagonal_pattern(doc1,crossed_diagonals)",
+        "operational_category(doc1,parking_prohibited)",
+        "operational_category(doc1,stopping_and_parking_prohibited)",
+        "undetermined(visual_facts,doc1)"
+      ]
+    },
+    "vocabulary": {
+      "entity": "doc1",
+      "red_diagonal_pattern": [
+        "single_diagonal",
+        "crossed_diagonals"
+      ],
+      "operational_category": [
+        "parking_prohibited",
+        "stopping_and_parking_prohibited"
+      ]
+    }
+  },
+  "facts": [],
+  "derived": [],
+  "expected_output": null,
+  "proposed_expected_output": "[printed_letter(doc1,E),red_diagonal_pattern(doc1,single_diagonal)],operational_category(doc1,parking_prohibited)",
+  "proposed_expected_output_condition": "Proposta condicional ao futuro recorte confirmar visualmente os traços informados; não é observação de pixels nem gabarito validado.",
+  "without_image_expected": "[],undetermined(visual_facts,doc1)",
+  "limits": [
+    "Fonte indisponível nesta tarefa: HTTP 488. Nenhuma imagem candidata foi criada.",
+    "Não foram observados pixels, transcrições, dimensões, cores ou coordenadas; facts e derived permanecem vazios.",
+    "Referência proposta por assistente; exige revisão humana após disponibilização da fonte.",
+    "Não inferir infração, culpa, identidade, intenção, nexo causal ou fatos de trânsito concreto.",
+    "A regra fornecida é operacional e hipotética; o exercício não afirma direito vigente.",
+    "Não incluir esta referência, código oficial da placa, fonte descritiva ou proposta de resposta em entradas candidatas.",
+    "Não comparar este item com casos executados enquanto estiver bloqueado e sem estímulo verificado."
+  ]
+}

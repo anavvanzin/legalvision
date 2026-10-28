@@ -6,6 +6,9 @@ import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 import { GoogleGenAI } from '@google/genai';
 import { requireAuth, AuthRequest } from './src/middleware/auth.ts';
+import { requireModelExecution } from './src/middleware/modelExecutionGate.ts';
+import { fetchWithRetry } from './src/utils/fetchWithRetry.ts';
+import { parseExecutionScope } from './src/utils/executionScope.ts';
 import {
   getOrCreateUser,
   getUserAdjudicationsByUid,
@@ -17,34 +20,6 @@ import {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-async function fetchWithRetry(
-  url: string,
-  options: RequestInit = {},
-  maxRetries = 3,
-  baseDelayMs = 600
-): Promise<Response> {
-  for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    const response = await fetch(url, options);
-    if (response.ok) {
-      return response;
-    }
-    if ((response.status === 429 || response.status >= 500) && attempt < maxRetries) {
-      const retryAfter = Number(response.headers.get('Retry-After'));
-      const delay =
-        !Number.isNaN(retryAfter) && retryAfter > 0
-          ? retryAfter * 1000
-          : baseDelayMs * Math.pow(2, attempt);
-      await new Promise((resolve) => setTimeout(resolve, delay));
-      continue;
-    }
-    const errorBody = await response.text().catch(() => '');
-    throw new Error(
-      `HTTP ${response.status} (${response.statusText}) from ${url}: ${errorBody.slice(0, 300)}`
-    );
-  }
-  throw new Error(`Exhausted retries for ${url}`);
-}
 
 function reconstructAbstract(invertedIndex?: Record<string, number[]> | null): string {
   if (!invertedIndex || typeof invertedIndex !== 'object') {
@@ -69,7 +44,7 @@ async function startServer() {
   app.use(express.json({ limit: '2mb' }));
 
   // 1. Google Search Grounding Route for FRCP Rules 4, 12, 14 and AO Forms (gemini-3.8-flash)
-  app.post('/api/grounding/frcp', async (req, res) => {
+  app.post('/api/grounding/frcp', requireModelExecution, requireAuth, async (req, res) => {
     try {
       const queryText = typeof req.body?.query === 'string' ? req.body.query.trim() : '';
       const formCode = typeof req.body?.formCode === 'string' ? req.body.formCode.trim() : 'AO 399 / AO 440 / AO 441';
@@ -239,7 +214,7 @@ Responda em português técnico e claro, estruturando:
   });
 
   // 3. Pre-Flight SHA-256 & Saved Execution Status Route
-  app.get('/api/execute/status', async (_req, res) => {
+  app.get('/api/execute/status', requireAuth, async (_req, res) => {
     try {
       const { verifyPreFlightHashes, loadSavedExecutionResults } = await import(
         './src/utils/serverExecutionEngine.ts'
@@ -261,11 +236,13 @@ Responda em português técnico e claro, estruturando:
   });
 
   // 4. Live Multimodal Execution Route (CASE01 R1 + Federal Forms AO 399 / 440 / 441)
-  app.post('/api/execute/run', async (req, res) => {
+  app.post('/api/execute/run', requireModelExecution, requireAuth, async (req, res) => {
     try {
-      const scopeRaw = req.body?.scope;
-      const scope: 'all' | 'case01' | 'federal_forms' =
-        scopeRaw === 'case01' || scopeRaw === 'federal_forms' ? scopeRaw : 'all';
+      const scope = parseExecutionScope(req.body?.scope);
+      if (!scope) {
+        res.status(400).json({ error: 'Escopo de execução inválido.' });
+        return;
+      }
 
       const { verifyPreFlightHashes, runLiveExecutionSuite } = await import(
         './src/utils/serverExecutionEngine.ts'

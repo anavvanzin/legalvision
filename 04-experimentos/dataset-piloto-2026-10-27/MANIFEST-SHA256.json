@@ -1,0 +1,296 @@
+{
+  "created_at_utc": "2026-10-27T18:49:41.253595+00:00",
+  "scope": "This suite, excluding self-manifest and generated cache",
+  "files": {
+    "FORMATO-MINIMO.md": {
+      "sha256": "ce90ca94a011e98f7c242acdee8da93c80bc30cbdebb34f37e77413226b774b6",
+      "bytes": 3522,
+      "valid_source_asset": null
+    },
+    "OFFLINE-CHECKS.json": {
+      "sha256": "0190280dfac9767a2eed76abeec53b64be8b8b736e10d5a1ecde1cb7a1d3edb4",
+      "bytes": 1659,
+      "valid_source_asset": null
+    },
+    "PROVENIENCIA-CONTINUACAO.json": {
+      "sha256": "248e5fabe32eff9b367a5fe4e01380eec908856bdea7beaf667c966e6dbce67b",
+      "bytes": 3388,
+      "valid_source_asset": null
+    },
+    "README.md": {
+      "sha256": "766c2301b7a46946392add0e276ce890ac0676e0b6d683995344629cf53dba86",
+      "bytes": 7842,
+      "valid_source_asset": null
+    },
+    "entrega-academica/LEIA-ME.md": {
+      "sha256": "1e29b35c4d8111b1fa1b80a8a3430b56d62d895ddc2da03a8679023a07c02ac5",
+      "bytes": 2032,
+      "valid_source_asset": null
+    },
+    "entrega-academica/design.md": {
+      "sha256": "2ef90db4198dda88237529a9a2fa6e1fa56d6d58985622eaf343dcbc16cbe5b5",
+      "bytes": 2165,
+      "valid_source_asset": null
+    },
+    "entrega-academica/fontes/gerar_pdfs.py": {
+      "sha256": "15f15bde9e597dbe4920fecdec1d5513fe672d367b61a1d3f366a0ce4af194b0",
+      "bytes": 14035,
+      "valid_source_asset": null
+    },
+    "entrega-academica/fontes/relatorio.md": {
+      "sha256": "aa51706c9c2d483438d9fcc80302c18bf7f213ad340354133054eed6998ecefd",
+      "bytes": 28983,
+      "valid_source_asset": null
+    },
+    "entrega-academica/poster-argumentacao-juridica-visual-A1.pdf": {
+      "sha256": "af1af289f1df776175a1f928a68662407e9578f530e9fcf2dd7d98b54f16fb2c",
+      "bytes": 112508,
+      "valid_source_asset": null
+    },
+    "entrega-academica/relatorio-argumentacao-juridica-visual.pdf": {
+      "sha256": "c237fd140f0df98be95c94e16ba2437363e2fb66dfe2b9182d6abb53e11f1e91",
+      "bytes": 536135,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/poster-A1-previa.png": {
+      "sha256": "a48f311513da3a7956d65605f41a44458a427d0b54ddcd5ae457aff56c80a394",
+      "bytes": 422663,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p03.png": {
+      "sha256": "515c62e71fef34a61312e10f2055eebace5cfb3559ce0b0bc4a4e1cc26cd63a3",
+      "bytes": 185043,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p04.png": {
+      "sha256": "e3df2b5a9e5f0e84dc9b8d2f236dcf72aac70fcf8229276b5e6cd6b6cf31f756",
+      "bytes": 190280,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p05.png": {
+      "sha256": "3d3dc01a6905424dad5442b74671c1196e116ddbd5191683d419248576d8acfd",
+      "bytes": 200930,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p06.png": {
+      "sha256": "740cfceb551f0cad13be47e6d6c29cc6e4e824bf8a35cb25b45f69b7175cd0dd",
+      "bytes": 177419,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p07.png": {
+      "sha256": "cb76a6cb15bced2e3760da862a0e00584549bc919df03d7effe58a906ad4c648",
+      "bytes": 175791,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p08.png": {
+      "sha256": "bda399a11ec09739a306345e906d7fc83a2fd32b010b599a47fba758b48fdb67",
+      "bytes": 216938,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p09.png": {
+      "sha256": "08e5c0e34c4824c75a98e895d87a454566177387bf409912792eb137f8964439",
+      "bytes": 161988,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p10.png": {
+      "sha256": "ac4ca5b40cec3931bf3e6bfc8a8b19b5e29fe1313ed1abc016baf97cd9a03e66",
+      "bytes": 164152,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p11.png": {
+      "sha256": "207e03aebc499f0757b0cdc784b7080c925af1ae59674b13ba656b97813effe7",
+      "bytes": 187561,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p13.png": {
+      "sha256": "6bf59930ab7f7aec13f662b8c80c674ad85b7245bd8f22a07736c31e412d49f7",
+      "bytes": 183537,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-p14.png": {
+      "sha256": "435b167c39a43546c46cf80b850ca5b00b9825b507ac8e4581924e0986b1bf02",
+      "bytes": 213928,
+      "valid_source_asset": null
+    },
+    "entrega-academica/revisao/relatorio-visao-geral.png": {
+      "sha256": "02914231d84c31cf5e362c39b6389fd479d7a0c26d79d5d5d2842081f13acdbc",
+      "bytes": 787371,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD01.reference.json": {
+      "sha256": "3e2888e536fc73631e6b395f2a5875edf8200df09f89a9d2f252c8c8502603c2",
+      "bytes": 3499,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD02.reference.json": {
+      "sha256": "37eb8457630e8a202350d191bc656cbc08323b71ef38c4c490412bb248868f78",
+      "bytes": 5581,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD03.reference.json": {
+      "sha256": "e9a82120bc5c25f403ea4235dff4e9face001e2085961dcf6d8a7a4b3e51ba0e",
+      "bytes": 5343,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD04.reference.json": {
+      "sha256": "e1f81b3eedffa88256dc644754adb5b66682ff3ec77cf1fefebf55de44537f6b",
+      "bytes": 4761,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD05.reference.json": {
+      "sha256": "dd9d3ab19f52e55a7602359222928ab2f6a5b4641b25e201dabdea482a8c96a9",
+      "bytes": 4805,
+      "valid_source_asset": null
+    },
+    "evaluator-only/ADD06.reference.json": {
+      "sha256": "ab2c872a531f8366e2af894eab0b95d54ca91278b58c693d4f4573168ca853a4",
+      "bytes": 3490,
+      "valid_source_asset": null
+    },
+    "evaluator-only/historico-origem/ADD04.reference.json": {
+      "sha256": "ae3bc257dfe9db3c2925a14ae1dcae111e6b5154dc8f24da3e9d492b89361317",
+      "bytes": 4471,
+      "valid_source_asset": null
+    },
+    "evaluator-only/historico-origem/ADD05.reference.json": {
+      "sha256": "a5b9e08b3d7af825da180ce4e7eb6a33ad81c7e4144c2a5925c0dac9fdbf9ac2",
+      "bytes": 4486,
+      "valid_source_asset": null
+    },
+    "evaluator-only/results/README.txt": {
+      "sha256": "3fac1e4712db9c07256d547c1c4edceee09a7300196ef40447c23c8d876d5aa3",
+      "bytes": 411,
+      "valid_source_asset": null
+    },
+    "evaluator-only/source-pages/MBST-I-2007-p142.png": {
+      "sha256": "94b7d92a0043e7a08032a9484bd96aff221b0a038e6f82fa9b9b2f3a525974c4",
+      "bytes": 225521,
+      "valid_source_asset": null
+    },
+    "evaluator-only/source-pages/MBST-I-2007-p152.png": {
+      "sha256": "a2338137e9afaaa2da7f1b6bc43c2fe323b73febf3c315517ad46a47623e9642",
+      "bytes": 318177,
+      "valid_source_asset": null
+    },
+    "evaluator-only/sources/AO_088b.original.pdf": {
+      "sha256": "b0462342769bcfb4be0d7dc47b455464e954064e0a36d4be6eb3c7bc8517a15f",
+      "bytes": 534828,
+      "valid_source_asset": null
+    },
+    "evaluator-only/sources/MBST-I-2007.original.pdf": {
+      "sha256": "f0a28721cc87aef3eb1238bbc1c7fca2f8a606834192d2c2c85118849fdc31b4",
+      "bytes": 3326278,
+      "valid_source_asset": null
+    },
+    "evaluator-only/sources/free-parking-all-vehicles.original.svg": {
+      "sha256": "d4059dae6539dd8d956d137cffa68a4eae8b83e065abb7168c23becdf356df15",
+      "bytes": 11755,
+      "valid_source_asset": null
+    },
+    "evaluator-only/sources/free-parking-all-vehicles.svg": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "valid_source_asset": false
+    },
+    "evaluator-only/sources/no-waiting-both-directions.original.svg": {
+      "sha256": "686a19bda8b8b0988ecd362512caf2286f494c952e6802075a1866ee554903b8",
+      "bytes": 18546,
+      "valid_source_asset": null
+    },
+    "evaluator-only/sources/no-waiting-both-directions.svg": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "valid_source_asset": false
+    },
+    "model-input/ADD01.json": {
+      "sha256": "0884f9d30f321980b698201d5d54b72827e3874b74d1439ef102e5f69d170428",
+      "bytes": 2136,
+      "valid_source_asset": null
+    },
+    "model-input/ADD02.json": {
+      "sha256": "e62ebf0aca52869404ddc9fadb7f2213aeed68941dbadf853ce15810a1fd24c3",
+      "bytes": 2883,
+      "valid_source_asset": null
+    },
+    "model-input/ADD03.json": {
+      "sha256": "8986c776ee06614d2de1d5b3ea5818d77e1fa215a2859de75ac6695b229e184b",
+      "bytes": 2786,
+      "valid_source_asset": null
+    },
+    "model-input/ADD04.json": {
+      "sha256": "50e4aba0e9dbcb2e515b0968ef4dd65b692ef400b41af74e68d74515e803854a",
+      "bytes": 1889,
+      "valid_source_asset": null
+    },
+    "model-input/ADD05.json": {
+      "sha256": "f132435ede6504a2703b5d8dbcb79e7b4b98efeef42430d5798bc586581b595a",
+      "bytes": 1889,
+      "valid_source_asset": null
+    },
+    "model-input/ADD06.json": {
+      "sha256": "4e2522c958a506cc143ba1de1bc867a7e2644f98b41d91250a469056d1e8835e",
+      "bytes": 2154,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD01.png": {
+      "sha256": "2ee2efe75c74fb1dd41749367cb523a2d43ada0cf760baa32af9facea28fd6d8",
+      "bytes": 251429,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD02.png": {
+      "sha256": "56bfe68411c241398f291856ddf966d2cec777b1f158695f98f2104dbbfd3297",
+      "bytes": 69517,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD03.png": {
+      "sha256": "76eb8e700e594fcd6fbd2a2a1288f60083c3908eca61ba16970575068fb62a80",
+      "bytes": 69654,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD04.png": {
+      "sha256": "5f0f059ccda338c0085df4051434690078836295012868a354658c529cdc756e",
+      "bytes": 17244,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD05.png": {
+      "sha256": "7338e57b9372575718b655a972f08b978720d74e5fcbde712d6f6f885c0bed51",
+      "bytes": 18039,
+      "valid_source_asset": null
+    },
+    "model-input/images/ADD06.png": {
+      "sha256": "0d0e1e521d6eac69679f6f4621e77bbbc189a63befe53dc794640ab3e7088bf4",
+      "bytes": 152630,
+      "valid_source_asset": null
+    },
+    "model-input/index.json": {
+      "sha256": "24bb3d6f426fcfc1bd6e095220bf323e1bdf40d29a497540647ba7cf1cad151d",
+      "bytes": 221,
+      "valid_source_asset": null
+    },
+    "model-input/prepared-inputs.jsonl": {
+      "sha256": "8df3a7f8c310beb1c02d7ad177619df4a4829f40f548e68a5fb37eeff5582f13",
+      "bytes": 29536,
+      "valid_source_asset": null
+    },
+    "notebook-aditivo-offline.ipynb": {
+      "sha256": "7defd5185c3568079eb72f5eb93a92d39d182b7cd6649131cf1ba18a85e7e806",
+      "bytes": 5253,
+      "valid_source_asset": null
+    },
+    "somente-model-input.zip": {
+      "sha256": "a18c600b98356e25f16fcb76988730e35f39e69228f9e206c355539257a1d183",
+      "bytes": 482326,
+      "valid_source_asset": null
+    },
+    "validar_entradas.py": {
+      "sha256": "936e9f5dbb682951f13be3cd3e34a1b4d9abf3e6b667f952a5e296a5167226e3",
+      "bytes": 5671,
+      "valid_source_asset": null
+    },
+    "verificar_pacote.py": {
+      "sha256": "b7245e778ccbe0fd4765fba210b27e35dc289019665e6c614f6868009519160e",
+      "bytes": 6504,
+      "valid_source_asset": null
+    }
+  }
+}

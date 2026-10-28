@@ -1,0 +1,28 @@
+{
+  "case_id": "ADD01",
+  "asset_id": "IMG_ADD01",
+  "image": "images/ADD01.png",
+  "image_sha256": "2ee2efe75c74fb1dd41749367cb523a2d43ada0cf760baa32af9facea28fd6d8",
+  "context": "doc1 designa a página documental fornecida, que pode conter campos impressos e preenchimentos. Rótulos, alternativas e enunciados padronizados não demonstram por si sós que um ato foi praticado. Nenhuma informação sobre um processo ou pessoa real foi fornecida.",
+  "enthymeme": "Quais estados de marcação são visíveis nas alternativas do grupo de comando? Essa página permite determinar uma opção selecionada? Complete as premissas visuais e a conclusão operacional.",
+  "provided_rule": "Regra operacional deste ensaio: no grupo de comando examinado, uma alternativa só conta como selecionada se sua caixa mostrar uma marca inequívoca. Se as caixas das alternativas production e inspection estiverem ambas vazias, conclua command_choice_undetermined(doc1). Se apenas uma estiver marcada, conclua selected_command(doc1,production) ou selected_command(doc1,inspection), conforme observado. Marca ilegível exige abstenção. Esta regra de leitura não decide validade, emissão ou cumprimento de uma ordem judicial. Se ambas as caixas estiverem marcadas ou a marcação não permitir escolha inequívoca, não resolva o conflito por adivinhação: responda [],undetermined(visual_facts,doc1).",
+  "output_contract": {
+    "format": "[premises],conclusion",
+    "without_image": "[],undetermined(visual_facts,doc1)",
+    "allowed_atoms": [
+      "option_state(doc1,production,marked)",
+      "option_state(doc1,production,unmarked)",
+      "option_state(doc1,production,unclear)",
+      "option_state(doc1,inspection,marked)",
+      "option_state(doc1,inspection,unmarked)",
+      "option_state(doc1,inspection,unclear)",
+      "command_choice_undetermined(doc1)",
+      "selected_command(doc1,production)",
+      "selected_command(doc1,inspection)",
+      "undetermined(visual_facts,doc1)"
+    ]
+  },
+  "vocabulary": {
+    "option_state": "Estado visual da caixa associada à alternativa indicada; use marked, unmarked ou unclear."
+  }
+}

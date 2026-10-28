@@ -7,6 +7,7 @@
     "dev": "tsx server.ts",
     "start": "node server.ts",
     "build": "vite build",
+    "build:public": "VITE_PUBLIC_DEMO=true vite build",
     "lint": "tsc --noEmit",
     "lint:rules": "npx eslint firestore.rules",
     "preview": "vite preview --host 0.0.0.0 --port 3000"

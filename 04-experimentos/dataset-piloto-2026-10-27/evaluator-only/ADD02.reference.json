@@ -1,0 +1,114 @@
+{
+  "reference_status": "assistant_proposed_pending_human_review",
+  "human_review_completed": false,
+  "annotation_provenance": {
+    "kind": "assistant_multimodal",
+    "exact_model_id": "not_exposed",
+    "source_blinded": false,
+    "source_exposure": "Official explanatory chapter read before inspecting PNG pixels. Reference is not independent human ground truth.",
+    "pixels_inspected_with": "view_image(detail=original)",
+    "bbox_format": "normalized XYXY [x0,y0,x1,y1], origin top-left; approximate manual regions, not segmentation",
+    "page_convention": "page=1 denotes the single illustration"
+  },
+  "source_page": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings",
+  "source_accessed_at_utc": "2026-10-27T12:17:54.164695+00:00",
+  "reuse": {
+    "license": "Open Government Licence v3.0, except where otherwise stated",
+    "copyright": "Crown copyright 2023",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: Department for Transport, Know your traffic signs, On-street parking control signs and road markings.",
+    "license_evidence_url": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings",
+    "license_terms_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "verification": "The official chapter explicitly states OGL v3.0 and third-party exceptions. No third-party notice was identified for these two illustrations in the chapter or SVG. The separate National Archives terms page returned HTTP 403 in this inspection; it was not retried.",
+    "adaptation": "Original SVG preserved in evaluator-only. Raster copy made with native macOS AppKit NSImage, 1440 x 960 RGBA, white background, full original viewBox; no crop, transcription overlay or substantive alteration."
+  },
+  "limits": [
+    "Proposed single-illustration case; no model inference or experimental result was produced while preparing it.",
+    "Public official illustration may already occur in model training; neutral filename does not exclude recognition.",
+    "Approximate assistant bounding boxes and transcription require human review.",
+    "Operational exercise only: the illustration and supplied rule do not establish actual street conditions, legal validity, a contravention, liability, identity, intention or causality.",
+    "Official source description and this reference remain evaluator-only; they must not be candidate context, retrieval material or tools."
+  ],
+  "case_id": "ADD02",
+  "asset_id": "ADD02",
+  "source_url": "https://assets.publishing.service.gov.uk/media/65e846f9ce8540001c12c46b/no-waiting-both-directions.svg",
+  "source_file": "evaluator-only/sources/no-waiting-both-directions.original.svg",
+  "source_sha256": "686a19bda8b8b0988ecd362512caf2286f494c952e6802075a1866ee554903b8",
+  "model_image": "model-input/images/ADD02.png",
+  "image_sha256": "56bfe68411c241398f291856ddf966d2cec777b1f158695f98f2104dbbfd3297",
+  "image_dimensions": [
+    1440,
+    960
+  ],
+  "facts": [
+    {
+      "atom": "restriction(doc1,upper,no_waiting)",
+      "bbox": [
+        0.399,
+        0.154,
+        0.602,
+        0.273
+      ],
+      "page": 1,
+      "transcription": "Mon - Sat / 8 am - 6.30 pm",
+      "visual_note": "Yellow upper panel; blue disc with red rim and diagonal red stroke at upper right."
+    },
+    {
+      "atom": "restriction(doc1,lower,no_loading)",
+      "bbox": [
+        0.399,
+        0.27,
+        0.603,
+        0.515
+      ],
+      "page": 1,
+      "transcription": "No loading / Mon - Fri / 8.00 - 9.30 am / 4.30 - 6.30 pm",
+      "visual_note": "White lower panel."
+    },
+    {
+      "atom": "arrow(doc1,lower,right)",
+      "bbox": [
+        0.472,
+        0.454,
+        0.528,
+        0.5
+      ],
+      "page": 1,
+      "transcription": null,
+      "visual_note": "Black horizontal arrow pointing right, inside the white lower panel."
+    },
+    {
+      "atom": "arrow(doc1,upper,absent)",
+      "bbox": [
+        0.399,
+        0.154,
+        0.602,
+        0.273
+      ],
+      "page": 1,
+      "transcription": null,
+      "visual_note": "No directional arrow visible in the complete yellow panel; the circular symbol is not an arrow."
+    }
+  ],
+  "derived": [
+    "scope(doc1,both,right)"
+  ],
+  "expected_output": "[restriction(doc1,upper,no_waiting),restriction(doc1,lower,no_loading),arrow(doc1,lower,right),arrow(doc1,upper,absent)],scope(doc1,both,right)",
+  "without_image_expected": "[],undetermined(visual_facts,doc1)",
+  "source_description_paraphrase": "The official explanation assigns the directional arrow only to the lower loading panel; the upper waiting panel has wider spatial scope. Kept here only as evaluator material.",
+  "derived_explanations": [
+    {
+      "atom": "scope(doc1,both,right)",
+      "rule": "R-ADD02",
+      "from": [
+        "restriction(doc1,upper,no_waiting)",
+        "restriction(doc1,lower,no_loading)",
+        "arrow(doc1,upper,absent)",
+        "arrow(doc1,lower,right)"
+      ],
+      "interpretation": "Under the supplied exercise convention, waiting scope is both directions and loading scope is right. Temporal conditions are not evaluated in this task."
+    }
+  ],
+  "artifact_status": "prepared_local_research",
+  "bbox_space": "model_image_normalized_xyxy",
+  "page_convention": "facts.page identifies the source PDF page, or 1 for a standalone illustration; bboxes always refer to the candidate PNG, not the uncropped source page."
+}
