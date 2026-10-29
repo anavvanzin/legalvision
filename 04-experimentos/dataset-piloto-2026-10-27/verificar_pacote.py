@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import tempfile
+import shutil
 import unittest
 import zipfile
 from validar_entradas import validate_neutral
@@ -80,6 +81,8 @@ class PackageChecks(unittest.TestCase):
                 self.assertEqual(cell["outputs"], [])
         for i, source in enumerate(code):
             compile(source, f"notebook-cell-{i}", "exec")
+        canonical = (ROOT / "validar_entradas.py").read_text(encoding="utf-8").split("if __name__ == '__main__':")[0]
+        self.assertTrue(code[0].startswith(canonical), "Validador standalone divergiu do script")
         state = {}
         source = code[0].replace('Path("model-input")', f"Path({str(ROOT / 'model-input')!r})", 1)
         exec(compile(source, "preparacao-local", "exec"), state)
@@ -88,18 +91,17 @@ class PackageChecks(unittest.TestCase):
         self.assertEqual(state["prepared_inputs"], expected)
         with tempfile.TemporaryDirectory() as directory:
             missing = code[0].replace('Path("model-input")', f"Path({directory!r})", 1)
-            with self.assertRaisesRegex(AssertionError, "Nenhum caso"):
+            with self.assertRaises((ValueError, FileNotFoundError)):
                 exec(compile(missing, "pasta-vazia", "exec"), {})
         from copy import deepcopy
         invalid = deepcopy(state["cases"][0])
         invalid["image_sha256"] = "0" * 64
         with tempfile.TemporaryDirectory() as directory:
             base = Path(directory)
-            (base / "images").mkdir()
-            (base / "images" / Path(invalid["image"]).name).write_bytes((ROOT / "model-input" / invalid["image"]).read_bytes())
+            shutil.copytree(ROOT / "model-input", base, dirs_exist_ok=True)
             (base / "ADD01.json").write_text(json.dumps(invalid))
             changed = code[0].replace('Path("model-input")', f"Path({directory!r})", 1)
-            with self.assertRaisesRegex(AssertionError, "Hash de imagem"):
+            with self.assertRaisesRegex(ValueError, "imagem ou hash"):
                 exec(compile(changed, "imagem-adulterada", "exec"), {})
 
 

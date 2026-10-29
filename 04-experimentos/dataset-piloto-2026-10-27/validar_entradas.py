@@ -2,7 +2,6 @@
 import hashlib
 import json
 from pathlib import Path
-import re
 
 CASE_KEYS = {'case_id', 'asset_id', 'image', 'image_sha256', 'context', 'enthymeme', 'provided_rule', 'output_contract', 'vocabulary'}
 ROW_KEYS = {'record_type', 'status', 'case_id', 'condition', 'repeat', 'prompt', 'image', 'image_sha256'}
@@ -81,7 +80,7 @@ def validate_neutral(root):
     if set(index) != {'case_ids', 'conditions', 'prepared_input_count', 'model_runs_performed'}:
         raise ValueError('campos não permitidos no índice')
     ids = index['case_ids']
-    if not ids or len(set(ids)) != len(ids) or not all(isinstance(x, str) and re.fullmatch(r'ADD\d{2}', x) for x in ids):
+    if ids != [f'ADD{i:02d}' for i in range(1, 7)]:
         raise ValueError('IDs do índice inválidos')
     if index['conditions'] != CONDITIONS or index['model_runs_performed'] != 0 or index['prepared_input_count'] != 2 * len(ids):
         raise ValueError('contagem ou condições do índice divergentes')

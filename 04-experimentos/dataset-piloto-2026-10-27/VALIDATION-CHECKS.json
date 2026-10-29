@@ -1,0 +1,68 @@
+{
+  "baseline_commit": "e8624d1cb4a9780bcce4ad2258c81a51e1e19bdb",
+  "verified_at_utc": "2026-10-29T00:03:06.309228+00:00",
+  "scope": "local preparation checks, not model or human evaluation",
+  "model_inferences_performed": 0,
+  "human_adjudications_performed": 0,
+  "dgx_access_tested": false,
+  "jupyter_frontend_tested": false,
+  "python_integration_tests_passed": 20,
+  "package_test_groups_passed": 3,
+  "existing_binary_assets_compared_unchanged": 32,
+  "binary_asset_sha256": {
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/poster-argumentacao-juridica-visual-A1.pdf": "af1af289f1df776175a1f928a68662407e9578f530e9fcf2dd7d98b54f16fb2c",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/relatorio-argumentacao-juridica-visual.pdf": "c237fd140f0df98be95c94e16ba2437363e2fb66dfe2b9182d6abb53e11f1e91",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/poster-A1-previa.png": "a48f311513da3a7956d65605f41a44458a427d0b54ddcd5ae457aff56c80a394",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p03.png": "515c62e71fef34a61312e10f2055eebace5cfb3559ce0b0bc4a4e1cc26cd63a3",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p04.png": "e3df2b5a9e5f0e84dc9b8d2f236dcf72aac70fcf8229276b5e6cd6b6cf31f756",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p05.png": "3d3dc01a6905424dad5442b74671c1196e116ddbd5191683d419248576d8acfd",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p06.png": "740cfceb551f0cad13be47e6d6c29cc6e4e824bf8a35cb25b45f69b7175cd0dd",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p07.png": "cb76a6cb15bced2e3760da862a0e00584549bc919df03d7effe58a906ad4c648",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p08.png": "bda399a11ec09739a306345e906d7fc83a2fd32b010b599a47fba758b48fdb67",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p09.png": "08e5c0e34c4824c75a98e895d87a454566177387bf409912792eb137f8964439",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p10.png": "ac4ca5b40cec3931bf3e6bfc8a8b19b5e29fe1313ed1abc016baf97cd9a03e66",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p11.png": "207e03aebc499f0757b0cdc784b7080c925af1ae59674b13ba656b97813effe7",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p13.png": "6bf59930ab7f7aec13f662b8c80c674ad85b7245bd8f22a07736c31e412d49f7",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-p14.png": "435b167c39a43546c46cf80b850ca5b00b9825b507ac8e4581924e0986b1bf02",
+    "04-experimentos/dataset-piloto-2026-10-27/entrega-academica/revisao/relatorio-visao-geral.png": "02914231d84c31cf5e362c39b6389fd479d7a0c26d79d5d5d2842081f13acdbc",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/source-pages/MBST-I-2007-p142.png": "94b7d92a0043e7a08032a9484bd96aff221b0a038e6f82fa9b9b2f3a525974c4",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/source-pages/MBST-I-2007-p152.png": "a2338137e9afaaa2da7f1b6bc43c2fe323b73febf3c315517ad46a47623e9642",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/AO_088b.original.pdf": "b0462342769bcfb4be0d7dc47b455464e954064e0a36d4be6eb3c7bc8517a15f",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/MBST-I-2007.original.pdf": "f0a28721cc87aef3eb1238bbc1c7fca2f8a606834192d2c2c85118849fdc31b4",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/free-parking-all-vehicles.original.svg": "d4059dae6539dd8d956d137cffa68a4eae8b83e065abb7168c23becdf356df15",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/free-parking-all-vehicles.svg": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/no-waiting-both-directions.original.svg": "686a19bda8b8b0988ecd362512caf2286f494c952e6802075a1866ee554903b8",
+    "04-experimentos/dataset-piloto-2026-10-27/evaluator-only/sources/no-waiting-both-directions.svg": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD01.png": "2ee2efe75c74fb1dd41749367cb523a2d43ada0cf760baa32af9facea28fd6d8",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD02.png": "56bfe68411c241398f291856ddf966d2cec777b1f158695f98f2104dbbfd3297",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD03.png": "76eb8e700e594fcd6fbd2a2a1288f60083c3908eca61ba16970575068fb62a80",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD04.png": "5f0f059ccda338c0085df4051434690078836295012868a354658c529cdc756e",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD05.png": "7338e57b9372575718b655a972f08b978720d74e5fcbde712d6f6f885c0bed51",
+    "04-experimentos/dataset-piloto-2026-10-27/model-input/images/ADD06.png": "0d0e1e521d6eac69679f6f4621e77bbbc189a63befe53dc794640ab3e7088bf4",
+    "04-experimentos/dataset-piloto-2026-10-27/somente-model-input.zip": "a18c600b98356e25f16fcb76988730e35f39e69228f9e206c355539257a1d183",
+    "07-apresentacoes/poster-argumentacao-juridica-visual-A1.pdf": "af1af289f1df776175a1f928a68662407e9578f530e9fcf2dd7d98b54f16fb2c",
+    "07-apresentacoes/relatorio-argumentacao-juridica-visual.pdf": "c237fd140f0df98be95c94e16ba2437363e2fb66dfe2b9182d6abb53e11f1e91"
+  },
+  "brazilian_provenance_reproduction": {
+    "source_pdf_pages": 222,
+    "pdfium_render_scale_for_crops": 4,
+    "crop_dimensions": [
+      360,
+      360
+    ],
+    "both_crop_pixels_equal": true,
+    "preview_render_scale": 2,
+    "preview_dimensions": [
+      1191,
+      1684
+    ],
+    "both_preview_pixels_equal": true
+  },
+  "remaining": [
+    "independent human adjudication",
+    "evaluation policy and compatible evaluator",
+    "authorized isolated candidate execution",
+    "remote DGX/Jupyter environment verification",
+    "reuse/publication conditions and academic submission links"
+  ]
+}

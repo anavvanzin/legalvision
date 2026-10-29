@@ -18,9 +18,19 @@
       "valid_source_asset": null
     },
     "README.md": {
-      "sha256": "766c2301b7a46946392add0e276ce890ac0676e0b6d683995344629cf53dba86",
-      "bytes": 7842,
+      "sha256": "fa58567a79d87426a65f598575014cfb70a98bc2c6292f17f50aec17f5d71de2",
+      "bytes": 8521,
       "valid_source_asset": null
+    },
+    "VALIDACAO-PREPARACAO.md": {
+      "valid_source_asset": null,
+      "sha256": "b26fc12eb201fb86ac24447158e2bd3f49d29b20c29ecbd27ab1f1d8e0b2c9ff",
+      "bytes": 8244
+    },
+    "VALIDATION-CHECKS.json": {
+      "valid_source_asset": null,
+      "sha256": "9b6a77b02bf94ce137b878c3e35272b81e272e7b78450534a975065d2b431dc0",
+      "bytes": 6201
     },
     "entrega-academica/LEIA-ME.md": {
       "sha256": "1e29b35c4d8111b1fa1b80a8a3430b56d62d895ddc2da03a8679023a07c02ac5",
@@ -133,19 +143,34 @@
       "valid_source_asset": null
     },
     "evaluator-only/ADD04.reference.json": {
-      "sha256": "e1f81b3eedffa88256dc644754adb5b66682ff3ec77cf1fefebf55de44537f6b",
-      "bytes": 4761,
+      "sha256": "746e6e025bdad33989530b66c3293cabe05ef4435b9ee98a1e9cd4d81643d049",
+      "bytes": 5048,
       "valid_source_asset": null
     },
     "evaluator-only/ADD05.reference.json": {
-      "sha256": "dd9d3ab19f52e55a7602359222928ab2f6a5b4641b25e201dabdea482a8c96a9",
-      "bytes": 4805,
+      "sha256": "07eb338bb51a048b981c24725a6d1bf1a07deb933c0d19e9f386c9a7a9e3e3ca",
+      "bytes": 5092,
       "valid_source_asset": null
     },
     "evaluator-only/ADD06.reference.json": {
       "sha256": "ab2c872a531f8366e2af894eab0b95d54ca91278b58c693d4f4573168ca853a4",
       "bytes": 3490,
       "valid_source_asset": null
+    },
+    "evaluator-only/adjudicacao/README.md": {
+      "valid_source_asset": null,
+      "sha256": "0c44ff34a60ab5a72651f498b467a5fd2204d10c0021ae95ffd08294d7892d5a",
+      "bytes": 6502
+    },
+    "evaluator-only/adjudicacao/ficha-cega.template.json": {
+      "valid_source_asset": null,
+      "sha256": "97c17aee7939bdc48134eadcd7f5268a089a5fe2c9d2be3ef513f90cf8da7cac",
+      "bytes": 2989
+    },
+    "evaluator-only/adjudicacao/registro-fontes-decisoes.json": {
+      "valid_source_asset": null,
+      "sha256": "8ddcd83155fc7ac0c5b182ab6167f1cfbb87ef5af3e57120214dba7d5521b1b9",
+      "bytes": 6599
     },
     "evaluator-only/historico-origem/ADD04.reference.json": {
       "sha256": "ae3bc257dfe9db3c2925a14ae1dcae111e6b5154dc8f24da3e9d492b89361317",
@@ -273,8 +298,8 @@
       "valid_source_asset": null
     },
     "notebook-aditivo-offline.ipynb": {
-      "sha256": "7defd5185c3568079eb72f5eb93a92d39d182b7cd6649131cf1ba18a85e7e806",
-      "bytes": 5253,
+      "sha256": "2d74c6006d78ec29852e17a2e8b90ceff53f0d37cfa97382dd0d7c54b8e065e4",
+      "bytes": 10801,
       "valid_source_asset": null
     },
     "somente-model-input.zip": {
@@ -283,14 +308,15 @@
       "valid_source_asset": null
     },
     "validar_entradas.py": {
-      "sha256": "936e9f5dbb682951f13be3cd3e34a1b4d9abf3e6b667f952a5e296a5167226e3",
-      "bytes": 5671,
+      "sha256": "96cf78b3e1fdcca9750623805b2cb48bf6f1a4a4b49ba45d882b115a60a0b101",
+      "bytes": 5591,
       "valid_source_asset": null
     },
     "verificar_pacote.py": {
-      "sha256": "b7245e778ccbe0fd4765fba210b27e35dc289019665e6c614f6868009519160e",
-      "bytes": 6504,
+      "sha256": "68f3f524eb2a3cb9dba97da46e408ea85df658fc8efeb8a42b59e528906840ba",
+      "bytes": 6637,
       "valid_source_asset": null
     }
-  }
+  },
+  "updated_at_utc": "2026-10-29T00:03:06.317768+00:00"
 }

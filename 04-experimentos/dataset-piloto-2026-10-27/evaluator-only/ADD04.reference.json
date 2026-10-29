@@ -47,7 +47,13 @@
     ],
     "crop_origin": "top-left of rendered source page",
     "source_page_image": "evaluator-only/source-pages/MBST-I-2007-p142.png",
-    "transformations": "Same square crop size for both signs. Original raster resolution retained; no enhancement, repainting, synthesis or overlaid text. Labels, sign codes and explanatory text excluded."
+    "transformations": "Same square crop size for both signs. Original raster resolution retained; no enhancement, repainting, synthesis or overlaid text. Labels, sign codes and explanatory text excluded.",
+    "source_page_preview_scale": 2,
+    "source_page_preview_dimensions": [
+      1191,
+      1684
+    ],
+    "crop_coordinate_space": "Full source page rendered at scale 4 (2382 x 3368), not the archived scale-2 preview. Both neutral crops are 360 x 360; no candidate pixels changed."
   },
   "visual_inspection": {
     "inspected": true,

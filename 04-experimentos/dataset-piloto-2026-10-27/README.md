@@ -1,3 +1,9 @@
+## Validação adicional e adjudicação
+
+Veja [VALIDACAO-PREPARACAO.md](VALIDACAO-PREPARACAO.md) para evidências, falhas reproduzidas e limites de prontidão. O [protocolo humano](evaluator-only/adjudicacao/README.md) inclui ficha independente e registro de fontes/decisões ainda vazios. Não há adjudicação ou inferência nova.
+
+O notebook de pesquisa agora valida a pasta neutra completa e permite selecionar caso/condição em `stimulus`, com bytes apenas em `with_image`. O notebook de `public/` confere somente os registros textuais disponíveis: não inclui pixels e não substitui o de pesquisa na prática visual. Não disponibilize `evaluator-only` ao candidato.
+
 # Integração no legalvision — 27/10/2026
 
 Este diretório é uma cópia adicional do pacote preparado anteriormente, integrada ao repositório em uma branch local. Os originais permanecem preservados. O lote continua com seis tarefas e doze entradas; não foram inventados casos para aumentar a contagem nem executados modelos.
