@@ -1,0 +1,110 @@
+{
+  "reference_status": "assistant_proposed_pending_human_review",
+  "human_review_completed": false,
+  "annotation_provenance": {
+    "kind": "assistant_multimodal",
+    "exact_model_id": "not_exposed",
+    "source_blinded": false,
+    "source_exposure": "Official explanatory chapter read before inspecting PNG pixels. Reference is not independent human ground truth.",
+    "pixels_inspected_with": "view_image(detail=original)",
+    "bbox_format": "normalized XYXY [x0,y0,x1,y1], origin top-left; approximate manual regions, not segmentation",
+    "page_convention": "page=1 denotes the single illustration"
+  },
+  "source_page": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings",
+  "source_accessed_at_utc": "2026-10-27T12:17:54.164695+00:00",
+  "reuse": {
+    "license": "Open Government Licence v3.0, except where otherwise stated",
+    "copyright": "Crown copyright 2023",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: Department for Transport, Know your traffic signs, On-street parking control signs and road markings.",
+    "license_evidence_url": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings",
+    "license_terms_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "verification": "The official chapter explicitly states OGL v3.0 and third-party exceptions. No third-party notice was identified for these two illustrations in the chapter or SVG. The separate National Archives terms page returned HTTP 403 in this inspection; it was not retried.",
+    "adaptation": "Original SVG preserved in evaluator-only. Raster copy made with native macOS AppKit NSImage, 1440 x 960 RGBA, white background, full original viewBox; no crop, transcription overlay or substantive alteration."
+  },
+  "limits": [
+    "Proposed single-illustration case; no model inference or experimental result was produced while preparing it.",
+    "Public official illustration may already occur in model training; neutral filename does not exclude recognition.",
+    "Approximate assistant bounding boxes and transcription require human review.",
+    "Operational exercise only: the illustration and supplied rule do not establish actual street conditions, legal validity, a contravention, liability, identity, intention or causality.",
+    "Official source description and this reference remain evaluator-only; they must not be candidate context, retrieval material or tools."
+  ],
+  "case_id": "ADD03",
+  "asset_id": "ADD03",
+  "source_url": "https://assets.publishing.service.gov.uk/media/65e842e108eef600115a566a/free-parking-all-vehicles.svg",
+  "source_file": "evaluator-only/sources/free-parking-all-vehicles.original.svg",
+  "source_sha256": "d4059dae6539dd8d956d137cffa68a4eae8b83e065abb7168c23becdf356df15",
+  "model_image": "model-input/images/ADD03.png",
+  "image_sha256": "76eb8e700e594fcd6fbd2a2a1288f60083c3908eca61ba16970575068fb62a80",
+  "image_dimensions": [
+    1440,
+    960
+  ],
+  "facts": [
+    {
+      "atom": "display_days(doc1,mon_sat)",
+      "bbox": [
+        0.451,
+        0.271,
+        0.708,
+        0.34
+      ],
+      "page": 1,
+      "transcription": "Mon - Sat"
+    },
+    {
+      "atom": "display_hours(doc1,h0800_h1900)",
+      "bbox": [
+        0.433,
+        0.361,
+        0.719,
+        0.439
+      ],
+      "page": 1,
+      "transcription": "8 am - 7 pm"
+    },
+    {
+      "atom": "display_max_stay(doc1,min20)",
+      "bbox": [
+        0.468,
+        0.464,
+        0.683,
+        0.533
+      ],
+      "page": 1,
+      "transcription": "20 mins"
+    },
+    {
+      "atom": "display_no_return(doc1,min40)",
+      "bbox": [
+        0.301,
+        0.574,
+        0.701,
+        0.725
+      ],
+      "page": 1,
+      "transcription": "No return / within 40 mins"
+    }
+  ],
+  "derived": [
+    "stay_assessment(doc1,exceeds_displayed_limit)"
+  ],
+  "expected_output": "[display_days(doc1,mon_sat),display_hours(doc1,h0800_h1900),display_max_stay(doc1,min20),display_no_return(doc1,min40)],stay_assessment(doc1,exceeds_displayed_limit)",
+  "without_image_expected": "[],undetermined(visual_facts,doc1)",
+  "source_description_paraphrase": "The official chapter describes this illustration as time-limited parking for all vehicles during the displayed weekday and daytime interval. The separate no-return text is also visible in the asset.",
+  "derived_explanations": [
+    {
+      "atom": "stay_assessment(doc1,exceeds_displayed_limit)",
+      "rule": "R-ADD03",
+      "from": [
+        "display_days(doc1,mon_sat)",
+        "display_hours(doc1,h0800_h1900)",
+        "display_max_stay(doc1,min20)",
+        "stipulated Wednesday 10:00 and continuous stay of 25 minutes"
+      ],
+      "interpretation": "Wednesday 10:00 is inside the displayed period; 25 > 20. The 40-minute no-return interval is distinct and irrelevant to this continuous-stay scenario. No legal contravention is adjudicated."
+    }
+  ],
+  "artifact_status": "prepared_local_research",
+  "bbox_space": "model_image_normalized_xyxy",
+  "page_convention": "facts.page identifies the source PDF page, or 1 for a standalone illustration; bboxes always refer to the candidate PNG, not the uncropped source page."
+}

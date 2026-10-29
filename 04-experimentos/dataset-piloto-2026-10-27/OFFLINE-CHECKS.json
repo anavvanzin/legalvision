@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-10-27T12:42:57.556274+00:00",
+  "scope": "Local files, offline notebook preparation and PDF composition; no model or remote evaluation.",
+  "ready_case_ids": [
+    "ADD01",
+    "ADD02",
+    "ADD03",
+    "ADD04",
+    "ADD05",
+    "ADD06"
+  ],
+  "pending_case_ids": [],
+  "prepared_input_count": 12,
+  "model_runs_performed_in_this_continuation": 0,
+  "human_reference_adjudication_completed": false,
+  "checks": {
+    "source_original_hashes_unchanged_at_snapshot_comparison": true,
+    "source_changed_since_snapshot": [],
+    "image_and_source_hash_agreement": true,
+    "candidate_evaluator_separation": true,
+    "identical_prompt_controls": true,
+    "candidate_zip_byte_comparison": true,
+    "notebook_preparation_exercised_locally": true,
+    "notebook_saved_outputs_empty": true,
+    "empty_directory_and_altered_hash_rejected": true,
+    "pdf_report_pages": 14,
+    "pdf_report_links": 12,
+    "pdf_poster_pages": 1,
+    "pdf_poster_mm": [
+      594,
+      841
+    ],
+    "pdf_visual_inspection": "Performed by primary assistant; final review images saved.",
+    "independent_assistant_review": "No blocking findings after isolated data and PDF corrections; not human adjudication."
+  },
+  "submission_pending": [
+    "Author identification",
+    "Permanent URL of this six-task dataset",
+    "Google Slides presentation URL",
+    "YouTube video URL",
+    "Public reuse conditions for Brazilian source crops"
+  ],
+  "preserved_invalid_sources": [
+    "evaluator-only/sources/no-waiting-both-directions.svg",
+    "evaluator-only/sources/free-parking-all-vehicles.svg"
+  ],
+  "test_groups_passed": 3,
+  "test_failures": 0
+}

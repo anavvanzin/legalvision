@@ -1,0 +1,16 @@
+{
+  "case_ids": [
+    "ADD01",
+    "ADD02",
+    "ADD03",
+    "ADD04",
+    "ADD05",
+    "ADD06"
+  ],
+  "conditions": [
+    "with_image",
+    "without_image"
+  ],
+  "prepared_input_count": 12,
+  "model_runs_performed": 0
+}

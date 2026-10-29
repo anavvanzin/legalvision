@@ -1,8 +1,19 @@
-# Argumentação jurídica visual - INE410159
+# LegalVision — argumentação jurídica visual
 
 Pasta central de Ana para o trabalho com Guilherme. Organização em 13/10/2026 por cópias, com originais e versões preservados. **O piloto jurídico Gemma 4 está pausado e não foi executado.**
 
-Repositório privado para versionamento: [GitHub](https://github.com/anavvanzin/legal-visual-argumentation). Índice complementar: [Craft](https://docs.craft.do/editor/d/61378bc9-4fb2-b082-6573-17848e5fdf01/1e7d86d5-8bff-2ae6-bdbf-6bd7943e4969). O GitLab não foi alterado.
+## Estado comprovado em 28/10/2026
+
+- Dataset oficial desta estabilização: ADD01–ADD06.
+- Seis tarefas, doze entradas preparadas e zero inferências.
+- Referências com estado `assistant_proposed_pending_human_review`.
+- Execução com estado `prepared_not_executed`.
+- Relatório e pôster existentes são versões de trabalho, não entregas finais.
+- Casos pendentes e a variante Qwen não integram este contrato.
+
+O modo público reproduzível é ativado somente por `VITE_PUBLIC_DEMO=true` e compilado com `bun run build:public`. Ele abre o inventário diretamente, não inicializa Firebase, não chama APIs e oferece apenas `index.json`, `prepared-inputs.jsonl` e o notebook. O ZIP permanece no diretório de pesquisa do GitHub e não é servido pela aplicação pública.
+
+Repositório para versionamento: [GitHub](https://github.com/anavvanzin/legalvision). Índice complementar: [Craft](https://docs.craft.do/editor/d/61378bc9-4fb2-b082-6573-17848e5fdf01/1e7d86d5-8bff-2ae6-bdbf-6bd7943e4969). O GitLab não foi alterado.
 
 Comece pelo [mapa do projeto](00-indice/MAPA.md) e pelo [estado atual](00-indice/STATUS.md). Para apresentação, abra o [briefing atualizado](07-apresentacoes/BRIEFING.md). Para localizar o pacote preparado, consulte [experimentos](04-experimentos/README.md).
 
