@@ -61,8 +61,11 @@ import {
 } from './firebase';
 import { IconocraciaCvTab } from './components/IconocraciaCvTab';
 import { ColabExecutionTab } from './components/ColabExecutionTab';
+import { OfflineDatasetTab } from './components/OfflineDatasetTab';
+import { PUBLIC_DEMO, PUBLIC_DEMO_MESSAGE } from './publicDemo';
 
 type TabId =
+  | 'dataset_offline'
   | 'casos_federais'
   | 'execucao_colab'
   | 'iconocracia_cv'
@@ -96,7 +99,7 @@ interface OpenAlexWorkItem {
   abstractText: string;
 }
 
-export function App() {
+function ConnectedApp() {
   const [activeTab, setActiveTab] = useState<TabId>('execucao_colab');
 
   // Firebase Auth & Firestore state
@@ -351,9 +354,11 @@ export function App() {
     setFrcpLoading(true);
     setFrcpError(null);
     try {
+      if (!currentUser) throw new Error('Autenticação obrigatória para consultar grounding.');
+      const token = await currentUser.getIdToken();
       const resp = await fetch('/api/grounding/frcp', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify({ query: qToUse, formCode: codeToUse }),
       });
       const data = await resp.json();
@@ -465,10 +470,16 @@ export function App() {
 
         <nav className="nav-section">
           <button
+            onClick={() => setActiveTab('dataset_offline')}
+            className={`nav-item ${activeTab === 'dataset_offline' ? 'active' : ''}`}
+          >
+            00 // DATASET_OFFLINE
+          </button>
+          <button
             onClick={() => setActiveTab('execucao_colab')}
             className={`nav-item ${activeTab === 'execucao_colab' ? 'active' : ''}`}
           >
-            00 // EXECUTION_RESULTS
+            01 // EXECUTION_RESULTS
           </button>
           <button
             onClick={() => setActiveTab('casos_federais')}
@@ -556,7 +567,7 @@ export function App() {
         <header className="var3-header">
           <div className="var3-label" style={{ opacity: 0.9 }}>
             <span className="var3-dot" />
-            Live Connection: Deterministic (0.0)
+            Execution gate: disabled by default
           </div>
           <div className="var3-label" style={{ opacity: 0.9 }}>
             Commit_Hash: {PROJECT_METADATA.legalCommit.slice(0, 8)}
@@ -568,90 +579,42 @@ export function App() {
           <div className="max-w-7xl mx-auto mb-10">
             <div className="mb-8">
               <div className="var3-label" style={{ color: 'var(--accent)', opacity: 1, fontWeight: 700 }}>
-                Research Dashboard // Phase 01
+                Research Dashboard // Prepared Dataset
               </div>
               <h2 className="font-oswald text-4xl sm:text-5xl font-bold my-1 tracking-tight text-[#1a1a1c]">
-                LABORATORY_REPORT
+                LEGALVISION_DATASET
               </h2>
               <p className="max-w-2xl text-sm leading-relaxed text-[#444]">
-                Bateria completa executada sob isolamento estrito. Resultados Consolidados: Piloto CASE01 (R1) e
-                Formulários Federais AO 399, 440 e 441.
+                Núcleo auditável preparado para comparação multimodal. As referências aguardam revisão humana e nenhuma inferência integra esta entrega.
               </p>
             </div>
 
             <div className="grid-layout">
               <div className="data-card">
-                <div className="var3-label">Executions</div>
-                <div className="stat-large tabular-nums">20</div>
+                <div className="var3-label">Cases</div>
+                <div className="stat-large tabular-nums">6</div>
               </div>
               <div className="data-card">
-                <div className="var3-label">Accuracy</div>
-                <div className="stat-large tabular-nums">100%</div>
+                <div className="var3-label">Prepared Inputs</div>
+                <div className="stat-large tabular-nums">12</div>
               </div>
               <div className="data-card">
-                <div className="var3-label">Abstentions</div>
-                <div className="stat-large tabular-nums">14/14</div>
+                <div className="var3-label">Inferences</div>
+                <div className="stat-large tabular-nums">0</div>
               </div>
               <button
                 onClick={() => {
-                  setActiveTab('execucao_colab');
+                  setActiveTab('dataset_offline');
                   const el = document.getElementById('workspace-main');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="btn-action"
               >
-                Run_Batch
+                Open_Inventory
               </button>
 
-              <div className="table-container">
-                <table className="var3-table">
-                  <thead>
-                    <tr>
-                      <th>Case ID</th>
-                      <th>Status</th>
-                      <th>Detection_Result</th>
-                      <th>Methodology_Audit</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="font-mono text-xs font-bold">CASE01 · Object_A</td>
-                      <td>
-                        <span className="pill pill-success">PASS</span>
-                      </td>
-                      <td>
-                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
-                          has_property(A, conduct_by_hand)
-                        </code>
-                      </td>
-                      <td className="text-xs text-[#333]">Visual anchoring verified (2/2 c/ imagem, 2/2 abstenções s/ imagem).</td>
-                    </tr>
-                    <tr>
-                      <td className="font-mono text-xs font-bold">LEGAL01 · Summons (AO 440)</td>
-                      <td>
-                        <span className="pill pill-success">PASS</span>
-                      </td>
-                      <td>
-                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
-                          identity_undetermined(blank)
-                        </code>
-                      </td>
-                      <td className="text-xs text-[#333]">Zero hallucination on empty field; prazos 21d / 60d homologados.</td>
-                    </tr>
-                    <tr>
-                      <td className="font-mono text-xs font-bold">AO 399 · Waiver / AO 441</td>
-                      <td>
-                        <span className="pill pill-warn">ABSTAIN</span>
-                      </td>
-                      <td>
-                        <code className="bg-[#eee] px-1.5 py-0.5 text-xs">
-                          deadline_undetermined
-                        </code>
-                      </td>
-                      <td className="text-xs text-[#333]">Form requires missing input data when blank or without image (60d / 90d c/ contexto).</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="table-container p-5 text-sm">
+                <strong>Estado comprovado:</strong> ADD01–ADD06 preparados em duas condições; referências propostas pendentes de revisão humana; execução de modelos não realizada.
               </div>
             </div>
           </div>
@@ -671,8 +634,10 @@ export function App() {
 
           {/* Active Module Content Container */}
           <div id="workspace-main" className="var3-workspace max-w-7xl mx-auto pt-2">
+            {activeTab === 'dataset_offline' && <OfflineDatasetTab />}
+
             {/* DEDICATED MODULE: EXECUCAO & RESULTADOS (HOJE) */}
-            {activeTab === 'execucao_colab' && <ColabExecutionTab />}
+            {activeTab === 'execucao_colab' && <ColabExecutionTab currentUser={currentUser} />}
 
             {/* DEDICATED MODULE: ICONOCRACIA-CV (2026-2) */}
             {activeTab === 'iconocracia_cv' && (
@@ -1576,7 +1541,7 @@ export function App() {
                 <div className="bg-white border border-[#d4dce0] p-4">
                   <div className="text-xs text-[#4d5e68]">Preservação Histórica</div>
                   <div className="text-2xl font-bold text-[#146563] font-mono tabular-nums mt-1">
-                    100% Intacta
+                    Preservação registrada
                   </div>
                   <div className="text-xs text-[#4d5e68] mt-1">
                     8 adições isoladas; zero mutação em <code>results/</code> ou <code>validation/</code>
@@ -1681,8 +1646,8 @@ export function App() {
                   {PROJECT_METADATA.author} · {PROJECT_METADATA.date} · Inspeção e execução local no Mac
                 </p>
                 <p className="text-lg text-[#142936] max-w-3xl mt-4 leading-relaxed">
-                  Temos uma contribuição jurídica auditada e checks locais reproduzidos.{' '}
-                  <strong>Bateria experimental executada e auditada com rastreabilidade integral de adjudicações e bibliografia.</strong>
+                  Temos um núcleo jurídico preparado e checks locais reproduzidos.{' '}
+                  <strong>As referências aguardam revisão humana e nenhuma inferência integra esta entrega.</strong>
                 </p>
               </div>
 
@@ -2216,8 +2181,8 @@ export function App() {
         {/* Variation 3 Console Footer */}
         <div className="console-footer">
           <span>&gt; SYS_STABLE</span>
-          <span>&gt; NO_LEAKAGE_DETECTED</span>
-          <span>&gt; HASH_VALID: 5/5</span>
+          <span>&gt; PREPARED_NOT_EXECUTED</span>
+          <span>&gt; HUMAN_REVIEW_PENDING</span>
           <span className="ml-auto">
             (C) 410159 · GRUPO 26 ({BIBLIOGRAPHIC_SOURCES.map((s) => s.id).join(' / ')})
           </span>
@@ -2226,4 +2191,44 @@ export function App() {
     </div>
   );
 }
+
+function PublicDemoApp() {
+  return (
+    <div className="var3-shell">
+      <aside className="var3-sidebar">
+        <div className="brand-block">
+          <div className="var3-label" style={{ color: '#ffffff', opacity: 1 }}>PUBLIC DEMO</div>
+          <div className="brand-title">LEGAL<br />VISION</div>
+        </div>
+        <nav className="nav-section">
+          <button className="nav-item active" type="button">00 // DATASET_OFFLINE</button>
+        </nav>
+      </aside>
+      <main className="var3-main">
+        <header className="var3-header">
+          <div className="var3-label"><span className="var3-dot" /> Static public build</div>
+          <div className="var3-label">6 cases · 12 inputs · 0 inferences</div>
+        </header>
+        <div className="workspace-content">
+          <div className="max-w-7xl mx-auto mb-6 border-2 border-[#1a1a1c] bg-white p-4 font-mono text-xs">
+            {PUBLIC_DEMO_MESSAGE}
+          </div>
+          <div className="var3-workspace max-w-7xl mx-auto">
+            <OfflineDatasetTab />
+          </div>
+        </div>
+        <div className="console-footer">
+          <span>&gt; PUBLIC_DEMO</span>
+          <span>&gt; PREPARED_NOT_EXECUTED</span>
+          <span>&gt; HUMAN_REVIEW_PENDING</span>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+export function App() {
+  return PUBLIC_DEMO ? <PublicDemoApp /> : <ConnectedApp />;
+}
+
 export default App;

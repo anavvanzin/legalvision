@@ -1,0 +1,33 @@
+{
+  "case_id": "ADD05",
+  "asset_id": "IMG_ADD05",
+  "image": "images/ADD05.png",
+  "image_sha256": "7338e57b9372575718b655a972f08b978720d74e5fcbde712d6f6f885c0bed51",
+  "context": "doc1 designa somente a placa do recorte. Não há dados de veículo, condutor, local, data ou comportamento.",
+  "enthymeme": "Qual padrão de diagonais vermelhas aparece sobre a letra e qual categoria decorre exclusivamente da regra operacional fornecida?",
+  "provided_rule": "Regra operacional hipotética deste exercício, e não uma declaração de direito vigente: se o recorte mostrar a letra E sobreposta por uma única diagonal vermelha, conclua operational_category(doc1,parking_prohibited). Se mostrar a letra E sobreposta por duas diagonais vermelhas cruzadas em X, conclua operational_category(doc1,stopping_and_parking_prohibited). A regra só se aplica após identificar o padrão nos pixels fornecidos. Sem imagem ou com padrão ilegível, não escolha categoria. Se a letra, o padrão ou a regra não permitirem conclusão inequívoca, responda [],undetermined(visual_facts,doc1).",
+  "output_contract": {
+    "format": "[premises],conclusion; all formal atoms use lowercase ASCII",
+    "without_image": "[],undetermined(visual_facts,doc1)",
+    "allowed_atoms": [
+      "printed_letter(doc1,letter_e)",
+      "red_diagonal_pattern(doc1,single_diagonal)",
+      "red_diagonal_pattern(doc1,crossed_diagonals)",
+      "operational_category(doc1,parking_prohibited)",
+      "operational_category(doc1,stopping_and_parking_prohibited)",
+      "undetermined(visual_facts,doc1)"
+    ]
+  },
+  "vocabulary": {
+    "entity": "doc1",
+    "red_diagonal_pattern": [
+      "single_diagonal",
+      "crossed_diagonals"
+    ],
+    "operational_category": [
+      "parking_prohibited",
+      "stopping_and_parking_prohibited"
+    ],
+    "letter_e": "símbolo formal para a letra E, quando observada"
+  }
+}

@@ -1,3 +1,9 @@
+# Continuação: piloto ADD01–ADD06
+
+O estado abaixo de 13/10 é histórico e não descreve sozinho o lote adicional. A [validação da preparação](../04-experimentos/dataset-piloto-2026-10-27/VALIDACAO-PREPARACAO.md) registra seis tarefas e doze entradas, checks locais e notebooks corrigidos, sem inferências. Preparação offline disponível; referências assistidas e política de avaliação aguardam adjudicação humana. DGX não verificada. Relatório/pôster existentes preservados como versões de trabalho.
+
+---
+
 # Estado em 13/10/2026
 
 | Frente | Estado | Evidência e limite |

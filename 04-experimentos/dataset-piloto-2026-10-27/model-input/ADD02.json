@@ -1,0 +1,43 @@
+{
+  "case_id": "ADD02",
+  "asset_id": "ADD02",
+  "image": "images/ADD02.png",
+  "image_sha256": "56bfe68411c241398f291856ddf966d2cec777b1f158695f98f2104dbbfd3297",
+  "context": "Exercício operacional fictício sobre uma única ilustração fornecida como doc1. upper e lower designam os dois painéis da placa, de cima para baixo. A tarefa trata da abrangência espacial dos comandos mostrados, sem avaliar uma via ou conduta real. Use somente os pixels recebidos e a regra abaixo; não consulte fontes, metadados ou outras imagens.",
+  "enthymeme": "Há seta(s), em qual(is) painel(is) e com que abrangência? Complete a conclusão sobre os âmbitos espaciais dos comandos de espera e de carga, sustentando-a com observações dos pixels.",
+  "provided_rule": "Regra operacional fornecida R-ADD02, apenas para este exercício: o círculo azul com borda e uma faixa diagonal vermelhas corresponde ao comando no_waiting; as palavras No loading correspondem ao comando no_loading. Cada painel contém um comando separado. Uma seta aplica-se exclusivamente ao comando do painel que a contém, na direção apontada. O comando de um painel sem seta aplica-se a ambos os sentidos ilustrados. Os dias e horários inscritos condicionam os períodos, mas esta pergunta pede somente os âmbitos espaciais. scope(doc1,W,L) registra, nessa ordem, os âmbitos do comando no_waiting e do comando no_loading. Não transfira uma seta de um painel para outro. Sem imagem, nenhuma premissa visual pode ser afirmada: responda exatamente [],undetermined(visual_facts,doc1). Esta convenção não afirma direito vigente nem infração real.",
+  "output_contract": {
+    "format": "[premises],conclusion",
+    "without_image": "[],undetermined(visual_facts,doc1)",
+    "allowed_atoms": [
+      "restriction(doc1,upper,no_waiting)",
+      "restriction(doc1,lower,no_waiting)",
+      "restriction(doc1,upper,no_loading)",
+      "restriction(doc1,lower,no_loading)",
+      "arrow(doc1,upper,absent)",
+      "arrow(doc1,upper,left)",
+      "arrow(doc1,upper,right)",
+      "arrow(doc1,lower,absent)",
+      "arrow(doc1,lower,left)",
+      "arrow(doc1,lower,right)",
+      "scope(doc1,left,left)",
+      "scope(doc1,left,right)",
+      "scope(doc1,left,both)",
+      "scope(doc1,right,left)",
+      "scope(doc1,right,right)",
+      "scope(doc1,right,both)",
+      "scope(doc1,both,left)",
+      "scope(doc1,both,right)",
+      "scope(doc1,both,both)",
+      "undetermined(visual_facts,doc1)"
+    ]
+  },
+  "vocabulary": {
+    "doc1": "única ilustração fornecida",
+    "upper/lower": "painéis superior/inferior",
+    "left/right/both/absent": "esquerda/direita/ambos os sentidos/ausente",
+    "restriction(doc1,P,C)": "comando C identificado no painel P",
+    "arrow(doc1,P,D)": "seta na direção D ou ausente no painel P",
+    "scope(doc1,W,L)": "âmbitos espaciais de espera e carga, nessa ordem"
+  }
+}

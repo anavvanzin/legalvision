@@ -1,0 +1,40 @@
+{
+  "status": "dataset_in_development",
+  "caseCount": 6,
+  "preparedInputCount": 12,
+  "conditions": ["with_image", "without_image"],
+  "referenceStatus": "assistant_proposed_pending_human_review",
+  "executionStatus": "prepared_not_executed",
+  "cases": [
+    {
+      "id": "ADD01",
+      "task": "Distinguir alternativas impressas e opção de comando selecionada",
+      "family": "Formulário AO88B"
+    },
+    {
+      "id": "ADD02",
+      "task": "Vincular uma seta ao respectivo painel",
+      "family": "Ilustrações britânicas"
+    },
+    {
+      "id": "ADD03",
+      "task": "Distinguir permanência contínua e intervalo de não retorno",
+      "family": "Ilustrações britânicas"
+    },
+    {
+      "id": "ADD04",
+      "task": "Classificar padrão de diagonais pela regra fornecida",
+      "family": "Manual brasileiro de 2007"
+    },
+    {
+      "id": "ADD05",
+      "task": "Contrastar padrões de diagonais pela mesma regra",
+      "family": "Manual brasileiro de 2007"
+    },
+    {
+      "id": "ADD06",
+      "task": "Distinguir alternativas impressas e registro de cumprimento preenchido",
+      "family": "Formulário AO88B"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "ADD06",
+  "asset_id": "IMG_ADD06",
+  "image": "images/ADD06.png",
+  "image_sha256": "0d0e1e521d6eac69679f6f4621e77bbbc189a63befe53dc794640ab3e7088bf4",
+  "context": "doc1 designa a página documental fornecida, que pode conter campos impressos e preenchimentos. Rótulos, alternativas e enunciados padronizados não demonstram por si sós que um ato foi praticado. Nenhuma informação sobre um processo ou pessoa real foi fornecida.",
+  "enthymeme": "Quais estados de marcação são visíveis nas alternativas do grupo de registro de cumprimento? O documento sustenta selecionar uma delas como relato preenchido? Complete as premissas visuais e a conclusão operacional.",
+  "provided_rule": "Regra operacional deste ensaio: alternativas impressas de registro de cumprimento só contam como relato selecionado quando houver marca inequívoca na caixa correspondente. Se as caixas served e unexecuted estiverem ambas vazias, conclua service_status_undetermined(doc1). Se apenas uma estiver marcada, conclua recorded_service_option(doc1,served) ou recorded_service_option(doc1,unexecuted), conforme observado. Isso classifica somente o registro documental; não prova que um ato ocorreu ou deixou de ocorrer no mundo. Se ambas as caixas estiverem marcadas ou a marcação não permitir escolha inequívoca, não resolva o conflito por adivinhação: responda [],undetermined(visual_facts,doc1).",
+  "output_contract": {
+    "format": "[premises],conclusion",
+    "without_image": "[],undetermined(visual_facts,doc1)",
+    "allowed_atoms": [
+      "option_state(doc1,served,marked)",
+      "option_state(doc1,served,unmarked)",
+      "option_state(doc1,served,unclear)",
+      "option_state(doc1,unexecuted,marked)",
+      "option_state(doc1,unexecuted,unmarked)",
+      "option_state(doc1,unexecuted,unclear)",
+      "service_status_undetermined(doc1)",
+      "recorded_service_option(doc1,served)",
+      "recorded_service_option(doc1,unexecuted)",
+      "undetermined(visual_facts,doc1)"
+    ]
+  },
+  "vocabulary": {
+    "option_state": "Estado visual da caixa associada à alternativa indicada; use marked, unmarked ou unclear."
+  }
+}

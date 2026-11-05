@@ -1,0 +1,113 @@
+{
+  "case_id": "ADD04",
+  "family": "MBST-I-2007",
+  "artifact_status": "prepared_local_research",
+  "ready_for_candidate": true,
+  "reference_status": "assistant_proposed_pending_human_review",
+  "human_review_completed": false,
+  "source_url": "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/manual_vol_i_2.pdf/@@display-file/file",
+  "source_landing_page": "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/manual_vol_i_2.pdf",
+  "source_file": "evaluator-only/sources/MBST-I-2007.original.pdf",
+  "source_sha256": "f0a28721cc87aef3eb1238bbc1c7fca2f8a606834192d2c2c85118849fdc31b4",
+  "source_page": 142,
+  "source_printed_page": 141,
+  "document_edition": "Manual Brasileiro de Sinalização de Trânsito, Volume I, 2ª edição, Brasília: CONTRAN, 2007; 222 PDF pages; copyright notice 2005",
+  "retrieved_at_utc": "2026-10-27T12:25:46.767205+00:00",
+  "model_image": "model-input/images/ADD04.png",
+  "image_sha256": "5f0f059ccda338c0085df4051434690078836295012868a354658c529cdc756e",
+  "image_dimensions": [
+    360,
+    360
+  ],
+  "source_access_history": [
+    {
+      "operation": "Download apenas do PDF público autorizado, usando urllib padrão.",
+      "outcome": "HTTP 488",
+      "source_target_created": false,
+      "retry_performed": false
+    },
+    {
+      "operation": "Public official alternative download; no retry of Seara source",
+      "url": "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/manual_vol_i_2.pdf/@@display-file/file",
+      "outcome": "HTTP 200; valid PDF downloaded locally"
+    }
+  ],
+  "render": {
+    "tool": "installed pypdfium2 PDFium renderer; PIL crop only",
+    "scale": 4,
+    "render_dimensions": [
+      2382,
+      3368
+    ],
+    "crop_pixels_xyxy": [
+      1840,
+      680,
+      2200,
+      1040
+    ],
+    "crop_origin": "top-left of rendered source page",
+    "source_page_image": "evaluator-only/source-pages/MBST-I-2007-p142.png",
+    "transformations": "Same square crop size for both signs. Original raster resolution retained; no enhancement, repainting, synthesis or overlaid text. Labels, sign codes and explanatory text excluded.",
+    "source_page_preview_scale": 2,
+    "source_page_preview_dimensions": [
+      1191,
+      1684
+    ],
+    "crop_coordinate_space": "Full source page rendered at scale 4 (2382 x 3368), not the archived scale-2 preview. Both neutral crops are 360 x 360; no candidate pixels changed."
+  },
+  "visual_inspection": {
+    "inspected": true,
+    "method": "view_image of complete page and final neutral crop",
+    "date_utc": "2026-10-27",
+    "source_blinded": false,
+    "observation": "Black letter E, circular red border and one red diagonal."
+  },
+  "bbox_space": "model_image_normalized_xyxy",
+  "page_convention": "facts.page identifies the source PDF page; bboxes refer to the 360x360 candidate crop, not the whole source page.",
+  "reuse": {
+    "status": "local_research_copy_no_open_license_asserted",
+    "attribution": "CONTRAN/DENATRAN, Manual Brasileiro de Sinalização de Trânsito, Volume I, 2ª ed., 2007, p. 141; Ministry of Transport official copy. Crop for this research exercise.",
+    "verified_notice": "PDF copyright © 2005 CONTRAN; landing-page footer is not treated as an express licence for cropping the PDF.",
+    "publication_limit": "No specific authorization for public redistribution of these crops was verified. Keep source attribution and check reuse before publishing this research package."
+  },
+  "facts": [
+    {
+      "atom": "printed_letter(doc1,letter_e)",
+      "bbox": [
+        0.37,
+        0.24,
+        0.69,
+        0.79
+      ],
+      "page": 142,
+      "transcription": "E",
+      "kind": "partly_occluded_printed_letter"
+    },
+    {
+      "atom": "red_diagonal_pattern(doc1,single_diagonal)",
+      "bbox": [
+        0.16,
+        0.15,
+        0.89,
+        0.86
+      ],
+      "page": 142,
+      "transcription": null,
+      "kind": "diagonal_count_and_relation"
+    }
+  ],
+  "derived": [
+    "operational_category(doc1,parking_prohibited)"
+  ],
+  "expected_output": "[printed_letter(doc1,letter_e),red_diagonal_pattern(doc1,single_diagonal)],operational_category(doc1,parking_prohibited)",
+  "without_image_expected": "[],undetermined(visual_facts,doc1)",
+  "limits": [
+    "Historical document exercise; no claim about current traffic law or a real event.",
+    "Both signs share the same PDF and family; they are a minimal contrast, not independent sources.",
+    "The letter is partly occluded by diagonals; region and interpretation remain assistant proposals awaiting human review.",
+    "Native source is rasterized at modest resolution; magnification creates no new detail.",
+    "No descriptive title, official sign code, reference answer or source URL is supplied to a candidate.",
+    "A remembered official sign is not independent proof of reading the provided pixels.",
+    "No actual offence, guilt, identity, intention, liability or causal relationship is inferred."
+  ]
+}

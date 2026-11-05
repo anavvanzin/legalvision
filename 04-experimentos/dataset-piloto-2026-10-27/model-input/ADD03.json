@@ -1,0 +1,35 @@
+{
+  "case_id": "ADD03",
+  "asset_id": "ADD03",
+  "image": "images/ADD03.png",
+  "image_sha256": "76eb8e700e594fcd6fbd2a2a1288f60083c3908eca61ba16970575068fb62a80",
+  "context": "Exercício operacional fictício com a placa doc1 como única evidência visual. Cenário estipulado: quarta-feira às 10:00; uma permanência contínua de 25 minutos; o veículo não saiu e voltou, portanto não há evento de retorno a avaliar. Não há feriado, exceção nem outra placa neste cenário estipulado. Esses fatos do cenário não descrevem um evento real. Use apenas a imagem fornecida e a regra abaixo.",
+  "enthymeme": "O dia e horário do cenário e a duração da permanência devem ser comparados aos dados mostrados na placa; assim, a permanência de 25 minutos ... Complete a conclusão e sustente-a com as inscrições efetivamente observadas.",
+  "provided_rule": "Regra operacional fornecida R-ADD03, apenas para este exercício: leia na placa os dias, o horário de aplicação, o limite de uma permanência contínua e, se houver, o intervalo separado de não retorno. Mon - Sat significa segunda a sábado; am/pm usa relógio de 12 horas. O limite de permanência aplica-se quando o dia e o horário do cenário estão no período inscrito. Uma permanência maior que o limite inscrito recebe exceeds_displayed_limit; duração menor ou igual recebe within_displayed_limit; fora dos dias/horários inscritos, use outside_displayed_period sem inferir autorização jurídica geral. Não some o intervalo de não retorno ao limite de permanência. Sem imagem, responda exatamente [],undetermined(visual_facts,doc1). A avaliação é somente desta convenção, não de uma infração ou permissão real.",
+  "output_contract": {
+    "format": "[premises],conclusion",
+    "without_image": "[],undetermined(visual_facts,doc1)",
+    "allowed_atoms": [
+      "display_days(doc1,mon_sat)",
+      "display_days(doc1,mon_fri)",
+      "display_days(doc1,every_day)",
+      "display_hours(doc1,h0800_h1900)",
+      "display_hours(doc1,h0800_h1830)",
+      "display_max_stay(doc1,min20)",
+      "display_max_stay(doc1,min40)",
+      "display_no_return(doc1,min20)",
+      "display_no_return(doc1,min40)",
+      "stay_assessment(doc1,within_displayed_limit)",
+      "stay_assessment(doc1,exceeds_displayed_limit)",
+      "stay_assessment(doc1,outside_displayed_period)",
+      "undetermined(visual_facts,doc1)"
+    ]
+  },
+  "vocabulary": {
+    "display_days": "dias transcritos e normalizados da placa",
+    "display_hours": "intervalo horário em HHMM_HHMM",
+    "display_max_stay": "limite de permanência contínua mostrado",
+    "display_no_return": "intervalo separado de não retorno mostrado",
+    "stay_assessment": "conclusão operacional sobre os fatos estipulados e a placa"
+  }
+}

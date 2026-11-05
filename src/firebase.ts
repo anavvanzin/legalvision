@@ -21,10 +21,13 @@ import {
   Timestamp,
 } from 'firebase/firestore';
 import firebaseConfig from '../firebase-applet-config.json';
+import { PUBLIC_DEMO, PUBLIC_DEMO_MESSAGE } from './publicDemo';
 
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app, firebaseConfig.firestoreDatabaseId);
-export const auth = getAuth(app);
+const app = PUBLIC_DEMO ? null : initializeApp(firebaseConfig);
+export const db = app
+  ? getFirestore(app, firebaseConfig.firestoreDatabaseId)
+  : (null as unknown as ReturnType<typeof getFirestore>);
+export const auth = app ? getAuth(app) : (null as unknown as ReturnType<typeof getAuth>);
 
 // Google Workspace Drive OAuth Scopes synced with set_up_oauth
 export const SCOPES = [
@@ -52,11 +55,13 @@ for (const scope of SCOPES) {
 let isSigningIn = false;
 let cachedAccessToken: string | null = null;
 
-onAuthStateChanged(auth, (user: User | null) => {
-  if (!user && !isSigningIn) {
-    cachedAccessToken = null;
-  }
-});
+if (!PUBLIC_DEMO) {
+  onAuthStateChanged(auth, (user: User | null) => {
+    if (!user && !isSigningIn) {
+      cachedAccessToken = null;
+    }
+  });
+}
 
 // Validate connection to Firestore on boot as required by firebase-integration-rpc
 async function testConnection() {
@@ -68,7 +73,7 @@ async function testConnection() {
     }
   }
 }
-testConnection();
+if (!PUBLIC_DEMO) testConnection();
 
 export enum OperationType {
   CREATE = 'create',
@@ -123,6 +128,7 @@ export function handleFirestoreError(
 }
 
 export async function signInWithGoogle(): Promise<User> {
+  if (PUBLIC_DEMO) throw new Error(PUBLIC_DEMO_MESSAGE);
   try {
     isSigningIn = true;
     const result = await signInWithPopup(auth, googleProvider);
@@ -137,6 +143,7 @@ export async function signInWithGoogle(): Promise<User> {
 }
 
 export async function googleSignInForDrive(): Promise<{ user: User; accessToken: string }> {
+  if (PUBLIC_DEMO) throw new Error(PUBLIC_DEMO_MESSAGE);
   try {
     isSigningIn = true;
     const result = await signInWithPopup(auth, googleProvider);

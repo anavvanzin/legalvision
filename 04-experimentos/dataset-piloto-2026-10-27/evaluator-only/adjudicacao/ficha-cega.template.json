@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "record_type": "human_pixel_review_template",
+  "status": "unfilled",
+  "instructions": "Copy per reviewer before opening sources or assistant reference. Null fields mean not assessed, never agreement. Keep evaluator-only.",
+  "reviewer_id": null,
+  "started_at_utc": null,
+  "completed_at_utc": null,
+  "prior_source_or_reference_exposure": null,
+  "cases": [
+    {
+      "case_id": "ADD01",
+      "image_sha256": "2ee2efe75c74fb1dd41749367cb523a2d43ada0cf760baa32af9facea28fd6d8",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    },
+    {
+      "case_id": "ADD02",
+      "image_sha256": "56bfe68411c241398f291856ddf966d2cec777b1f158695f98f2104dbbfd3297",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    },
+    {
+      "case_id": "ADD03",
+      "image_sha256": "76eb8e700e594fcd6fbd2a2a1288f60083c3908eca61ba16970575068fb62a80",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    },
+    {
+      "case_id": "ADD04",
+      "image_sha256": "5f0f059ccda338c0085df4051434690078836295012868a354658c529cdc756e",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    },
+    {
+      "case_id": "ADD05",
+      "image_sha256": "7338e57b9372575718b655a972f08b978720d74e5fcbde712d6f6f885c0bed51",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    },
+    {
+      "case_id": "ADD06",
+      "image_sha256": "0d0e1e521d6eac69679f6f4621e77bbbc189a63befe53dc794640ab3e7088bf4",
+      "observations": null,
+      "facts_with_normalized_xyxy": null,
+      "necessary_premises": null,
+      "supplementary_facts": null,
+      "conclusion_under_provided_rule": null,
+      "readability_and_uncertainty": null,
+      "contract_ambiguities_or_leakage": null,
+      "decision": "pending"
+    }
+  ]
+}
